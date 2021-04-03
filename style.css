@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
+/* @media url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"); */
+
+* {
+  padding: 0;
+  margin-top: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #eddedd;
+}
+header {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+/* navigation bar */
+.nav {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  float: left;
+  background: #8ac6d1;
+  height: 80px;
+}
+
+.nav ol li {
+  list-style: none;
+  margin: 0;
+  float: left;
+}
+.logo {
+  letter-spacing: 3px;
+}
+
+.navlink {
+  list-style: none;
+  margin: 0;
+}
+
+.navlink a {
+  color: rgb(80, 78, 78);
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+.burger {
+  font-size: 1.2em;
+  display: none;
+}
+
+/*footer */
+.footer {
+  width: 95%;
+  height: 350px;
+  position: relative;
+  justify-content: flex;
+  background-color: #fff;
+  border-radius: 3px;
+  margin: 30px;
+}
+.footer-content {
+  height: 300px;
+  display: flex;
+  padding: 40px 60px;
+  width: 100%;
+  border-bottom: 1px solid #84849d;
+}
+.footer-section {
+  width: 20%;
+}
+
+.footer-content .form p {
+  font-size: 14px;
+}
+
+.footer-section li {
+  list-style: inherit;
+  padding-bottom: 7px;
+}
+.footer-section li a {
+  text-decoration: none;
+  color: #000948;
+}
+.footer-section h3 {
+  color: #010837;
+}
+
+.footer-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 50px;
+  line-height: 50px;
+  width: 100%;
+  text-align: center;
+  color: #84849d;
+}
+
+@media screen and (max-width: 678px) {
+  .burger {
+    display: block;
+  }
+  .nav {
+    margin: 0;
+    background: #8ac6d1;
+    position: absolute;
+    right: 0;
+    top: 70px;
+    width: 50%;
+    height: calc(100% - 70px);
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0;
+  }
+  .navlink {
+    text-align: center;
+  }
+}
+
+/* store sections carousels */
+
+h1 {
+  text-align: center;
+}
+
+#carousel {
+  display: flex;
+  overflow-x: auto;
+  -ms-overflow-style: none; /* Hide the scrollbar for MS Edge */
+  scrollbar-width: none; /* Hide the scrollbar for Mozilla Firefox */
+  margin: 0 auto 0 auto;
+  width: 90vw;
+  height: fit-content;
+  border: solid #f3e6ff 0.5px;
+}
+
+#carousel::-webkit-scrollbar {
+  display: none; /* Hide the scrollbar on Webkit based browsers (Chrome, Safari, etc) */
+  -webkit-overflow-scrolling: auto; /* On touch screens the content continues to scroll for a while after finishing the scroll gesture */
+}
+
+.item {
+  min-width: 300px;
+  height: 300px;
+  margin: 15px;
+  font-size: 5em;
+  text-align: center;
+  background-color: #fff9ef;
+  border-radius: 7px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  display: inline-table;
+  position: static;
+  width: 40%;
+}
+
+.item:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 0;
+  margin: -50px;
+}
