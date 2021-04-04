@@ -28,18 +28,19 @@
         <div class="navlink"><a href="homepage/contact.html">Contact</a></div>
         <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="dropDownNavbar()">&#9776;</a>    
     </div> -->
-    <div class="topnav" id="myTopnav">
-      <a href="homepage/about-us.html">About Us</a> 
-      <a href="homepage/fees.html">Fees</a>
-      <a href="homepage/my-account.html">My Account</a>
-      <a href="homepage/browse.html">Browse</a>
-      <a href="homepage/faqs.html">FAQs</a>
-      <a href="homepage/contact.html">Contact</a>
+    <div class="nav" id="navbar">
+      <h1 class="nav-section">ICONIC</h1>
+      <a class="nav-section" href="homepage/about-us.html">About Us</a>
+      <a class="nav-section" href="homepage/fees.html">Fees</a>
+      <a class="nav-section" href="homepage/my-account.html">My Account</a>
+      <a class="nav-section" href="homepage/browse.html">Browse</a>
+      <a class="nav-section" href="homepage/faqs.html">FAQs</a>
+      <a class="nav-section" href="homepage/contact.html">Contact</a>
       <a
         href="javascript:void(0);"
         style="font-size: 15px"
         class="icon"
-        onclick="myFunction()"
+        onclick="handleResponsiveNavBar()"
         >&#9776;</a
       >
     </div>
@@ -281,14 +282,14 @@
     </footer>
 
     <script>
-      function myFunction() {
-        var x = document.getElementById("myTopnav");
-        if (x.className === "topnav") {
+      function handleResponsiveNavBar() {
+        var x = document.getElementById("navbar");
+        if (x.className === "nav") {
           x.className += " responsive";
         } else {
-          x.className = "topnav";
+          x.className = "nav";
         }
       }
-      </script>
+    </script>
   </body>
 </html>
