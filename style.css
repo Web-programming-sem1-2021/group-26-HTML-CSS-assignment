@@ -66,6 +66,58 @@ h1 {
 }
 
 /* navigation bar */
+/* .nav {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  float: left;
+  background: #8ac6d1;
+  height: 80px;
+  overflow: hidden;
+}
+
+.logo {
+  letter-spacing: 3px;
+}
+
+.navlink {
+  justify-self: space-around;
+  position: relative;
+  margin: 20px;
+}
+
+.navlink a {
+  color: rgb(80, 78, 78);
+  text-decoration: none;
+  font-size: 20px;
+}
+.nav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .nav .navlink:not(:second-child),
+  .nav .icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .nav .responsive {
+    position: relative;
+  }
+  .nav .responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .nav .responsive .navlink {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+} */
 .nav {
   overflow: hidden;
   background-color: #8ac6d1;
@@ -75,23 +127,19 @@ h1 {
 .nav a {
   display: inline-block;
   width: 13%;
-  outline-offset: 0px;
-  text-shadow: none;
   color: rgb(80, 78, 78);
   text-align: center;
   padding: 16px;
   text-decoration: none;
   font-size: 20px;
-  transition: all 800ms cubic-bezier(0.18, 1, 0.23, 1);
 }
-
 .nav h1 {
   display: inline-block;
   color: rgb(80, 78, 78);
   text-align: center;
   padding: 16px 16px;
   font-size: 2.5em;
-  widows: 2px;
+  widows: 2px;;
 }
 
 .nav .icon {
@@ -99,11 +147,10 @@ h1 {
 }
 
 .nav a:hover,
-.nav a:active,
 .dropdown:hover .dropbtn {
   background-color: rgb(119, 119, 119);
   color: white;
-  letter-spacing: 5px;
+  border-radius: 20%;
 }
 
 #all:hover a:hover {
