@@ -26,6 +26,13 @@ h1 {
   text-align: center;
 }
 
+.iconic {
+  text-align: center  !important;
+  font-size: 40px !important;
+  width: 20%  !important;
+  position: relative  !important;
+}
+
 /* navigation bar */
 .nav {
   top: 0px;
@@ -61,7 +68,6 @@ h1 {
 
 .nav .icon {
   display: none;
-
 }
 
 .nav a:hover,
@@ -185,10 +191,10 @@ h1 {
   background-color: #fff9ef;
   border-radius: 7px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  transition: 0.3s;
   display: inline-table;
   position: static;
   width: 40%;
+  transition: 0.3s;
 }
 
 .item:hover {

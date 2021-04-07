@@ -4,23 +4,70 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Browse</title>
+    <link rel="stylesheet" href="../../style.css">
   </head>
-  //TODO: Minh
   <body>
-    <p>
-      At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
-      gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem
-      ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-      tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-      voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
-      clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
-      amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, At accusam
-      aliquyam diam diam dolore dolores duo eirmod eos erat, et nonumy sed
-      tempor et et invidunt justo labore Stet clita ea et gubergren, kasd magna
-      no rebum. sanctus sea sed takimata ut vero voluptua. est Lorem ipsum dolor
-      sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-      diam nonumy eirmod tempor invidunt ut labore et dolore magna suck my duck
-      
-    </p>
+    <div class="nav" id="navbar">
+      <h1 class="nav-section">ICONIC</h1>
+      <a class="nav-section" href="../about-us.html">About Us</a>
+      <a class="nav-section" href="../fees.html">Fees</a>
+      <a class="nav-section" href="../my-account.html">Account</a>
+      <a class="nav-section" href="../browse/browse.html">Browse</a>
+      <a class="nav-section" href="../faqs.html">FAQs</a>
+      <a class="nav-section" href="../contact.html">Contact</a>
+      <a
+        href="javascript:void(0);"
+        style="font-size: 15px"
+        class="icon"
+        onclick="handleResponsiveNavBar()"
+        >&#9776;</a
+      >
+    </div>
+    <footer>
+      <h1>FOOTER AREA</h1>
+      <div class="footer">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>Copyright</h3>
+            <ul></ul>
+          </div>
+          <div class="footer-section">
+            <h3>Term of Service</h3>
+            <ul></ul>
+          </div>
+          <div class="footer-section">
+            <h3>Privacy Policy</h3>
+            <ul></ul>
+          </div>
+          <div class="footer-section">
+            <h3>Student contributors</h3>
+            <ol>
+              <li>Nguyen Thi Quynh Giang <b>[s3866617]</b></li>
+              <br />
+              <li>Joo Jeong-hyeon<b>[sid]</b></li>
+              <br />
+              <li>Vo Khai Minh<b>[s3866617]</b></li>
+            </ol>
+          </div>
+          <div class="footer-section">
+            <h3>Source Code</h3>
+            <ul></ul>
+          </div>
+        </div>
+        <div class="footer-bottom">Privacy policy-Terms and conditions</div>
+      </div>
+    </footer>
+  
+    <script>
+      function handleResponsiveNavBar() {
+        var x = document.getElementById("navbar");
+        if (x.className === "nav") {
+          x.className += " responsive";
+        } else {
+          x.className = "nav";
+        }
+      }
+    </script>
+    
   </body>
 </html>
