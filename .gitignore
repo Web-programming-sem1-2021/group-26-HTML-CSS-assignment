@@ -5,3 +5,4 @@ _site/
 bin/
 /.vs
 
+.DS_Store
