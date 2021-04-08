@@ -23,3 +23,10 @@
     padding: 100px;
     display: flex;
 }
+
+.slider.Simg img
+{
+    position: absolute;
+    top: 0;
+    
+}
