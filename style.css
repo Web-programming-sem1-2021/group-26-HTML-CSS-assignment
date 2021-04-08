@@ -1,9 +1,5 @@
-/* @media url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"); */
-
-@font-face {
-  font-family: Poppins;
-  src: url("./fonts/Poppins-Regular.ttf") format("truetype");
-}
+@import url(“https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap”);
+/* @media url(“https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css”); */
 * {
   padding: 0;
   margin-top: 0;
@@ -12,8 +8,8 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: Poppins, sans-serif;
-  background-color: #eddedd;
+  font-family: “Poppins”, sans-serif;
+  background-color: #EDDEDD;
 }
 header {
   width: 100%;
@@ -26,23 +22,13 @@ h1 {
   text-align: center;
 }
 
-.iconic {
-  text-align: center  !important;
-  font-size: 40px !important;
-  width: 20%  !important;
-  position: relative  !important;
-}
 
 /* navigation bar */
 .nav {
-  top: 0px;
-  height: fit-content;
   overflow: hidden;
-  background-color: #8ac6d1;
+  background-color: #8AC6D1;
   height: fit-content;
-  position: sticky;
 }
-
 .nav a {
   display: inline-block;
   width: 13%;
@@ -55,7 +41,6 @@ h1 {
   font-size: 20px;
   transition: all 800ms cubic-bezier(0.18, 1, 0.23, 1);
 }
-
 .nav h1 {
   display: inline-block;
   color: rgb(80, 78, 78);
@@ -63,13 +48,10 @@ h1 {
   padding: 16px 16px;
   font-size: 2.5em;
   widows: 2px;
-  width: 20%;
 }
-
 .nav .icon {
   display: none;
 }
-
 .nav a:hover,
 .nav a:active,
 .dropdown:hover .dropbtn {
@@ -77,15 +59,12 @@ h1 {
   color: white;
   letter-spacing: 5px;
 }
-
 #all:hover a:hover {
   opacity: 1;
 }
-
 .dropdown:hover .dropdown-content {
   display: block;
 }
-
 @media screen and (max-width: 600px) {
   .nav a:not(:first-child),
   .dropdown .dropbtn {
@@ -97,7 +76,6 @@ h1 {
     font-size: large;
   }
 }
-
 @media screen and (max-width: 600px) {
   .nav.responsive {
     position: relative;
@@ -115,7 +93,6 @@ h1 {
     width: auto;
   }
 }
-
 /*footer */
 .footer {
   width: 95%;
@@ -131,16 +108,14 @@ h1 {
   display: flex;
   padding: 40px 60px;
   width: 100%;
-  border-bottom: 1px solid #84849d;
+  border-bottom: 1px solid #84849D;
 }
 .footer-section {
   width: 20%;
 }
-
 .footer-content .form p {
   font-size: 14px;
 }
-
 .footer-section li {
   list-style: inherit;
   padding-bottom: 7px;
@@ -152,7 +127,6 @@ h1 {
 .footer-section h3 {
   color: #010837;
 }
-
 .footer-bottom {
   position: absolute;
   bottom: 0;
@@ -161,34 +135,30 @@ h1 {
   line-height: 50px;
   width: 100%;
   text-align: center;
-  color: #84849d;
+  color: #84849D;
 }
-
 /* store sections carousels */
-
 .carousel {
   display: flex;
   overflow-x: auto;
-  -ms-overflow-style: none; /* Hide the scrollbar for MS Edge */
-  scrollbar-width: none; /* Hide the scrollbar for Mozilla Firefox */
+  -ms-overflow-style: none; 
+  scrollbar-width: none; 
   margin: 0 auto 0 auto;
   width: 90vw;
   height: fit-content;
-  border: solid #f3e6ff 0.5px;
+  border: solid #F3E6FF 0.5px;
 }
-
 .carousel::-webkit-scrollbar {
-  display: none; /* Hide the scrollbar on Webkit based browsers (Chrome, Safari, etc) */
-  -webkit-overflow-scrolling: auto; /* On touch screens the content continues to scroll for a while after finishing the scroll gesture */
+  display: none; 
+  -webkit-overflow-scrolling: auto; 
 }
-
 .item {
   min-width: 300px;
   height: 300px;
   margin: 15px;
   font-size: 5em;
   text-align: center;
-  background-color: #fff9ef;
+  background-color: #FFF9EF;
   border-radius: 7px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   display: inline-table;
@@ -196,11 +166,9 @@ h1 {
   width: 40%;
   transition: 0.3s;
 }
-
 .item:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
-
 .container {
   padding: 0;
   font-size: small;
@@ -208,9 +176,7 @@ h1 {
   display: block;
   justify-content: space-around;
 }
-
 /* Section tile */
-
 .store-title {
   text-align: left;
   color: rgb(0, 0, 0);
