@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FAQs</title>
-    //TODO: Minh
-    <    <link rel="stylesheet" href="../style.css">
+    //TODO: Minh <
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../style/faqs.css">
   </head>
   <body>
     <div class="nav" id="navbar">
-      <a href="../index.html" class="homeIcon" > <h1>ICONIC</h1></a>
+      <a href="../index.html" class="homeIcon"> <h1>ICONIC</h1></a>
       <a class="nav-section" href="about-us.html">About Us</a>
       <a class="nav-section" href="fees.html">Fees</a>
-      <a class="nav-section" href="my-account.html">Account</a>
+      <a class="nav-section" href="../homepage/myAccount/my-account.html">Account</a>
       <a class="nav-section" href="browse/browse.html">Browse</a>
       <a class="nav-section" href="faqs.html">FAQs</a>
       <a class="nav-section" href="contact.html">Contact</a>
@@ -24,6 +25,79 @@
         >&#9776;</a
       >
     </div>
+
+    <div class="container" id="faqs">
+      <div class="row">
+        <div class="col-xs-12 qa-pairs">
+          <h1>FAQ</h1>
+          <dl>
+            <dd>
+              Yes, an FAQ question does belong in the space above. This space
+              here is for the answer.
+            </dd>
+            <dt>
+              Would an FAQ question belong in this space right here or would it
+              belong somewhere else on the page?
+              <div class="faq-toggle">
+                <div class="circle">
+                  <div class="minus"></div>
+                  <div class="plus"></div>
+                </div>
+              </div>
+            </dt>
+          </dl>
+          <dl>
+            <dd>
+              Yes, an FAQ question does belong in the space above. This space
+              here is for the answer.
+            </dd>
+            <dt>
+              Would an FAQ question belong in this space right here or would it
+              belong somewhere else on the page?
+              <div class="faq-toggle">
+                <div class="circle">
+                  <div class="minus"></div>
+                  <div class="plus"></div>
+                </div>
+              </div>
+            </dt>
+          </dl>
+          <dl>
+            <dd>
+              Yes, an FAQ question does belong in the space above. This space
+              here is for the answer.
+            </dd>
+            <dt>
+              Would an FAQ question belong in this space right here or would it
+              belong somewhere else on the page?
+              <div class="faq-toggle">
+                <div class="circle">
+                  <div class="minus"></div>
+                  <div class="plus"></div>
+                </div>
+              </div>
+            </dt>
+          </dl>
+          <dl>
+            <dd>
+              Yes, an FAQ question does belong in the space above. This space
+              here is for the answer.
+            </dd>
+            <dt>
+              Would an FAQ question belong in this space right here or would it
+              belong somewhere else on the page?
+              <div class="faq-toggle">
+                <div class="circle">
+                  <div class="minus"></div>
+                  <div class="plus"></div>
+                </div>
+              </div>
+            </dt>
+          </dl>
+        </div>
+      </div>
+    </div>
+
     <footer>
       <h1>FOOTER AREA</h1>
       <div class="footer">
@@ -68,7 +142,22 @@
           x.className = "nav";
         }
       }
-    </script>
     
+    </script>
+    <script>
+    $(function(){
+      $("dd").slideUp(1);
+      $("dt, dt .faq-toggle").click(function(){
+        var $this = $(this), $parent = $this.parent(), outer = true;
+        if ($this.is('.faq-toggle')) { $parent = $parent.parent(); outer = false; }
+        if ($parent.hasClass('active')) {
+          $parent.removeClass('active').find('dd').slideUp(500);
+        } else {
+          $parent.siblings().removeClass('active').find('dd').slideUp(500);
+          $parent.addClass('active').find('dd').slideDown(500);  
+        }
+        return outer;
+      });
+    });</script>
   </body>
 </html>

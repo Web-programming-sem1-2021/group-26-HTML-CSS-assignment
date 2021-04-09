@@ -1,95 +1,95 @@
-@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700);
-
-
+/* demo */
 body {
-  font-family: "Lato", sans-serif;
-  font-size: 18px;
-  background: #fff;
-  line-height:26px;
+    background: #fff;
 }
-
 h1 {
- font-family: "Lato", sans-serif;
-font-weight: 700;
-font-style: normal;
-color: #98c23d;
-  font-size: 32px;
-  
+    text-align: center;
+}
+/* feature */
+#faqs .qa-pairs dl {
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-flow: column;
+}
+#faqs .qa-pairs dl > * {
+    box-shadow: inset 0px 1px 10px -1px rgba(204, 204, 204, .8);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+#faqs .qa-pairs dt {
+    background: pink;
+    order: 1;
+    z-index: 1;
+    line-height: 1.4;
+    padding: 12px 44px 12px 24px;
+}
+#faqs .qa-pairs .faq-toggle {
+   /*background: url(http://rephresh.colangelo-sm.com/img/plus-minus.png);
+   */
+   /*background-position: left top;
+   */
+    margin-right: 20px;
+    margin-top: 13px;
+    position: absolute;
+    line-height: 1em;
+    text-align: center;
+    color: #a677c3;
+    font-weight: 700;
+    top: 0;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    display: table;
+    cursor: pointer;
+}
+#faqs .qa-pairs .faq-toggle .circle {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    border: 3px solid #9c8dc3;
+    border-radius: 50%;
+    position: relative;
+    transform: rotate(0deg);
+    transform-origin: 50% 50%;
+    transition: transform 0.5s;
+}
+#faqs .qa-pairs .faq-toggle .minus, #faqs .qa-pairs .faq-toggle .plus {
+    display: block;
+    position: absolute;
+    width: 10px;
+    height: 2px;
+    background-color: #9c8dc3;
+    left: 50%;
+    margin-left: -5px;
+    top: 50%;
+    margin-top: -1px;
+}
+#faqs .qa-pairs .faq-toggle .plus {
+    position: absolute;
+    width: 10px;
+    transform: rotate(90deg);
+    transform-origin: 50% 50%;
+    transition: width 0.5s;
+}
+#faqs .qa-pairs dd {
+    padding: 22px 24px 12px 24px;
+    margin-top: -10px;
+    order: 2;
+    background: #fff;
 }
 
-
-.content {
-  width: 80%;
-  padding: 20px;
-  margin: 0 auto;
-  padding: 0 60px 0 0;
+#faqs .qa-pairs dl.active .faq-toggle .circle {
+    transform: rotate(720deg);
+    transition: transform 0.5s;
 }
-
-.centerplease {
-  margin: 0 auto;
-  max-width: 270px;
-  font-size: 40px;
+#faqs .qa-pairs dl.active .faq-toggle .plus {
+    width: 0px;
+    transition: width transform 0.5s;
 }
-
-.question {
-  color: #fff;
-  position: relative;
-  background: #98c23d;
-  margin: 0;
-  padding: 10px 10px 10px 50px;
-  display: block;
-  width:100%;
-  cursor: pointer;
-}
-
-.answers {
-  font-weight:300;
-  background: #f2f2f2;
-  padding: 0px 15px;
-  margin: 0px 0;
-  height: 0;
-  overflow: hidden;
-  z-index: -1;
-  position: relative;
-  opacity: 0;
-  -webkit-transition: .7s ease;
-  -moz-transition: .7s ease;
-  -o-transition: .7s ease;
-  transition: .7s ease;
-}
-
-.questions:checked ~ .answers{
-  height: auto;
-  opacity: 1;
-  padding: 15px;
-}
-
-.plus {
-  color:#fff;
-  position: absolute;
-  margin-left: 10px;
-  margin-top: 5px;
-  z-index: 5;
-  font-size: 2em;
-  line-height: 100%;
-  -webkit-user-select: none;    
-  -moz-user-select: none;
-  -ms-user-select: none;
-  -o-user-select: none;
-  user-select: none;
-  -webkit-transition: .3s ease;
-  -moz-transition: .3s ease;
-  -o-transition: .3s ease;
-  transition: .3s ease;
-}
-
-.questions:checked ~ .plus {
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-  transform: rotate(45deg);
-}
-
-.questions {
-  display: none;
+@media (max-width: 767px) {
+    #faqs .qa-pairs dl {
+        font-size: 1.2em;
+   }
 }
