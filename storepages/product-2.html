@@ -2,14 +2,46 @@
 <html>
 <head>
   <link rel="stylesheet" type="text/css" href="layout.css">
+  <link rel="stylesheet" href="layout.js">
 </head>
+
 <body>
 
+
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Clients</a>
+  <a href="#">Contact</a>
+</div>
+
+<span style="font-size:28px;cursor:pointer;margin-left: 30px;" onclick="openNav()">&#9776;</span>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+
+
+    
 <div class="container">
+    <!-- <div class="sticky">
+        <img src="./images/logo1.png" style="object-fit:covor;width:350px">
+    </div> -->
+
   <!-- TOP -->
-  <div class="top">
-    <span>TOP (1000 x 80) <br/> #FF5E00;</span>
-  </div>
+    <div class="top">
+        <div class="sticky">
+        <img src="./images/logo1.png" style="object-fit:covor;width:500px">
+        </div>
+    </div>
 
   <!-- MIDDLE -->
   <div class="middle">
@@ -74,7 +106,7 @@
         <div class="middle-right-7">
             <button type="button" class="">Buy now</button>
             <button type="button" class="">
-                <i class="fas fa-shopping-cart pr-2"></i>Add to cart</button>
+                <i class="fas fa-shopping-cart pr-2"></i>Add to basket</button>
         </div>
 
 
@@ -85,6 +117,9 @@
   <div class="bottom"> <span>BOTTOM (1000 x 100) <br/> #5D5D5D;</span> </div>
 
 </div>
+
+
+
 
 </body>
 </html>
