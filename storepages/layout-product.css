@@ -1,3 +1,4 @@
+/* Constraints for WHOLE contents */
 *{
         margin:0px;
         padding: 0px;
@@ -14,9 +15,14 @@
         text-align:left;
         display: table;
     }
+    .on-top{
+        list-style: none;
+        margin-top: 10px;
+        float: right;
+        padding: 0;
+        display: flex;
+    }
     .top{
-
-
         width: 300px;
         height: 100px;
         display: table;
@@ -120,8 +126,8 @@
 
 
 
-
-  button {
+/* Button For Product */
+  .button-product {
 
     width: 230px;
 
@@ -147,7 +153,7 @@
 
 }
 
-button:hover {
+.button-product:hover {
     background: #cfcfcf;
     color: #000000;
     outline: 1px solid #cfcfcf;
@@ -156,10 +162,45 @@ button:hover {
 
 
 
+  /* Button For Top */
+
+  .button-top {
+    width: auto;
+
+    background-color: #ffffff;
+
+    border: none;
+
+    color:rgb(0, 0, 0);
+
+    padding: 0px;
+
+    text-align: left;
+
+    display: inline-block;
+
+    font-size: 13px;
+
+    margin: 5px;
+    margin-right: 30px;
+
+    cursor: pointer;
+
+
+}
+
+.button-top:hover {
+    /* background: #000000; */
+    font-size: 15px;
+    border-bottom-width : 3px;
+    border-bottom-style: solid;
+    border-bottom-color : rgb(0, 0, 0);
+    
+  }
 
 
 
-
+  /*  Sidebar toggle */
   body {
     font-family:Arial, Helvetica, sans-serif
   }
@@ -202,7 +243,9 @@ button:hover {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
   }
-
+.sidebar-button{
+    display: inline-block;
+}
 
 
 
