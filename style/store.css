@@ -13,13 +13,11 @@ font-size: 'Poppins', sans-serif;
 {
     position: relative;
     width: 100%;
-    min-height: 100vh;
-    display: flex;
+    min-height: 75vh;
+    display: flex; 
     justify-content: center;
     align-items: flex-end;
     background: #000;
-
-
 }
 
 .slider1 .Simg
@@ -40,10 +38,10 @@ font-size: 'Poppins', sans-serif;
 
 }
 
-.slider1 input[type="radio"] :checked + .Simg
+.slider1 input[type="radio"]:checked + .Simg
 {
     z-index: 10;
-    clip-path: circle(1000px at center);
+    clip-path: circle(1500px at center);
     transition-delay: 0.75s;
 }
 
@@ -64,6 +62,19 @@ font-size: 'Poppins', sans-serif;
     text-align: center;
     max-width: 800px;
 
+}
+
+.slider1 .Simg .content h2
+{
+    font-size: 6em;
+    line-height: 1em;
+    color: #fff;
+}
+
+.slider1 .Simg .content p
+{
+    font-size: 1.1em;
+    color: #fff;
 }
 
 .slider1 .Simg .content a
@@ -96,7 +107,6 @@ font-size: 'Poppins', sans-serif;
     header
     {
         padding: 20px 40px;
-
     }
 
     .slider1 .Simg
@@ -116,3 +126,85 @@ font-size: 'Poppins', sans-serif;
         margin-top: 10px;
     }
 }
+
+
+
+
+/* navigation bar */
+.nav {
+    overflow: hidden;
+    background-color: #8AC6D1;
+    height: fit-content;
+  }
+  .nav .nav-section {
+    display: inline-block;
+    width: 13%;
+    outline-offset: 0px;
+    text-shadow: none;
+    color: rgb(80, 78, 78);
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+    font-size: 20px;
+    transition: all 800ms cubic-bezier(0.18, 1, 0.23, 1);
+  }
+  .nav .homeIcon {
+    text-decoration: none !important;
+    display: inline-block;
+    color: rgb(80, 78, 78);
+    text-align: center;
+    padding: 16px 16px;
+    font-size: 20;
+    widows: 2px;
+    width: 20%;
+  }
+  .nav .icon {
+    display: none;
+    width: 13%;
+    outline-offset: 0px;
+    text-shadow: none;
+    color: rgb(80, 78, 78);
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+    font-size: 20px;
+    transition: all 800ms cubic-bezier(0.18, 1, 0.23, 1);
+  }
+  .nav .nav-section:hover,
+  .nav .nav-section:active,
+  .dropdown:hover .dropbtn {
+    background-color: rgb(119, 119, 119);
+    color: white;
+    letter-spacing: 5px;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  @media screen and (max-width: 600px) {
+    .nav a:not(:first-child),
+    .dropdown .dropbtn {
+      display: none;
+    }
+    .nav a.icon {
+      float: right;
+      display: block;
+      font-size: large;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .nav.responsive {
+      position: relative;
+    }
+    .nav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .nav.responsive .nav-section {
+      float: none;
+      display: grid;
+      text-align: center;
+      width: auto;
+    }
+  }
