@@ -5,147 +5,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Us</title>
     //TODO: Minh
-    <style>
-      input[type="text"],
-      [type="email"],
-      select,
-      textarea {
-        width: 100%;
-        padding: 12px;
-        border: 1px solid #ccc;
-        margin-top: 6px;
-        margin-bottom: 16px;
-        resize: vertical;
-      }
-
-      input[type="submit"] {
-        background-color: mediumpurple;
-        color: white;
-        padding: 12px 20px;
-        border: none;
-        cursor: pointer;
-      }
-
-      input[type="submit"]:hover {
-        background-color: deeppink;
-      }
-
-      .contactform {
-        position: relative;
-        border-radius: 50px;
-        background-color: #f2f2f2;
-        padding: 5px;
-        z-index: 2;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: auto;
-        margin-top: 3%;
-        width: 50%;
-        animation-name: gradient;
-        animation-duration: 3s;
-        animation-iteration-count: infinite;
-      }
-
-      .contactform:hover {
-        animation-name: gradient;
-        animation-duration: 15s;
-        animation-iteration-count: infinite;
-      }
-
-      .column {
-        float: center;
-        width: 50%;
-        margin-top: 6px;
-        padding: 20px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 40%;
-      }
-
-      .row:after {
-        content: "";
-        display: table;
-        clear: both;
-      }
-
-      @media screen and (max-width: 600px) {
-        .column,
-        input[type="submit"] {
-          width: auto;
-          margin-top: 0;
-        }
-      }
-
-      @keyframes gradient {
-        0% {
-          background-color: #d78ddb;
-        }
-        20% {
-          background-color: #7af2c3;
-        }
-        40% {
-          background-color: #759cec;
-        }
-        60% {
-          background-color: #23f2eb;
-        }
-        80% {
-          background-color: #f27723;
-        }
-        100% {
-          background-color: #ad3bd7;
-        }
-      }
-    </style>
+    <link rel="stylesheet" href="../style.css">
   </head>
   <body>
-    <form name="myform" action="" method="POST" onsubmit="return validForm()">
-      <div class="contactform">
-        <div style="text-align: center">
-          <h1>Get In Touch</h1>
-          <p>Contact me for a quote, to collaborate or just say hi :)</p>
-        </div>
-        <div class="row">
-          <div class="column">
-            <form action="/action_page.php">
-              <label for="fname">First Name</label>
-              <input
-                type="text"
-                id="fname"
-                name="firstname"
-                placeholder="Your name.."
-              />
-
-              <label for="lname">Last Name</label>
-              <input
-                type="text"
-                id="lname"
-                name="lastname"
-                placeholder="Your last name.."
-              />
-
-              <label for="email">Email:</label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="Your Email.."
-              />
-
-              <label for="subject">Subject</label>
-              <textarea
-                id="subject"
-                name="subject"
-                placeholder="Write something.."
-                style="height: 170px"
-              ></textarea>
-              <input type="submit" value="Submit" />
-            </form>
+    <div class="nav" id="navbar">
+      <a href="../index.html" class="homeIcon" > <h1>ICONIC</h1></a>
+      <a class="nav-section" href="about-us.html">About Us</a>
+      <a class="nav-section" href="fees.html">Fees</a>
+      <a class="nav-section" href="my-account.html">Account</a>
+      <a class="nav-section" href="browse/browse.html">Browse</a>
+      <a class="nav-section" href="faqs.html">FAQs</a>
+      <a class="nav-section" href="contact.html">Contact</a>
+      <a
+        href="javascript:void(0);"
+        style="font-size: 15px"
+        class="icon"
+        onclick="handleResponsiveNavBar()"
+        >&#9776;</a
+      >
+    </div>
+    <footer>
+      <h1>FOOTER AREA</h1>
+      <div class="footer">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>Copyright</h3>
+            <ul></ul>
+          </div>
+          <div class="footer-section">
+            <h3>Term of Service</h3>
+            <ul></ul>
+          </div>
+          <div class="footer-section">
+            <h3>Privacy Policy</h3>
+            <ul></ul>
+          </div>
+          <div class="footer-section">
+            <h3>Student contributors</h3>
+            <ol>
+              <li>Nguyen Thi Quynh Giang <b>[s3866617]</b></li>
+              <br />
+              <li>Joo Jeong-hyeon<b>[sid]</b></li>
+              <br />
+              <li>Vo Khai Minh<b>[s3866617]</b></li>
+            </ol>
+          </div>
+          <div class="footer-section">
+            <h3>Source Code</h3>
+            <ul></ul>
           </div>
         </div>
+        <div class="footer-bottom">Privacy policy-Terms and conditions</div>
       </div>
-    </form>
+    </footer>
+
+    <script>
+      function handleResponsiveNavBar() {
+        var x = document.getElementById("navbar");
+        if (x.className === "nav") {
+          x.className += " responsive";
+        } else {
+          x.className = "nav";
+        }
+      }
+    </script>
+    
   </body>
 </html>

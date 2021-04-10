@@ -4,64 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fee plans</title>
-  <link rel="stylesheet" href="style/fee.css">
+    <link rel="stylesheet" href="../style.css">
 </head>
-//TODO: Minh
-<body>
-    <div class="pricing-table-wrapper">
-  <ul class="pricing-table">
-    <li class="pricing-table__item">
-      <img src="https://css-tricks.ir/wp-content/themes/css-tricks-ir-1396/images/products/packages/1.svg" alt="" class="pricing-table__img" />
-      <h3 class="pricing-table__title">package title</h3>
-      <p class="pricing-table__description">
-        <span class="pricing-table__tagline">The tagline goes here</span>
-        <span class="pricing-table__price">800</span>
-        <span class="pricing-table__label">900 is the real price</span>
-        <span class="pricing-table__save">You save 100</span>
-      </p>
-      <ul class="pricing-table__products">
-        <li class="pricing-table__product"><a href="">Included item title</a></li>
-        <li class="pricing-table__product"><a href="">Included item title</a></li>
-        <li class="pricing-table__product pricing-table__product--excluded"><a href="">Excluded item title</a></li>
-        <li class="pricing-table__product pricing-table__product--excluded"><a href="">Excluded item title</a></li>
-      </ul>
-      <a href="https://mojtabaseyedi.com" class="pricing-table__button">continue</a>
-    </li>
-    <li class="pricing-table__item pricing-table__item--popular" data-popular="Popular">
-      <img src="https://css-tricks.ir/wp-content/themes/css-tricks-ir-1396/images/products/packages/2.svg" alt="" class="pricing-table__img" />
-      <h3 class="pricing-table__title">package title</h3>
-      <p class="pricing-table__description">
-        <span class="pricing-table__tagline">The tagline goes here</span>
-        <span class="pricing-table__price">800</span>
-        <span class="pricing-table__label">900 is the real price</span>
-        <span class="pricing-table__save">You save 100</span>
-      </p>
-      <ul class="pricing-table__products">
-        <li class="pricing-table__product"><a href="">Included item title</a></li>
-        <li class="pricing-table__product"><a href="">Included item title</a></li>
-        <li class="pricing-table__product"><a href="">Included item title</a></li>
-        <li class="pricing-table__product"><a href="">Included item title</a></li>
-      </ul>
-      <a href="https://mojtabaseyedi.com" class="pricing-table__button">continue</a>
-    </li>
-    <li class="pricing-table__item">
-      <img src="https://css-tricks.ir/wp-content/themes/css-tricks-ir-1396/images/products/packages/3.svg" alt="" class="pricing-table__img" />
-      <h3 class="pricing-table__title">package title</h3>
-      <p class="pricing-table__description">
-        <span class="pricing-table__tagline">The tagline goes here</span>
-        <span class="pricing-table__price">800</span>
-        <span class="pricing-table__label">900 is the real price</span>
-        <span class="pricing-table__save">You save 100</span>
-      </p>
-      <ul class="pricing-table__products">
-        <li class="pricing-table__product pricing-table__product--excluded"><a href="">Excluded item title</a></li>
-        <li class="pricing-table__product"><a href="">Included item title</a></li>
-        <li class="pricing-table__product"><a href="">Included item title</a></li>
-        <li class="pricing-table__product"><a href="">Included item title</a></li>
-      </ul>
-      <a href="https://mojtabaseyedi.com" class="pricing-table__button">continue</a>
-    </li>
-  </ul>
-</div>
-</body>
+  <body>
+    <div class="nav" id="navbar">
+      <a href="../index.html" class="homeIcon" > <h1>ICONIC</h1></a>
+      <a class="nav-section" href="about-us.html">About Us</a>
+      <a class="nav-section" href="fees.html">Fees</a>
+      <a class="nav-section" href="my-account.html">Account</a>
+      <a class="nav-section" href="browse/browse.html">Browse</a>
+      <a class="nav-section" href="faqs.html">FAQs</a>
+      <a class="nav-section" href="contact.html">Contact</a>
+      <a
+        href="javascript:void(0);"
+        style="font-size: 15px"
+        class="icon"
+        onclick="handleResponsiveNavBar()"
+        >&#9776;</a
+      >
+    </div>
+    <footer>
+      <h1>FOOTER AREA</h1>
+      <div class="footer">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>Copyright</h3>
+            <ul></ul>
+          </div>
+          <div class="footer-section">
+            <h3>Term of Service</h3>
+            <ul></ul>
+          </div>
+          <div class="footer-section">
+            <h3>Privacy Policy</h3>
+            <ul></ul>
+          </div>
+          <div class="footer-section">
+            <h3>Student contributors</h3>
+            <ol>
+              <li>Nguyen Thi Quynh Giang <b>[s3866617]</b></li>
+              <br />
+              <li>Joo Jeong-hyeon<b>[sid]</b></li>
+              <br />
+              <li>Vo Khai Minh<b>[s3866617]</b></li>
+            </ol>
+          </div>
+          <div class="footer-section">
+            <h3>Source Code</h3>
+            <ul></ul>
+          </div>
+        </div>
+        <div class="footer-bottom">Privacy policy-Terms and conditions</div>
+      </div>
+    </footer>
+
+    <script>
+      function handleResponsiveNavBar() {
+        var x = document.getElementById("navbar");
+        if (x.className === "nav") {
+          x.className += " responsive";
+        } else {
+          x.className = "nav";
+        }
+      }
+    </script>
+    
+ </body>
 </html>
