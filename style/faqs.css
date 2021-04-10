@@ -1,95 +1,116 @@
-/* demo */
-body {
-    background: #fff;
-}
-h1 {
-    text-align: center;
-}
-/* feature */
-#faqs .qa-pairs dl {
-    overflow: hidden;
-    position: relative;
-    z-index: 1;
-    display: flex;
-    flex-flow: column;
-}
-#faqs .qa-pairs dl > * {
-    box-shadow: inset 0px 1px 10px -1px rgba(204, 204, 204, .8);
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-#faqs .qa-pairs dt {
-    background: pink;
-    order: 1;
-    z-index: 1;
-    line-height: 1.4;
-    padding: 12px 44px 12px 24px;
-}
-#faqs .qa-pairs .faq-toggle {
-   /*background: url(http://rephresh.colangelo-sm.com/img/plus-minus.png);
-   */
-   /*background-position: left top;
-   */
-    margin-right: 20px;
-    margin-top: 13px;
-    position: absolute;
-    line-height: 1em;
-    text-align: center;
-    color: #a677c3;
-    font-weight: 700;
-    top: 0;
-    right: 0;
-    width: 20px;
-    height: 20px;
-    display: table;
-    cursor: pointer;
-}
-#faqs .qa-pairs .faq-toggle .circle {
-    display: table-cell;
-    vertical-align: middle;
-    text-align: center;
-    border: 3px solid #9c8dc3;
-    border-radius: 50%;
-    position: relative;
-    transform: rotate(0deg);
-    transform-origin: 50% 50%;
-    transition: transform 0.5s;
-}
-#faqs .qa-pairs .faq-toggle .minus, #faqs .qa-pairs .faq-toggle .plus {
+.hidden_box {
+    margin: 2em auto;
+    padding: 0;
+    max-width: 1200px;
+  }
+  
+  .hidden_box label {
     display: block;
+    font-weight: bold;
+    line-height: 3;
+    background: #efefef;
+    border-radius: 5px;
+    cursor :pointer;
+    transition: .5s;
+    position: relative;
+    padding: 0 3em 0 4em;
+    text-align: justify;
+  }
+  
+  @media screen and (max-width: 640px) {
+      .hidden_box label {
+        line-height: 2;
+        padding: .5em 3em .5em 4em;
+      }
+  }
+  
+  
+  .hidden_box label:before {
+    display: block;
+    content: 'Q';
+    font-weight: 900;
+    transition: 0.2s;
     position: absolute;
-    width: 10px;
-    height: 2px;
-    background-color: #9c8dc3;
-    left: 50%;
-    margin-left: -5px;
     top: 50%;
-    margin-top: -1px;
-}
-#faqs .qa-pairs .faq-toggle .plus {
-    position: absolute;
-    width: 10px;
-    transform: rotate(90deg);
-    transform-origin: 50% 50%;
-    transition: width 0.5s;
-}
-#faqs .qa-pairs dd {
-    padding: 22px 24px 12px 24px;
-    margin-top: -10px;
-    order: 2;
+    left: 1em;
+      transform: translateY(-50%);
+    width: 2em;
+    height: 2em;
+    line-height: 2;
+    text-align: center;
+      font-size: 1em;
     background: #fff;
-}
-
-#faqs .qa-pairs dl.active .faq-toggle .circle {
-    transform: rotate(720deg);
-    transition: transform 0.5s;
-}
-#faqs .qa-pairs dl.active .faq-toggle .plus {
-    width: 0px;
-    transition: width transform 0.5s;
-}
-@media (max-width: 767px) {
-    #faqs .qa-pairs dl {
-        font-size: 1.2em;
-   }
-}
+    border-radius: 5px;
+  }
+  
+  .hidden_box label:after {
+    display: block;
+    content: '( ͡° ͜ʖ ͡°)';
+    font-weight: 90;
+    font-size: 90%;
+    transition: 0.5s;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 3em;
+    height: 3em;
+    line-height: 3;
+    text-align: center;
+  }
+  
+  .hidden_box label:hover {
+    background: pink;
+  }
+  
+  .hidden_box input:checked ~ label:after {
+    color: #668ad8;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%) rotate(360deg);
+  }
+  
+  .hidden_box input {
+    display: none;
+  }
+  
+ 
+  .hidden_box .hidden_show {
+    height: 0;
+    padding: 0 0.6em;
+    overflow: hidden;
+    opacity: 0;
+    transition: 0.8s;
+  }
+  
+  
+  .hidden_box input:checked ~ .hidden_show {
+    padding: 10px 0.6em;
+    height: auto;
+    opacity: 1;
+  }
+  
+  @media screen and (max-width: 640px) {
+      .hidden_box input:checked ~ .hidden_show {
+        padding: 10px 0.6em;
+      }
+  }
+  
+  .question {
+    display: inline-block;
+    width: 80%;
+  }
+  
+  .hidden_box p {
+    margin: 0;
+    text-align: justify;
+  }
+  
+  .q {
+    font-size: 1em;
+    padding: .2em .6em;
+    margin-right: .8em;
+    background: #fff;
+    border-radius: 5px;
+  }
