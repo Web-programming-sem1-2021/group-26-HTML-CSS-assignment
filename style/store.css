@@ -1,7 +1,15 @@
 
+*
+{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-size: 'Poppins', sans-serif;
+}
 
 
-.slider
+
+.slider1
 {
     position: relative;
     width: 100%;
@@ -11,4 +19,100 @@
     align-items: flex-end;
     background: #000;
 
+
+}
+
+.slider1 .Simg
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    transition-delay: 0s;
+    z-index: 1;
+    clip-path: circle(0px at center);
+
+}
+
+.slider1 input[type="radio"] :checked + .Simg
+{
+    z-index: 10;
+    clip-path: circle(1000px at center);
+    transition-delay: 0.75s;
+}
+
+.slider1 .Simg img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.slider1 .Simg .content
+{
+    position: relative;
+    text-align: center;
+    max-width: 800px;
+
+}
+
+.slider1 .Simg .content a
+{
+    position: relative;
+    display: inline-block;
+    background: #fff;
+    padding: 10px 30px;
+    color: #111;
+    font-weight: 500;
+    margin-top: 20px;
+    text-decoration: none;
+
+}
+
+
+.slider1 input[type="radio"]
+{
+    position: relative;
+    z-index: 1000;
+    margin: 5px;
+    margin-bottom: 40px;
+    outline: none;
+    cursor: pointer;
+}
+
+
+@media (max-width: 768px)
+{
+    header
+    {
+        padding: 20px 40px;
+
+    }
+
+    .slider1 .Simg
+    {
+        padding: 40px;
+    }
+
+    .slider1 .Simg .content h2
+    {
+        font-size: 3em;
+    }
+
+    .slider1 .Simg .content p 
+    {
+        font-size: 1em;
+        color: #fff;
+        margin-top: 10px;
+    }
 }
