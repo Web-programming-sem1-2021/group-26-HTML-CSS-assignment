@@ -8,21 +8,12 @@
   overflow: hidden;
 }
 
-h1{
+.table-title{
     padding: 1rem;
     color: #fff;
     text-align: center;
     font-size: 3rem;
     position: relative;
-}
-
-.title-underline{
-     width: 200px;
-    border: 3px solid white;
-    position: absolute;
-    top: 47%;
-    right: 43%;
-    border-radius: 7px;
 }
 
 table{
@@ -33,7 +24,7 @@ table{
 table thead{ 
     font-family: 'Lobster', cursive;
     background-color: #000;
-    color: #fff;
+    color:#000;
     font-size: 1.5rem;
    
 }
