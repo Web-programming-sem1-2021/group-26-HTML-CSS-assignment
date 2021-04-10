@@ -8,54 +8,192 @@
   <link rel="stylesheet" href="../style/store.css">
   </head>
   <body>
-    <div class="nav" id="navbar">
-      <a href="index.html" class="homeIcon" > <h1 style="font-size: 50px;">ICONIC 🐈</h1></a>
-       <a class="nav-section" href="homepage/about-us.html">About Us</a>
-       <a class="nav-section" href="homepage/fees.html">Fees</a>
-       <a class="nav-section" href="homepage/my-account.html">Account</a>
-       <a class="nav-section" href="homepage/browse.html">Browse</a>
-       <a class="nav-section" href="homepage/faqs.html">FAQs</a>
-       <a class="nav-section" href="homepage/contact.html">Contact</a>
-       <a
-         href="javascript:void(0);"
-         style="font-size: 15px"
-         class="icon"
-         onclick="handleResponsiveNavBar()"
-         >&#9776;</a
-       >
-    </div>
-  
-    <div class="slider1">
-      <input type="radio" name="slider1" checked="checked">
-      <div class="Simg">
-        <img src="./images/img1.jpg">
-          <div class="content">
-            <h2>Slider 1</h2>
-            <p>dfsfsfsfs fsdfsf sdfsdfsfsf</p>>
-            <a href="#"> Click Here</a>
-          </div>
-      </div>
+    <header>
+    <nav>
+      <div id="logo">Your Logo here</div>
 
-      <input type="radio" name="slider1">
-      <div class="Simg">
-        <img src="./images/img1.jpg">
-          <div class="content">
-            <h2>Slider 2</h2>
-            <p>dfsfsfsfs fsdfsf sdfsdfsfsf</p>>
-            <a href="#"> Click Here</a>
-          </div>
-      </div>
+      <label for="drop" class="toggle">Menu</label>
+      <input type="checkbox" id="drop" />
+          <ul class="menu">
+              <li><a href="#">Home</a></li>
+              <li>
+                  <!-- First Tier Drop Down -->
+                  <label for="drop-1" class="toggle">WordPress +</label>
+                  <a href="#">WordPress</a>
+                  <input type="checkbox" id="drop-1"/>
+                  <ul>
+                      <li><a href="#">Themes and stuff</a></li>
+                      <li><a href="#">Plugins</a></li>
+                      <li><a href="#">Tutorials</a></li>
+                  </ul> 
 
-      <input type="radio" name="slider1">
-      <div class="Simg">
-        <img src="./images/img1.jpg">
-        <div class="content">
-          <h2>Slider 3</h2>
-          <p>dfsfsfsfs fsdfsf sdfsdfsfsf</p>>
-          <a href="#"> Click Here</a>
-        </div>
-      </div>
+              </li>
+              <li>
 
-    </div>
+              <!-- First Tier Drop Down -->
+              <label for="drop-2" class="toggle">Web Design +</label>
+              <a href="#">Web Design</a>
+              <input type="checkbox" id="drop-2"/>
+              <ul>
+                  <li><a href="#">Resources</a></li>
+                  <li><a href="#">Links</a></li>
+                  <li>
+                     
+                  <!-- Second Tier Drop Down -->        
+                  <label for="drop-3" class="toggle">Tutorials +</label>
+                  <a href="#">Tutorials</a>         
+                  <input type="checkbox" id="drop-3"/>
+
+                  <ul>
+                      <li><a href="#">HTML/CSS</a></li>
+                      <li><a href="#">jQuery</a></li>
+                      <li><a href="#">Other</a></li>
+                  </ul>
+                  </li>
+              </ul>
+              </li>
+              <li><a href="#">Graphic Design</a></li>
+              <li><a href="#">Inspiration</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">About</a></li>
+          </ul>
+      </nav>
+      </header>
+    <section class="home">
+      <div class="slider">
+         <div class="slide active" style="background-image: url('images/slide-1.jpg')">
+             <div class="container">
+                 <div class="caption">
+                     <h1>1. Winter Collection 2020</h1>
+                     <p>Lorem ipsum dummy text goes here.</p>
+                     <a href="">Shop Now</a>
+                 </div>
+             </div>
+         </div>
+         <div class="slide" style="background-image: url('images/slide-2.jpg')">
+             <div class="container">
+                 <div class="caption">
+                     <h1>2. Winter Collection 2020</h1>
+                     <p>Lorem ipsum dummy text goes here.</p>
+                     <a href="">Shop Now</a>
+                 </div>
+             </div>
+         </div>
+         <div class="slide" style="background-image: url('images/slide-3.jpg')">
+             <div class="container">
+                 <div class="caption">
+                     <h1>3. Winter Collection 2020</h1>
+                     <p>Lorem ipsum dummy text goes here.</p>
+                     <a href="">Shop Now</a>
+                 </div>
+             </div>
+         </div>
+      </div>
+   
+     <!-- controls  -->
+     <div class="controls">
+         <div class="prev"><</div>
+         <div class="next">></div>
+     </div>
+ 
+     <!-- indicators -->
+     <div class="indicator">
+     </div>
+ 
+   </section>
+
+
+   <script>
+     const slides=document.querySelector(".slider").children;
+ const prev=document.querySelector(".prev");
+ const next=document.querySelector(".next");
+ const indicator=document.querySelector(".indicator");
+ let index=0;
+
+
+   prev.addEventListener("click",function(){
+       prevSlide();
+       updateCircleIndicator(); 
+       resetTimer();
+   })
+
+   next.addEventListener("click",function(){
+      nextSlide(); 
+      updateCircleIndicator();
+      resetTimer();
+      
+   })
+
+   // create circle indicators
+    function circleIndicator(){
+        for(let i=0; i< slides.length; i++){
+        	const div=document.createElement("div");
+        	      div.innerHTML=i+1;
+                div.setAttribute("onclick","indicateSlide(this)")
+                div.id=i;
+                if(i==0){
+                	div.className="active";
+                }
+               indicator.appendChild(div);
+        }
+    }
+    circleIndicator();
+
+    function indicateSlide(element){
+         index=element.id;
+         changeSlide();
+         updateCircleIndicator();
+         resetTimer();
+    }
+     
+    function updateCircleIndicator(){
+    	for(let i=0; i<indicator.children.length; i++){
+    		indicator.children[i].classList.remove("active");
+    	}
+    	indicator.children[index].classList.add("active");
+    }
+
+   function prevSlide(){
+   	 if(index==0){
+   	 	index=slides.length-1;
+   	 }
+   	 else{
+   	 	index--;
+   	 }
+   	 changeSlide();
+   }
+
+   function nextSlide(){
+      if(index==slides.length-1){
+      	index=0;
+      }
+      else{
+      	index++;
+      }
+      changeSlide();
+   }
+
+   function changeSlide(){
+   	       for(let i=0; i<slides.length; i++){
+   	       	 slides[i].classList.remove("active");
+   	       }
+
+       slides[index].classList.add("active");
+   }
+
+   function resetTimer(){
+   	  // when click to indicator or controls button 
+   	  // stop timer 
+   	  clearInterval(timer);
+   	  // then started again timer
+   	  timer=setInterval(autoPlay,4000);
+   }
+ 
+  function autoPlay(){
+      nextSlide();
+      updateCircleIndicator();
+  }
+  let timer=setInterval(autoPlay,4000);
+   </script>
   </body>
 </html>
