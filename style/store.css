@@ -3,54 +3,6 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 @import url(https://fonts.googleapis.com/css?family=Bree+Serif);
 
-body {
-	background: #212121;
-	font-size:22px;
-	line-height: 32px;
-	color: #ffffff;
-	margin: 0;
-	padding: 0;
-	word-wrap:break-word !important;
-	font-family: 'Open Sans', sans-serif;
-	}
-
-h1 {
-	font-size: 60px;
-	text-align: center;
-	color: #FFF;
-}	
-
-h3 {
-	font-size: 30px;
-	line-height: 34px;
-	text-align: center;
-	color: #FFF;
-}
-
-h3 a {
-	color: #FFF;
-}
-
-a {
-	color: #FFF;
-}
-
-h1 {
-	margin-top: 100px;
-	text-align:center;
-	font-size:60px;
-	line-height: 70px;
-	font-family: 'Bree Serif', 'serif';
-	}
-
-#container {
-	margin: 0 auto;
-	max-width: 890px;
-}
-
-p {
-	text-align: center;
-}
 
 .toggle,
 [id^=drop] {
@@ -61,7 +13,7 @@ p {
 nav { 
 	margin:0;
 	padding: 0;
-	background-color: #254441;
+	background-color: #3b0a0ad2;
 }
 
 #logo {
@@ -96,7 +48,7 @@ nav ul li {
 	margin: 0px;
 	display:inline-block;
 	float: left;
-	background-color: #254441;
+	background-color: #3b0a0a7c;
 	}
 
 /* Styling the links */
@@ -136,6 +88,7 @@ nav ul ul li {
 	float:none;
 	display:list-item;
 	position: relative;
+	z-index:100;
 }
 
 /* Second, Third and more Tiers	
@@ -302,7 +255,7 @@ body{
 }
 
 .home{
-	height: 50vh;
+	height: 60vh;
 	overflow:hidden;
 	position: relative;
 }
@@ -444,8 +397,6 @@ body{
 		display: none;
 	}
 }
-
-
 
 
 
