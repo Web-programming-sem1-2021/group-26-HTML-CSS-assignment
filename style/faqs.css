@@ -8,10 +8,10 @@
     display: block;
     font-weight: bold;
     line-height: 3;
-    background: #efefef;
+    background: #e99ca6;
     border-radius: 5px;
     cursor :pointer;
-    transition: .5s;
+    transition: .2s;
     position: relative;
     padding: 0 3em 0 4em;
     text-align: justify;
@@ -29,7 +29,7 @@
     display: block;
     content: 'Q';
     font-weight: 900;
-    transition: 0.2s;
+    transition: 0.8s;
     position: absolute;
     top: 50%;
     left: 1em;
@@ -45,10 +45,10 @@
   
   .hidden_box label:after {
     display: block;
-    content: '( ͡° ͜ʖ ͡°)';
+    content: '👻';
     font-weight: 90;
-    font-size: 90%;
-    transition: 0.5s;
+    font-size: 30px;
+    transition: 1s;
     position: absolute;
     top: 50%;
     right: 0;
@@ -60,7 +60,9 @@
   }
   
   .hidden_box label:hover {
-    background: pink;
+    background: gray;
+    color: white;
+
   }
   
   .hidden_box input:checked ~ label:after {
