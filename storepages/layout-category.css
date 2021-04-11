@@ -48,7 +48,7 @@
     background-color: rgb(255, 158, 158);
     position: relative;
 }
-.middle-left{
+/* .middle-left{
     position: absolute;
     top: 0px;
     width: auto; height: auto;
@@ -61,7 +61,7 @@
     left: 800px;
     width: 380px;
     height: 500px;
-}
+} */
 /* .middle-right-1{
     position:relative;
     width: 230px;
@@ -109,41 +109,6 @@
 }
 
 
-
-
-/* Button For Product */
-.button-product {
-
-width: 230px;
-
-background-color: #000000;
-
-border: none;
-
-color:rgb(255, 255, 255);
-
-padding: 10px;
-
-text-align: center;
-
-display: inline-block;
-
-font-size: 20px;
-
-margin: 5px;
-
-cursor: pointer;
-
-outline: 1px solid black;
-
-}
-
-.button-product:hover {
-background: #cfcfcf;
-color: #000000;
-outline: 1px solid #cfcfcf;
-
-}
 
 
 
@@ -211,10 +176,16 @@ padding: 8px 8px 8px 32px;
 text-decoration: none;
 font-size: 20px;
 color: #000000;
+
 display: block;
 transition: 0.3s;
 }
+.selected {
 
+color: #000000;
+background-color: #cfcfcf;
+
+}
 .sidenav a:hover {
 color: #000000;
 font-size: 25px;
