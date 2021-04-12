@@ -135,7 +135,7 @@ li > a:only-child:after { content: ''; }
 	/* Stylinf the toggle lable */
 	.toggle {
 		display: block;
-		background-color: #254441;
+		background-color: #3b0a0ad2;
 		padding:14px 20px;	
 		color:#FFF;
 		font-size:17px;
@@ -349,7 +349,7 @@ body{
  width: 40px;
  margin-top: -20px;
  color:#ffffff;
- background-color: #FF5722;
+ background-color: #3b0a0ad2;
  text-align: center;
  line-height: 40px;
  font-size:20px;
@@ -380,7 +380,7 @@ body{
 	width:25px;
 	height: 25px;
 	color:#ffffff;
-	background-color: #FF5722;
+	background-color: #3b0a0ad2;
 	border-radius:50%;
 	text-align: center;
 	line-height: 25px;
