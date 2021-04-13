@@ -17,9 +17,12 @@ img.small2 {
   float: right;
   height: 200px;
   margin-bottom: 24px;
-  margin-right: 24px;
+  margin-left: 24px;
 }
-body,
+
+h2{
+  font-size: 30px;
+}
 section,
 img {
   border: 2px solid #b1b1b1;
@@ -28,6 +31,7 @@ img {
 
 section {
   margin: 20px;
+  padding: 20px;
 }
 
 /*
@@ -102,7 +106,7 @@ ul li {
 }
 
 /* Hover effect */
-.icon-effect .icon {
+/* .icon-effect .icon {
   .transition-animation;
 }
 
@@ -124,4 +128,4 @@ ul li {
 .icon-effect-1a .icon:hover:after {
   .transition-scale(1); // mixins
   opacity: 1;
-}
+} */

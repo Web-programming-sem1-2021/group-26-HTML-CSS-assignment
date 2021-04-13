@@ -5,25 +5,78 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Store</title>
-  <link rel="stylesheet" href="style/store.css">
+    <link rel="stylesheet" href="../style/store.css" />
+    <link rel="stylesheet" href="../style.css" />
   </head>
   <body>
-    <div class="slider">
-      <input type="radio" name="slider">
-      <div class="Simg">
-        <img src="images/img1.jpg">
+    <div class="nav" id="navbar" style="background-color: burlywood">
+      <a href="index.html" class="homeIcon">
+        <h1 style="font-size: 50px">ICONIC 🐈</h1></a
+      >
+      <a class="nav-section" href="store-1.html">Store Home</a>
+      <a class="nav-section" href="../homepage/about-us.html">About Us</a>
+      <div class="dropdown">
+        <button class="dropbtn">
+          Products
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#">Browse Porduct by categories</a>
+        </div>
       </div>
-
-      <input type="radio" name="slider">
-      <div class="Simg">
-        <img src="images/img1.jpg">
-      </div>
-
-      <input type="radio" name="slider">
-      <div class="Simg">
-        <img src="images/img1.jpg">
-      </div>
-
+      <a class="nav-section" href="homepage/contact.html">Contact</a>
+      <a
+        href="javascript:void(0);"
+        style="font-size: 20px"
+        class="icon"
+        onclick="handleResponsiveNavBar()"
+        >&#9776;</a
+      >
     </div>
+
+    <div class="slider1">
+      <input type="radio" name="slider1" checked="checked" />
+      <div class="Simg">
+        <img src="./images/img1.jpg" />
+        <div class="content">
+          <h2>Slider 1</h2>
+          <p>dfsfsfsfs fsdfsf sdfsdfsfsf</p>
+          >
+          <a href="#"> Click Here</a>
+        </div>
+      </div>
+
+      <input type="radio" name="slider1" />
+      <div class="Simg">
+        <img src="./images/img1.jpg" />
+        <div class="content">
+          <h2>Slider 2</h2>
+          <p>dfsfsfsfs fsdfsf sdfsdfsfsf</p>
+          >
+          <a href="#"> Click Here</a>
+        </div>
+      </div>
+
+      <input type="radio" name="slider1" />
+      <div class="Simg">
+        <img src="./images/img1.jpg" />
+        <div class="content">
+          <h2>Slider 3</h2>
+          <p>dfsfsfsfs fsdfsf sdfsdfsfsf</p>
+          >
+          <a href="#"> Click Here</a>
+        </div>
+      </div>
+    </div>
+    <script>
+      function handleResponsiveNavBar() {
+        var x = document.getElementById("navbar");
+        if (x.className === "nav") {
+          x.className += " responsive";
+        } else {
+          x.className = "nav";
+        }
+      }
+    </script>
   </body>
 </html>
