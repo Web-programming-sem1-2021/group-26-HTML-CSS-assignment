@@ -45,9 +45,11 @@ img,
     float: left;
     padding-left: 24px;
     width: 34%;
+    position: relative;
   }
   footer {
     clear: both;
+    
   }
 }
 
