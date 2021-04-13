@@ -9,20 +9,8 @@
 }
 
 h1{
-    padding: 1rem;
-    color: #fff;
     text-align: center;
-    font-size: 3rem;
     position: relative;
-}
-
-.title-underline{
-     width: 200px;
-    border: 3px solid white;
-    position: absolute;
-    top: 47%;
-    right: 43%;
-    border-radius: 7px;
 }
 
 table{
@@ -69,7 +57,6 @@ table tbody td a{
     so we fill all the A:link cell
     (delete the padding for td)*/
      text-decoration: none;
-    color: #fff;
     
 }
 /* table tbody td a:hover{
