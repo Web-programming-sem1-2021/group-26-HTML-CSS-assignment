@@ -72,7 +72,6 @@ nav a:hover {
 	background-color: #CD2026; 
 }
 
-<<<<<<< HEAD
 /* Hide Dropdowns by Default
  * and giving it a position of absolute */
 nav ul ul {
@@ -254,7 +253,7 @@ body{
 	margin:0;
 	font-family: sans-serif;
 	overflow-x: hidden;
-	background: #a8a3a3ee;
+	background: #f3f3f3ee;
 }
 
 *{
@@ -409,191 +408,120 @@ body{
 
 
 
-/*Product slide CSS*/
 
 
-.box{
-	width:300px;
-	box-shadow: 2px 2px 30px rgba(0,0,0,0.2);
-	border-radius: 10px;
-	overflow: hidden;
-	margin: 25px;
+/*Product of the day*/
+
+.Cardhead {
+	text-align: center;
+	font-family: 'Times New Roman', Times, serif;
+	font-size: 16px;
 }
 
-.slider-img{
-	height: 450px;
-	position:relative;
-}
-.slider-img img{
-	width:100%;
-	height: 100%;
-	object-fit: cover;
-	box-sizing: border-box;
-}
-.detail-box{
+.Product_row{
 	width: 100%;
-display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 10px 20px;
-	box-sizing: border-box;
-	font-family: calibri;
-}
-.type{
+	justify-content: flex-start;
 	display: flex;
-	flex-direction: column;
+	flex-flow: row wrap;
+  }
+  
+
+
+.row {
+  width: 100%;
+  justify-content: flex-start;
+  display: flex;
+  flex-flow: row wrap;
 }
-.type a{
-	color:#222222;
-	margin: 5px 0px;
-	font-weight: 700;
-	letter-spacing: 0.5px;
-	padding-right: 8px;
+
+
+
+.product, .product--col{
+  box-shadow: 1px 5px 15px #ccc;
+  width: 15em;
+  height: auto;
+  border-radius: 3px;
+  padding: 2em;
+  margin: 1em;
+  overflow: hidden;
+  position: relative;
+  flex: auto;
 }
-.type span{
-	color:rgba(26,26,26,0.5);
+
+
+.Product_row{
+	background: linear-gradient(-45deg, #e90a15bb 50%, rgba(0, 0, 0, 0.5) 50%);
 }
-.price{
-	color: #333333;
-	font-weight: 600;
-	font-size: 1.1rem;
-	font-family: poppins;
-	letter-spacing: 0.5px;
+.product--col {
+  background: linear-gradient(-45deg, #f11515bb 50%, rgba(255, 255, 255, 0.5) 50%);
 }
-.overlay{
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	transform: translate(-50%,-50%);
-	width:100%;
-	height: 100%;
-	background-color: rgba(92,95,236,0.6);
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-.buy-btn{
-	width:160px;
-	height: 40px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background-color: #FFFFFF;
-	color:#252525;
-	font-weight: 700;
-	letter-spacing: 1px;
-	font-family: calibri;
-	border-radius: 20px;
-	box-shadow: 2px 2px 30px rgba(0,0,0,0.2);
-}
-.buy-btn:hover{
-	color:#FFFFFF;
-	background-color: #f15fa3;
-	transition: all ease 0.3s;
-}
-.overlay{
-	visibility: hidden;
-}
-.slider-img:hover .overlay{
-	visibility: visible;
-	animation:fade 0.5s;
-}
+
+
  
-@keyframes fade{
-	0%{
-		opacity: 0;
-	}
-	100%{
-		opacity: 1;
-	}
+.product img, .product--rowcol img{
+	max-width: 100%;
+	height: auto !important;
+	text-align: center;
+  }
+.product img, .product--col img{
+  max-width: 100%;
+  height: auto !important;
+  text-align: center;
 }
-.slider{
-	width:100%;
-	height: 100vh;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+.product_inner {
+  display: flex;
+  align-items: center;
+  flex-flow: column wrap;
 }
-=======
-.slider1 .Simg img
-{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.product_inner p {
+  color: rgba(0, 0, 0, 0.9);
 }
-
-
-.slider1 .Simg .content
-{
-    position: relative;
-    text-align: center;
-    max-width: 800px;
-
+.product_inner button {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  color: #fff;
+  border-radius: 3px;
+  padding: 1em 3em;
+  margin: 1em 0 0 0;
+  background: none;
+  cursor: pointer;
+  transition: background ease-in 0.25s;
 }
-
-.slider1 .Simg .content h2
-{
-    font-size: 6em;
-    line-height: 1em;
-    color: #fff;
+.product_inner button:hover {
+  background: white;
+  color: #2b2d42;
 }
-
-.slider1 .Simg .content p
-{
-    font-size: 1.1em;
-    color: #fff;
+.product_inner button:before {
+  font-family: FontAwesome;
+  content: "";
+  color: #fff;
+  position: absolute;
+  font-size: 1.5em;
+  margin: 0 -1.5em;
 }
-
-.slider1 .Simg .content a
-{
-    position: relative;
-    display: inline-block;
-    background: #fff;
-    padding: 10px 30px;
-    color: #111;
-    font-weight: 500;
-    margin-top: 20px;
-    text-decoration: none;
-
+.product_inner button:hover:before {
+  color: #2b2d42;
 }
-
-
-.slider1 input[type="radio"]
-{
-    position: relative;
-    z-index: 1000;
-    margin: 5px;
-    margin-bottom: 40px;
-    outline: none;
-    cursor: pointer;
+.product_overlay {
+  background: rgba(255, 255, 255, 0.9);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  transform: translateY(-500px);
+  opacity: 0;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
 }
-
-
-@media (max-width: 768px)
-{
-    header
-    {
-        padding: 20px 40px;
-    }
-
-    .slider1 .Simg
-    {
-        padding: 40px;
-    }
-
-    .slider1 .Simg .content h2
-    {
-        font-size: 3em;
-    }
-
-    .slider1 .Simg .content p 
-    {
-        font-size: 1em;
-        color: #fff;
-        margin-top: 10px;
-    }
+.product_overlay h2 {
+  color: rgba(43, 45, 66, 0.7);
+  font-size: 1.2em;
+  margin: 1em 0;
 }
->>>>>>> main
+.product_overlay i {
+  color: rgba(43, 45, 66, 0.7);
+  font-size: 1.5em;
+}
