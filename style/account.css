@@ -6,7 +6,7 @@ body {
 }
 .card {
   border: 2px solid #17a589;
-  box-shadow: 5px 6px 0px #17a589;
+  box-shadow: 10px 10px #17a589;
   transition: 0.3s all;
   border-radius: 3px;
   background-color: #fff;
@@ -17,6 +17,7 @@ body {
   text-align: center;
   width: 80%;
   margin: 20px auto 10px auto;
+  border-radius: 10px;
 }
 
 .card .avatar img {

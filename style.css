@@ -228,6 +228,8 @@ h1 {
   width: 90vw;
   height: fit-content;
   border: solid #7daeee 0.5px;
+  background-color: #a8d1d1;
+  
 }
 .carousel::-webkit-scrollbar {
   display: none;
