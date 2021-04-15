@@ -12,12 +12,13 @@
     <!---Naivgation-->
     <nav>
       <div id="logo">
-        <img src="./imdages/HandM.png" alt="Logo" style="width: 3%"  />
+        <img class= "logo-img" src="./images/sup.png" alt="Logo" style="width: 10%"  />
       </div>
 
       <label for="drop" class="toggle">Menu</label>
       <input type="checkbox" id="drop" />
           <ul class="menu">
+              
               <li><a href="#">Home</a></li>
               <li>
                   <!-- First Drop Down -->
@@ -187,8 +188,80 @@
 
   <!--New products-->
   <div class='Cardhead'>
-    <h1>Product of the day</h1>
+    <h1>New Products</h1>
   </div>
+
+  <div class='Cardhead'>
+    <h1>Featured Products</h1>
+  </div>
+
+
+  <!--  FOOTER START -->
+<footer>
+
+  
+<div class="footer">
+  <div class="inner-footer">
+
+<!--  for company name and description -->
+    <div class="footer-items">
+      <a href="./store-1.html"><img class= "logo-img" src="./images/sup.png" alt="Logo" style="width: 100%"/></a>
+     
+    </div>
+
+<!--  for quick links  -->
+    <div class="footer-items">
+      <h3>Find It Fast</h3>
+      <div class="border1"></div> <!--for the underline -->
+        <ul>
+          <a href="#"><li>Term of serive</li></a>
+          <a href="#"><li>Privacy Policy</li></a>
+          <a href="#"><li>Contact</li></a>
+          <a href="#"><li>About Us</li></a>
+        </ul>
+    </div>
+
+<!--  for some other links -->
+    <div class="footer-items">
+      <h3>Quick Link</h3>
+      <div class="border1"></div>  <!--for the underline -->
+        <ul>
+          <a href="#"><li>Mall</li></a>
+          <a href="#"><li>Products</li></a>
+          <a href="#"><li>My Account</li></a>
+          
+        </ul>
+    </div>
+
+<!--  for contact us info -->
+    <div class="footer-items">
+      <h3>Opening Hours</h3>
+      <div class="border1"></div>
+        <ul>
+          <li>MON TO SAT: 8.30am to 7 pm</li>
+          <li>SUN : CLOSED</li>
+
+        </ul> 
+      
+    </div>
+  </div>
+  
+<!--   Footer Bottom start  -->
+  <div class="footer-bottom">
+    Copyright &copy;  2021.
+  </div>
+</div>
+</footer>
+
+
+
+
+
+
+
+
+
+
 
  <script>
      const slides=document.querySelector(".slider").children;
@@ -291,58 +364,6 @@
 
 
 
-
-  $(function () {
-  "use strict";
-
-  var init = "No items yet!";
-  var counter = 0;
-
-  // Initial Cart
-  $(".counter").html(init);
-
-  // Add Items To Basket
-  function addToBasket() {
-    counter++;
-    $(".counter")
-      .html(counter)
-      .animate(
-        {
-          opacity: "0"
-        },
-        300,
-        function () {
-          $(".counter").delay(300).animate({
-            opacity: "1"
-          });
-        }
-      );
-  }
-
-  // Add To Basket Animation
-  $("button").on("click", function () {
-    addToBasket();
-    $(this)
-      .parent()
-      .parent()
-      .find(".product_overlay")
-      .css({
-        transform: " translateY(0px)",
-        opacity: "1",
-        transition: "all ease-in-out .45s"
-      })
-      .delay(1500)
-      .queue(function () {
-        $(this)
-          .css({
-            transform: "translateY(-500px)",
-            opacity: "0",
-            transition: "all ease-in-out .45s"
-          })
-          .dequeue();
-      });
-  });
-});
 
 
 </script>
