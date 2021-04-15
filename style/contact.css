@@ -53,7 +53,7 @@ textarea {
 }
 input[type="submit"] {
   background-color: #86d4d4;
-  box-shadow: 8px 5px rgb(161, 161, 161);
+  box-shadow: 0 10px 10px -5px rgb(161, 161, 161);
   border-radius: 20px;
   padding: 7px;
   border: 0;
