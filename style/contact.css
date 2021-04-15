@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:200,300,400,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Raleway", sans-serif;
+}
+section {
+  padding: 5rem 10px;
+  background-position: center center;
+}
+.form-box {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-image: linear-gradient(
+    to right,
+    #669dee,
+    #9c98e7,
+    #c095d9,
+    #d995c8,
+    #e798b7
+  );
+  background-position: center center;
+}
+h2 {
+  text-transform: uppercase;
+  margin-bottom: 0.7rem;
+  font-size: 2rem;
+  font-weight: 300;
+}
+.form-item {
+  margin-bottom: 0.7rem;
+}
+label,
+input,
+textarea {
+  display: block;
+  width: 100%;
+  font-size: 1.2rem;
+  line-height: 1.4;
+  outline-color: #007575;
+}
+label {
+  margin-bottom: 3px;
+}
+input,
+textarea {
+  padding: 3px;
+  background-color: rgba(250, 250, 250, 0.85);
+}
+input[type="submit"] {
+  background-color: #00bbbb;
+  padding: 7px;
+  border: 0;
+  color: snow;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+input[type="submit"]:hover {
+  animation-name: submit-hover;
+  animation-duration: 0.7s;
+}
+input[type="submit"]:active {
+  animation-name: submit-active;
+  animation-duration: 0.3s;
+}
+@keyframes submit-hover {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.02);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes submit-active {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.98);
+  }
+}
