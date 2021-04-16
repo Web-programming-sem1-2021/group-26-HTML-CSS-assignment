@@ -5,6 +5,7 @@
   margin-top: 0;
   box-sizing: border-box;
 }
+
 body {
   margin: 0;
   padding: 0;
@@ -21,7 +22,10 @@ header {
 h1 {
   text-align: center;
 }
-
+a {
+  text-decoration: none;
+  color: blueviolet;
+}
 /* navigation bar */
 .nav {
   overflow: hidden;
@@ -61,7 +65,8 @@ h1 {
   font-size: 20px;
   transition: all 800ms cubic-bezier(0.18, 1, 0.23, 1);
 }
-.nav .nav-section:hover, .nav .dropdown:hover,
+.nav .nav-section:hover,
+.nav .dropdown:hover,
 .nav .nav-section:active,
 .dropdown:hover .dropbtn {
   background-color: rgb(119, 119, 119);
@@ -213,7 +218,6 @@ h1 {
   }
   .footer-section {
     width: 50%;
-    
   }
 }
 
@@ -229,7 +233,6 @@ h1 {
   height: fit-content;
   border: solid #7daeee 0.5px;
   background-color: #a8d1d1;
-  
 }
 .carousel::-webkit-scrollbar {
   display: none;
