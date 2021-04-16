@@ -9,31 +9,39 @@
     />
     <link rel="icon" href="#" />
     <title>Home</title>
-    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="
+    style.css"
+    />
   </head>
 
   <body>
-    <!-- <div class="nav" id="nav-id">
-      <h1 class="logo">LOGO</h1>
-        <div class="navlink"><a href="homepage.html" active>Home</a></div>
-        <div class="navlink">
-          <a href="homepage/about-us.html">About Us</a>
-        </div>
-        <div class="navlink"><a href="homepage/fees.html">Fees</a></div>
-        <div class="navlink">
-          <a href="homepage/my-account.html">My Account</a>
-        </div>
-        <div class="navlink"><a href="homepage/browse.html">Browse</a></div>
-        <div class="navlink"><a href="homepage/faqs.html">FAQs</a></div>
-        <div class="navlink"><a href="homepage/contact.html">Contact</a></div>
-        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="dropDownNavbar()">&#9776;</a>    
-    </div> -->
+    <!-- referenced from : "https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp" -->
     <div class="nav" id="navbar">
-     <a href="index.html" class="homeIcon" > <h1 style="font-size: 50px;">ICONIC 🐈</h1></a>
+      <a href="index.html" class="homeIcon">
+        <h1 style="font-size: 50px">ICONIC 🐈</h1></a
+      >
       <a class="nav-section" href="homepage/about-us.html">About Us</a>
       <a class="nav-section" href="homepage/fees.html">Fees</a>
-      <a class="nav-section" href="homepage/my-account.html">Account</a>
-      <a class="nav-section" href="homepage/browse.html">Browse</a>
+      <a class="nav-section" href="homepage/myAccount/my-account.html"
+        >Account</a
+      >
+      <div class="dropdown">
+        <button class="dropbtn">
+          Browse
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="./homepage/browse/browse-stores-by-name.html"
+            >Browse Store <br />
+            by name</a
+          >
+          <a href="./homepage/browse/browse-stores-by-categories.html"
+            >Browse Store <br />by Categories</a
+          >
+        </div>
+      </div>
       <a class="nav-section" href="homepage/faqs.html">FAQs</a>
       <a class="nav-section" href="homepage/contact.html">Contact</a>
       <a
@@ -50,7 +58,12 @@
       <div class="carousel">
         <div class="item">
           <img
+<<<<<<< HEAD
             src="./images/img1.jpg"
+=======
+            class="card-image"
+            src="/images/homeImages/fashion1.jpeg"
+>>>>>>> main
             alt="Avatar"
             style="width: 100%; padding: 0px"
           />
@@ -60,28 +73,65 @@
           </div>
         </div>
         <div class="item">
+<<<<<<< HEAD
           <img src="./images/img1.jpg" alt="Avatar" style="width: 100%" />
           <div class="container">g
+=======
+          <img
+            class="card-image"
+            src="/images/homeImages/tech1.jpeg"
+            alt="Avatar"
+            style="width: 100%"
+          />
+          <div class="container">
+>>>>>>> main
             <h4><b>Clothes</b></h4>
             <p>fklanflkdsn</p>
           </div>
         </div>
         <div class="item">
+<<<<<<< HEAD
           <img src="./images/img1.jpg" alt="Avatar" style="width: 100%" />
+=======
+          <img
+            class="card-image"
+            src="/images/img1.jpg"
+            alt="Avatar"
+            style="width: 100%"
+          />
+>>>>>>> main
           <div class="container">
             <h4><b>Clothes</b></h4>
             <p>fklanflkdsn</p>
           </div>
         </div>
         <div class="item">
+<<<<<<< HEAD
           <img src="./images/img1.jpg" alt="Avatar" style="width: 100%" />
+=======
+          <img
+            class="card-image"
+            src="/images/img1.jpg"
+            alt="Avatar"
+            style="width: 100%"
+          />
+>>>>>>> main
           <div class="container">
             <h4><b>Clothes</b></h4>
             <p>fklanflkdsn</p>
           </div>
         </div>
         <div class="item">
+<<<<<<< HEAD
           <img src="./images/img1.jpg" alt="Avatar" style="width: 100%" />
+=======
+          <img
+            class="card-image"
+            src="/images/img1.jpg"
+            alt="Avatar"
+            style="width: 100%"
+          />
+>>>>>>> main
           <div class="container">
             <h4><b>Clothes</b></h4>
             <p>fklanflkdsn</p>
@@ -95,7 +145,6 @@
           </div>
         </div>
       </div>
-
       <h1 class="store-title">New Products</h1>
       <div class="carousel">
         <div class="item">
@@ -251,16 +300,11 @@
       <div class="footer">
         <div class="footer-content">
           <div class="footer-section">
-            <h3>Copyright</h3>
-            <ul></ul>
-          </div>
-          <div class="footer-section">
-            <h3>Term of Service</h3>
-            <ul></ul>
-          </div>
-          <div class="footer-section">
-            <h3>Privacy Policy</h3>
-            <ul></ul>
+            <h3>
+              <a href="/homepage/footer/copyright.html"> Copyright</a>
+            </h3>
+            <h3><a href="/homepage/footer/privacy.html">Privacy Policy</a></h3>
+            <h3><a href="/homepage/footer/terms.html">Terms of Service</a></h3>
           </div>
           <div class="footer-section">
             <h3>Student contributors</h3>
@@ -283,16 +327,6 @@
         <div class="footer-bottom">Privacy policy-Terms and conditions</div>
       </div>
     </footer>
-
-    <script>
-      function handleResponsiveNavBar() {
-        var x = document.getElementById("navbar");
-        if (x.className === "nav") {
-          x.className += " responsive";
-        } else {
-          x.className = "nav";
-        }
-      }
-    </script>
+    <script src="/jsFunctions.js"></script>
   </body>
 </html>

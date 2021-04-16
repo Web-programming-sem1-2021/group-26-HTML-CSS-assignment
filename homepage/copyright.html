@@ -5,13 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Copyright</title>
     <link rel="stylesheet" href="../style.css">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    />
   </head>
   <body>
     <div class="nav" id="navbar">
         <a href="../index.html" class="homeIcon" > <h1>ICONIC</h1></a>
         <a class="nav-section" href="about-us.html">About Us</a>
       <a class="nav-section" href="fees.html">Fees</a>
-      <a class="nav-section" href="my-account.html">Account</a>
+      <a class="nav-section" href="./myAccount/my-account.html">Account</a>
       <a class="nav-section" href="browse/browse.html">Browse</a>
       <a class="nav-section" href="faqs.html">FAQs</a>
       <a class="nav-section" href="contact.html">Contact</a>
@@ -57,15 +61,8 @@
         <div class="footer-bottom">Privacy policy-Terms and conditions</div>
       </div>
     </footer>
-    <script>
-      function handleResponsiveNavBar() {
-        var x = document.getElementById("navbar");
-        if (x.className === "nav") {
-          x.className += " responsive";
-        } else {
-          x.className = "nav";
-        }
-      }
+    <script src="../jsFunctions.js">
+      
     </script>
   </body>
 </html>

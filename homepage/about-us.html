@@ -3,19 +3,47 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="./../style.css" />
+    <link
+      rel="stylesheet"
+      href="../style/about-us.css
+  "
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    />
     <title>About Us</title>
   </head>
-   <div></div>
+  <div></div>
   <body>
     <div class="nav" id="navbar">
-      <a href="../index.html" class="homeIcon" > <h1>ICONIC</h1></a>
-      <a class="nav-section" href="about-us.html">About Us</a>
-      <a class="nav-section" href="fees.html">Fees</a>
-      <a class="nav-section" href="my-account.html">Account</a>
-      <a class="nav-section" href="browse.html">Browse</a>
-      <a class="nav-section" href="faqs.html">FAQs</a>
-      <a class="nav-section" href="contact.html">Contact</a>
+      <a href="../" class="homeIcon"> <h1>ICONIC</h1></a>
+      <a class="nav-section" href="./about-us.html">About Us</a>
+      <a class="nav-section" href="./fees.html">Fees</a>
+      <a class="nav-section" href="./myAccount/my-account.html">Account</a>
+      <div class="dropdown">
+        <button class="dropbtn">
+          Browse
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="../homepage/browse/browse-stores-by-name.html"
+            >Browse Store <br />
+            by name</a
+          >
+          <a href="../homepage/browse/browse-stores-by-categories.html"
+            >Browse Store <br />by Categories</a
+          >
+        </div>
+      </div>
+      <a class="nav-section" href="./about-us.html">FAQs</a>
+      <a
+        class="nav-section"
+        href="./contact.html
+      "
+        >Contact</a
+      >
       <a
         href="javascript:void(0);"
         style="font-size: 15px"
@@ -24,33 +52,89 @@
         >&#9776;</a
       >
     </div>
-    <h1>
-      Display information about your group and group members. Include at least
-      one portrait photo for each member.
-    </h1>
-    <h2>
-         <ol>
-          <li>Giang</li>
-          <li>Joo</li>
-          <li>Minh</li>
-          <li>Ram</li>
-      </ol>
-    </h2>
-    <footer>
-      <h1>FOOTER AREA</h1>
+    <section>
+      <h2 style="position: relative">Nguyễn Thị Giang</h2>
+      <p>
+        <img
+          class="small1"
+          src="../images/team/Giang.jpg"
+          alt="Picture of Giang"
+        />
+      </p>
+      <p>
+       <h3>Major: Information Technology</h3>
+       <b>Date of birth:</b> May 18th, 2020 <br>
+       <b>Personality type:</b> INTP <br>
+       <b>Interests:</b>  <br>
+      </p>
+    </section>
+    <section>
+      <h2 style="display: block; position: relative;">Joo Jeong-hyeon</h2>
+      <p>
+        <img
+          class="small2"
+          src="../images/team/Jeong-hyeon.png"
+          alt="Picture of Jeong-hyeon"
+        />
+      </p>
+      <p>
+        Acoustic guitar? Electric lead guitar? Ukelele? Harp? Jean can play them
+        all. She started off by making homemade guitars from cardboard boxes and
+        elastic bands till her uncle took pity on her and bought her a Spanish
+        guitar for Christmas. After a few lessons at school she was flying!
+      </p>
+    </section>
+    <section>
+      <h2 style="display: block; position: relative;">Ramcharan Ramacharan</h2>
+      <p>
+        <img
+          class="small1"
+          src="../images/team/Ram.jpg"
+          alt="Picture of Ramcharan"
+        />
+      </p>
+      <p>
+        Jonathan is the VampireTribe's singer. He likes to sing all the time -
+        not just when he's playing with the VampireTribe! His mom and dad say he
+        learened to sing before he learned to talk!
+      </p>
+      <p>Jonathan also plays clarinet and is learning the alto saxophone.</p>
+    </section>
+    <section>
+      <h2 style="display: block; position: relative;">Võ Khải Minh</h2>
+      <p>
+        <img
+          class="small2"
+          src="../images/team/Minh.png"
+          alt="Picture of Jean"
+        />
+      </p>
+
+      <p>
+        <h3>Major: Information technology</h3>
+      </p>
+    </section>
+    <ul class="icon-effect icon-effect-1a">
+      <li>
+        <a href="#" class="icon"><i class="fa fa-facebook"></i></a>
+      </li>
+      <li>
+        <a href="#" class="icon"><i class="fa fa-twitter"></i></a>
+      </li>
+      <li>
+        <a href="#" class="icon"><i class="fa fa-github"></i></a>
+      </li>
+    </ul>
+
+    <h1>FOOTER AREA</h1>
       <div class="footer">
         <div class="footer-content">
           <div class="footer-section">
-            <h3>Copyright</h3>
-            <ul></ul>
-          </div>
-          <div class="footer-section">
-            <h3>Term of Service</h3>
-            <ul></ul>
-          </div>
-          <div class="footer-section">
-            <h3>Privacy Policy</h3>
-            <ul></ul>
+            <h3>
+              <a href="/homepage/footer/copyright.html">Copyright</a>
+            </h3>
+            <h3><a href="/homepage/footer/privacy.html">Privacy Policy</a></h3>
+            <h3><a href="/homepage/footer/terms.html">Terms of Service</a></h3>
           </div>
           <div class="footer-section">
             <h3>Student contributors</h3>
@@ -71,15 +155,7 @@
       </div>
     </footer>
 
-    <script>
-      function handleResponsiveNavBar() {
-        var x = document.getElementById("navbar");
-        if (x.className === "nav") {
-          x.className += " responsive";
-        } else {
-          x.className = "nav";
-        }
-      }
+    <script src="../jsFunctions.js">
     </script>
   </body>
 </html>

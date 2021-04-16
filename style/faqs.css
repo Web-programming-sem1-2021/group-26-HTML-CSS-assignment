@@ -1,95 +1,114 @@
-@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700);
+.hidden_box {
+  margin: 2em auto;
+  padding: 0;
+  max-width: 1200px;
+}
 
+.hidden_box label {
+  display: block;
+  font-weight: bold;
+  line-height: 3;
+  background: #e99ca6;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+  position: relative;
+  padding: 0 3em 0 4em;
+  text-align: justify;
+}
 
-body {
-  font-family: "Lato", sans-serif;
-  font-size: 18px;
+@media screen and (max-width: 640px) {
+  .hidden_box label {
+    line-height: 2;
+    padding: 0.5em 3em 0.5em 4em;
+  }
+}
+
+.hidden_box label:before {
+  display: block;
+  content: "Q";
+  font-weight: 900;
+  transition: 0.8s;
+  position: absolute;
+  top: 50%;
+  left: 1em;
+  transform: translateY(-50%);
+  width: 2em;
+  height: 2em;
+  line-height: 2;
+  text-align: center;
+  font-size: 1em;
   background: #fff;
-  line-height:26px;
+  border-radius: 5px;
 }
 
-h1 {
- font-family: "Lato", sans-serif;
-font-weight: 700;
-font-style: normal;
-color: #98c23d;
-  font-size: 32px;
-  
+.hidden_box label:after {
+  display: block;
+  content: "🛒";
+  font-weight: 90;
+  font-size: 30px;
+  transition: 1s;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 3em;
+  height: 3em;
+  line-height: 3;
+  text-align: center;
 }
 
-
-.content {
-  width: 80%;
-  padding: 20px;
-  margin: 0 auto;
-  padding: 0 60px 0 0;
+.hidden_box label:hover {
+  background: gray;
+  color: white;
 }
 
-.centerplease {
-  margin: 0 auto;
-  max-width: 270px;
-  font-size: 40px;
+.hidden_box input:checked ~ label:after {
+  color: #668ad8;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%) rotate(360deg);
+}
+
+.hidden_box input {
+  display: none;
+}
+
+.hidden_box .hidden_show {
+  height: 0;
+  padding: 0 0.6em;
+  overflow: hidden;
+  opacity: 0;
+  transition: 0.8s;
+}
+
+.hidden_box input:checked ~ .hidden_show {
+  padding: 10px 0.6em;
+  height: auto;
+  opacity: 1;
+}
+
+@media screen and (max-width: 640px) {
+  .hidden_box input:checked ~ .hidden_show {
+    padding: 10px 0.6em;
+  }
 }
 
 .question {
-  color: #fff;
-  position: relative;
-  background: #98c23d;
+  display: inline-block;
+  width: 80%;
+}
+
+.hidden_box p {
   margin: 0;
-  padding: 10px 10px 10px 50px;
-  display: block;
-  width:100%;
-  cursor: pointer;
+  text-align: justify;
 }
 
-.answers {
-  font-weight:300;
-  background: #f2f2f2;
-  padding: 0px 15px;
-  margin: 0px 0;
-  height: 0;
-  overflow: hidden;
-  z-index: -1;
-  position: relative;
-  opacity: 0;
-  -webkit-transition: .7s ease;
-  -moz-transition: .7s ease;
-  -o-transition: .7s ease;
-  transition: .7s ease;
-}
-
-.questions:checked ~ .answers{
-  height: auto;
-  opacity: 1;
-  padding: 15px;
-}
-
-.plus {
-  color:#fff;
-  position: absolute;
-  margin-left: 10px;
-  margin-top: 5px;
-  z-index: 5;
-  font-size: 2em;
-  line-height: 100%;
-  -webkit-user-select: none;    
-  -moz-user-select: none;
-  -ms-user-select: none;
-  -o-user-select: none;
-  user-select: none;
-  -webkit-transition: .3s ease;
-  -moz-transition: .3s ease;
-  -o-transition: .3s ease;
-  transition: .3s ease;
-}
-
-.questions:checked ~ .plus {
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-  transform: rotate(45deg);
-}
-
-.questions {
-  display: none;
+.q {
+  font-size: 1em;
+  padding: 0.2em 0.6em;
+  margin-right: 0.8em;
+  background: #fff;
+  border-radius: 5px;
 }
