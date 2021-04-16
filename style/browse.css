@@ -3,7 +3,12 @@
   box-sizing: inherit;
 }
 
-section {
+body {
+  justify-content: space-around;
+}
+
+/* general */
+aside section {
   width: 6.5cm;
   background-color: #96e5f8;
   margin-bottom: 24px;
@@ -13,7 +18,7 @@ section {
 }
 
 /* small images are set to 200px in height */
-img.small {
+img.small1 {
   float: left;
   height: 200px;
   margin-bottom: 24px;
@@ -36,20 +41,14 @@ img,
   border-radius: 16px;
 }
 /* the bits that are specific to a wide viewport (over 56em) */
-@media all and (min-width: 900px) {
-  article {
-    float: left;
-    width: 66%;
-  }
+@media all and (min-width: 600px) {
   aside {
     float: left;
     padding-left: 24px;
-    width: 34%;
     position: relative;
   }
   footer {
     clear: both;
-    
   }
 }
 
@@ -131,4 +130,51 @@ img,
   width: 2.5cm;
   flex: 50%;
   border: 0px solid #b1b1b1;
+}
+
+/* store cards list layout */
+
+.store-cards {
+  max-width: 80%;
+  margin: 20px auto 20px auto;
+  position: relative;
+  display: grid;
+  justify-content: left;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  /* grid-template-rows: repeat(8, 1fr); */
+}
+
+.store-card {
+  background-color: #a2c1c9;
+  color: white;
+  margin: 20px;
+  padding: 1rem;
+  height: 20rem;
+  border: 2px solid #b1b1b1;
+  border-radius: 16px;
+}
+
+img.store-image {
+  flex: start;
+  width: 98%;
+  height: 10rem;
+}
+p.thumbnail-description {
+  margin: 10px;
+  justify-content: space-around;
+  font-size: 0.8rem;
+}
+
+.store-card a {
+  text-decoration: none;
+  color: rgb(231, 12, 132);
+}
+
+.store-card a:hover {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  cursor: pointer;
 }

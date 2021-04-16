@@ -5,11 +5,12 @@
   margin-top: 0;
   box-sizing: border-box;
 }
+
 body {
   margin: 0;
   padding: 0;
   font-family: “Poppins”, sans-serif;
-  background-color: #ecdded;
+  background-color: #b6f8f8;
 }
 header {
   width: 100%;
@@ -21,7 +22,10 @@ header {
 h1 {
   text-align: center;
 }
-
+a {
+  text-decoration: none;
+  color: blueviolet;
+}
 /* navigation bar */
 .nav {
   overflow: hidden;
@@ -29,7 +33,7 @@ h1 {
 }
 .nav .nav-section {
   display: inline-block;
-  width: 13%;
+  width: 10%;
   outline-offset: 0px;
   text-shadow: none;
   color: rgb(80, 78, 78);
@@ -62,6 +66,7 @@ h1 {
   transition: all 800ms cubic-bezier(0.18, 1, 0.23, 1);
 }
 .nav .nav-section:hover,
+.nav .dropdown:hover,
 .nav .nav-section:active,
 .dropdown:hover .dropbtn {
   background-color: rgb(119, 119, 119);
@@ -101,7 +106,7 @@ h1 {
 }
 .dropdown-content {
   display: none;
-  position: relative;
+  position: absolute;
   background-color: #f9f9f9;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
@@ -167,10 +172,10 @@ h1 {
   width: 95%;
   height: 350px;
   position: relative;
-  justify-content: flex;
+  justify-content: center;
   background-color: #fff;
   border-radius: 3px;
-  margin: 30px;
+  margin: 20px auto 10px auto;
 }
 .footer-content {
   height: 300px;
@@ -182,9 +187,7 @@ h1 {
 .footer-section {
   width: 20%;
 }
-.footer-content .form p {
-  font-size: 14px;
-}
+
 .footer-section li {
   list-style: inherit;
   padding-bottom: 7px;
@@ -206,7 +209,20 @@ h1 {
   text-align: center;
   color: #84849d;
 }
-/* store sections carousels */
+
+@media screen and (max-width: 600px) {
+  .footer {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer-section {
+    width: 50%;
+  }
+}
+
+/*--------------- store sections carousels ---------------- */
+/* -------------------------------------------------------- */
 .carousel {
   display: flex;
   overflow-x: auto;
@@ -215,7 +231,8 @@ h1 {
   margin: 0 auto 0 auto;
   width: 90vw;
   height: fit-content;
-  border: solid #f3e6ff 0.5px;
+  border: solid #7daeee 0.5px;
+  background-color: #a8d1d1;
 }
 .carousel::-webkit-scrollbar {
   display: none;
@@ -244,6 +261,12 @@ h1 {
   margin: 10px;
   display: block;
   justify-content: space-around;
+}
+
+.carousel .item .card-image {
+  display: flex;
+  width: 120px;
+  height: 200px;
 }
 /* Section tile */
 .store-title {

@@ -3,17 +3,35 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Account</title>
+    <title>Browse</title>
     <link rel="stylesheet" href="../../style.css" />
-    <link rel="stylesheet" href="../../style/login.css" />
+    <link rel="stylesheet" href="../../style/browse.css" />
+     <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    />
   </head>
   <body>
     <div class="nav" id="navbar">
       <a href="../../index.html" class="homeIcon"> <h1>ICONIC</h1></a>
       <a class="nav-section" href="../about-us.html">About Us</a>
       <a class="nav-section" href="../fees.html">Fees</a>
-      <a class="nav-section" href="./my-account.html">Account</a>
-      <a class="nav-section" href="../browse/browse.html">Browse</a>
+      <a class="nav-section" href="../myAccount/my-account.html">Account</a>
+      <div class="dropdown">
+        <button class="dropbtn">
+          Browse
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="../browse/browse-stores-by-name.html"
+            >Browse Store <br />
+            by name</a
+          >
+          <a href="../browse/browse-stores-by-categories.html"
+            >Browse Store <br />by Categories</a
+          >
+        </div>
+      </div>
       <a class="nav-section" href="../faqs.html">FAQs</a>
       <a class="nav-section" href="../contact.html">Contact</a>
       <a
@@ -25,30 +43,19 @@
       >
     </div>
 
-    <div class="log-form">
-      <h2>Login to your account</h2>
-      <form>
-        <input type="text" title="username" placeholder="username" />
-        <input type="password" title="username" placeholder="password" />
-        <button type="submit" class="btn">Login</button>
-        <a class="forgot" href="#">Forgot Username?</a>
-      </form>
-    </div>
+    <h1 style="margin: 20px; color: gray; font-size: 50px">
+      Browse Stores by CATE
+    </h1>
+    
     <footer>
-      <h1>FOOTER AREA</h1>
       <div class="footer">
         <div class="footer-content">
           <div class="footer-section">
-            <h3>Copyright</h3>
-            <ul></ul>
-          </div>
-          <div class="footer-section">
-            <h3>Term of Service</h3>
-            <ul></ul>
-          </div>
-          <div class="footer-section">
-            <h3>Privacy Policy</h3>
-            <ul></ul>
+            <h3>
+              <a href="/homepage/footer/copyright.html">Copyright</a>
+            </h3>
+            <h3><a href="/homepage/footer/privacy.html">Privacy Policy</a></h3>
+            <h3><a href="/homepage/footer/terms.html">Terms of Service</a></h3>
           </div>
           <div class="footer-section">
             <h3>Student contributors</h3>
@@ -69,8 +76,6 @@
       </div>
     </footer>
 
-    <script src="../../jsFunctions.js">
-     
-    </script>
+    <script src="../../jsFunctions.js"></script>
   </body>
 </html>
