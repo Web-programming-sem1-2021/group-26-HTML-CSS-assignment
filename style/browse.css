@@ -135,14 +135,15 @@ img,
 /* store cards list layout */
 
 .store-cards {
-  max-width: 70%;
-  margin: auto auto;
+  max-width: 80%;
+  margin: 20px auto 20px auto;
   position: relative;
   display: grid;
   justify-content: left;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   /* grid-template-rows: repeat(8, 1fr); */
 }
 
@@ -156,14 +157,24 @@ img,
   border-radius: 16px;
 }
 
-@media (min-width: 600px) {
-  .store-cards {
-    grid-template-columns: repeat(2, 1fr);
-  }
+img.store-image {
+  flex: start;
+  width: 98%;
+  height: 10rem;
+}
+p.thumbnail-description {
+  margin: 10px;
+  justify-content: space-around;
+  font-size: 0.8rem;
 }
 
-@media (min-width: 1200px) {
-  .cards {
-    grid-template-columns: repeat(3, 1fr);
-  }
+.store-card a {
+  text-decoration: none;
+  color: rgb(231, 12, 132);
+}
+
+.store-card a:hover {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  cursor: pointer;
 }
