@@ -29,7 +29,7 @@ h1 {
 }
 .nav .nav-section {
   display: inline-block;
-  width: 13%;
+  width: 10%;
   outline-offset: 0px;
   text-shadow: none;
   color: rgb(80, 78, 78);
@@ -61,7 +61,7 @@ h1 {
   font-size: 20px;
   transition: all 800ms cubic-bezier(0.18, 1, 0.23, 1);
 }
-.nav .nav-section:hover,
+.nav .nav-section:hover, .nav .dropdown:hover,
 .nav .nav-section:active,
 .dropdown:hover .dropbtn {
   background-color: rgb(119, 119, 119);
@@ -101,7 +101,7 @@ h1 {
 }
 .dropdown-content {
   display: none;
-  position: relative;
+  position: absolute;
   background-color: #f9f9f9;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);

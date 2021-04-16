@@ -32,6 +32,8 @@
         <div class="navlink"><a href="homepage/contact.html">Contact</a></div>
         <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="dropDownNavbar()">&#9776;</a>    
     </div> -->
+
+    <!-- referenced from : "https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp" -->
     <div class="nav" id="navbar">
       <a href="index.html" class="homeIcon">
         <h1 style="font-size: 50px">ICONIC 🐈</h1></a
@@ -41,7 +43,22 @@
       <a class="nav-section" href="homepage/myAccount/my-account.html"
         >Account</a
       >
-      <a class="nav-section" href="homepage/browse.html">Browse</a>
+      <div class="dropdown">
+        <button class="dropbtn">
+          Browse
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="./homepage/browse/browse-stores-by-name.html"
+            >Browse Store <br />
+            by name</a
+          >
+          <a href="./homepage/browse/browse-stores-by-categories.html"
+            >Browse Store <br />
+            by Categories</a
+          >
+        </div>
+      </div>
       <a class="nav-section" href="homepage/faqs.html">FAQs</a>
       <a class="nav-section" href="homepage/contact.html">Contact</a>
       <a
