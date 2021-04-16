@@ -19,19 +19,30 @@
       <input type="checkbox" id="drop" />
           <ul class="menu">
               
-              <li><a href="#">Home</a></li>
-              <li>
-                  <!-- First Drop Down -->
-                  <label for="drop-1" class="toggle">Product +</label>
-                  <a href="#">Product</a>
-                  <input type="checkbox" id="drop-1"/>
-                  <ul>
-                      <li><a href="browse-products.html">Browse Products by Category</a></li>
-                      <li><a href="#">Browse Products by Created Time</a></li>
-                  </ul> 
+            <li>
 
+              <!-- First Tier Drop Down -->
+              <label for="drop-2" class="toggle">Products +</label>
+              <a href="#">Products</a>
+              <input type="checkbox" id="drop-2"/>
+              <ul>
+                  <li><a href="#">Created Time</a></li>
+                  <li>
+                     
+                  <!-- Second Tier Drop Down -->        
+                  <label for="drop-3" class="toggle">Categories +</label>
+                  <a href="#">Categories</a>         
+                  <input type="checkbox" id="drop-3"/>
+
+                  <ul>
+                      <li><a href="#">Activewear</a></li>
+                      <li><a href="#">Jeans</a></li>
+                      <li><a href="#">T-Shirt</a></li>
+                      <li><a href="#">Jacket</a></li>
+                  </ul>
+                  </li>
+              </ul>
               </li>
-         
               <li><a href="#">About Us</a></li>
               <li><a href="#">Contact</a></li>
               
@@ -252,20 +263,6 @@
   </div>
 </div>
 </footer>
-
-
-
-
-
-
-<<<<<<< HEAD
-
-
-
-
-
-=======
->>>>>>> e205d342937ea45fc071f90c50855705e30f8248
  <script>
      const slides=document.querySelector(".slider").children;
     const prev=document.querySelector(".prev");
@@ -357,25 +354,8 @@
       updateCircleIndicator();
   }
   let timer=setInterval(autoPlay,4000);
-
-<<<<<<< HEAD
-
-
-
-
-
-
-
-
-
-
-
 </script>
 
 
 </body>
-=======
-</script>
-  </body>
->>>>>>> e205d342937ea45fc071f90c50855705e30f8248
 </html>
