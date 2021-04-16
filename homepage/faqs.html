@@ -13,7 +13,21 @@
       <a class="nav-section" href="about-us.html">About Us</a>
       <a class="nav-section" href="fees.html">Fees</a>
       <a class="nav-section" href="./myAccount/my-account.html">Account</a>
-      <a class="nav-section" href="browse/browse.html">Browse</a>
+      <div class="dropdown">
+        <button class="dropbtn">
+          Browse
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="../homepage/browse/browse-stores-by-name.html"
+            >Browse Store <br />
+            by name</a
+          >
+          <a href="../homepage/browse/browse-stores-by-categories.html"
+            >Browse Store <br />by Categories</a
+          >
+        </div>
+      </div>
       <a class="nav-section" href="faqs.html">FAQs</a>
       <a class="nav-section" href="contact.html">Contact</a>
       
@@ -74,25 +88,5 @@
       <div class="footer-bottom">Privacy policy-Terms and conditions</div>
     </div>
   </footer>
-
-    <script src="../jsFunctions.js">
-     
-    
-    </script>
-    <!-- <script>
-    $(function(){
-      $("dd").slideUp(1);
-      $("dt, dt .faq-toggle").click(function(){
-        var $this = $(this), $parent = $this.parent(), outer = true;
-        if ($this.is('.faq-toggle')) { $parent = $parent.parent(); outer = false; }
-        if ($parent.hasClass('active')) {
-          $parent.removeClass('active').find('dd').slideUp(500);
-        } else {
-          $parent.siblings().removeClass('active').find('dd').slideUp(500);
-          $parent.addClass('active').find('dd').slideDown(500);  
-        }
-        return outer;
-      });
-    });</script> -->
   </body>
 </html>

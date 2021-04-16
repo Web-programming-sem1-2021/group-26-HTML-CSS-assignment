@@ -1,35 +1,23 @@
-@import url("https://fonts.googleapis.com/css?family=Raleway:200,300,400,700&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 section {
   padding: 5rem 10px;
   background-position: center center;
 }
 .form-box {
-  width: 100%;
-  max-width: 500px;
+  width: 80%;
   margin: 0 auto;
   padding: 2rem;
-  background-image: linear-gradient(
-    to right,
-    #669dee,
-    #9c98e7,
-    #c095d9,
-    #d995c8,
-    #e798b7
-  );
+  background-color: #fff;
   background-position: center center;
-  box-shadow: 20px 10px rgb(161, 161, 161);
+  box-shadow: 10px 10px #17a589;
+  border-radius: 10px;
+  border: 2px solid #17a589;
 }
 h2 {
   text-transform: uppercase;
   margin-bottom: 0.7rem;
-  font-size: 2rem;
-  font-weight: 300;
+  font-size: 40px;
+  font-weight: 700;
+  color: #17a589;
 }
 .form-item {
   margin-bottom: 0.7rem;
@@ -42,6 +30,7 @@ textarea {
   font-size: 1.2rem;
   line-height: 1.4;
   outline-color: #007575;
+  border-radius: 10px;
 }
 label {
   margin-bottom: 3px;
@@ -52,7 +41,7 @@ textarea {
   background-color: rgba(250, 250, 250, 0.85);
 }
 input[type="submit"] {
-  background-color: #86d4d4;
+  background-color: #17a589;
   box-shadow: 0 10px 10px -5px rgb(161, 161, 161);
   border-radius: 20px;
   padding: 7px;

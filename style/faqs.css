@@ -45,8 +45,7 @@
   
   .hidden_box label:after {
     display: block;
-    content: '👻';
-    font-weight: 90;
+    content: '🛒';    font-weight: 90;
     font-size: 30px;
     transition: 1s;
     position: absolute;

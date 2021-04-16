@@ -167,10 +167,10 @@ h1 {
   width: 95%;
   height: 350px;
   position: relative;
-  justify-content: flex;
+  justify-content: center;
   background-color: #fff;
   border-radius: 3px;
-  margin: 30px;
+  margin: 20px auto 10px auto;
 }
 .footer-content {
   height: 300px;
@@ -228,6 +228,8 @@ h1 {
   width: 90vw;
   height: fit-content;
   border: solid #7daeee 0.5px;
+  background-color: #a8d1d1;
+  
 }
 .carousel::-webkit-scrollbar {
   display: none;
