@@ -143,52 +143,6 @@ border-bottom-width : 2px;
 
 /*  Sidebar toggle */
 
-body {
-font-family:Arial, Helvetica, sans-serif
-}
-
-.sidenav {
-height: 100%;
-width: 0;
-position: fixed;
-z-index: 1;
-top: 0;
-left: 0;
-background-color: rgb(255, 255, 255);
-overflow-x: hidden;
-transition: 0.3s;
-padding-top: 60px;
-}
-
-.sidenav a {
-padding: 8px 8px 8px 32px;
-text-decoration: none;
-font-size: 20px;
-color: #000000;
-
-display: block;
-transition: 0.3s;
-}
-.selected {
-
-color: #000000;
-background-color: git #cfcfcf;
-
-}
-.sidenav a:hover {
-color: #000000;
-font-size: 25px;
-background-color: #cfcfcf;
-
-}
-
-.sidenav .closebtn {
-position: absolute;
-top: 0;
-right: 25px;
-font-size: 36px;
-margin-left: 50px;
-}
 
 .item {
     float: left;
