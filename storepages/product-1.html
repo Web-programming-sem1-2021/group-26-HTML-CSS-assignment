@@ -1,106 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Linen Worker Jacket</title>
-    <link href="product-style.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="layout-product.css">
+  <link rel="stylesheet" href="layout-product.js">
+
 </head>
+
 <body>
-    <!-- //TODO: Joo -->
 
 
-<!--Section: Block Content-->
-<section class="jacket1">
 
-  
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img src="./images/close.png" width="20px"></a>
+    <a href="../storepages/category-1.html">Jacket</a>
+    <a href="#">Dresses</a>
+    <a href="#">Jeans</a>
+    <a href="#">T-shirt</a>
+    <a href="#">Shoes</a>
+  </div>
 
-    <div class="jacket-image">
-              <figure class="jacket-image-1">
-                    <img src="./images/Jacket/jacket1.jpeg">
-              </figure>
+
+  <!-- <div class="sidenav"></div> -->
+  <div class="sidebar-button">
+    <span style="font-size:28px;cursor:pointer;margin-left: 30px;" onclick="openNav()"><img src="./images/menu.png"
+        width="20px"></span>
+
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "240px";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+    </script>
+
+  </div>
+
+  <div class="on-top">
+    <button type="button" class="button-top">LOGIN</button>
+    <button type="button" class="button-top">MY PAGE</button>
+    <button type="button" class="button-top">MY BASKET</button>
+  </div>
+
+  <div class="container">
+
+    <!-- <div class="sticky">
+        <img src="./images/logo1.png" style="object-fit:covor;width:350px">
+    </div> -->
+
+    <!-- TOP -->
+    <div class="top">
+      <div class="sticky">
+        <a href="../storepages/store-1.html">
+          <img src="./images/logo1.png" style="object-fit:covor;width:500px">
+        </a>
+      </div>
     </div>
 
+    <!-- MIDDLE -->
+    <div class="middle">
+      <div class="middle-left">
+        <img class='middle-left' src='./images/Jacket/jacket1.jpeg'>
+      </div>
 
-              
-      <div class="product-detail">
-  
-        <h1>Linen Worker Jacket</h1>
-        <p class="Scription">LIGHTWEIGHT COLLARED JACKET MADE OF LINEN. FEATURING LONG SLEEVES, CHEST PATCH POCKETS WITH FLAPS, HIP PATCH </p>
-        <p><strong>$100.99</strong></p>
-        <div class="table-responsive">
-          <table class="detialed-description">
-            <tbody>
-              <tr>
-                <th class="detialed-description" scope="row"><strong>Model</strong></th>
-                <td>Jacket-JB01</td>
-              </tr>
-              <tr>
-                <th class="detialed-description" scope="row"><strong>Color</strong></th>
-                <td>Navy Blue</td>
-              </tr>
 
-            </tbody>
+      <div class="middle-right">
+
+        <div class="middle-right-1"></div>
+
+        <div class="middle-right-2">
+          <p>LINEN WORKER JACKET</p>
+        </div>
+
+        <div class="middle-right-3">
+          <p class="Scription">LIGHTWEIGHT COLLARED JACKET MADE OF LINEN. FEATURING LONG SLEEVES, CHEST PATCH POCKETS
+            WITH FLAPS, HIP PATCH </p>
+
+        </div>
+
+        <div class="middle-right-4">
+          <p><strong>$100.99</strong></p>
+        </div>
+
+        <div class="middle-right-4">
+          <p>Color : Navy Blue | 7545/600</p>
+        </div>
+        <br>
+        <hr width="230px">
+        <div class="middle-right-4">
+          <table>
+            <td class="quantity-button">Quantity</td>
+            <td class="size-button">Select size</td>
+
+
+
+            <tr>
+              <td class="quantity-button">
+                <div class="quantity-controller">
+                  <input class="" min="1" name="" value="1" type="number">
+                </div>
+              </td>
+              <td>
+
+
+                <div class="size-button">
+                  <select name="select-size" id="select-size">
+                    <option value="designer">XS</option>
+                    <option value="hacker">S</option>
+                    <option value="gamer">M</option>
+                    <option value="developer">L</option>
+                    <option value="programmer">XL</option>
+                  </select>
+                </div>
+
+
+              </td>
+            </tr>
           </table>
+
         </div>
-    </div>
 
-    <div class="order-basket-button"></div>
-        <hr>
-          <table class="table table-sm table-borderless">
-                <td class="quantity-button">Quantity</td>
-                <td class="size-button">Select size</td>
-          
-
-
-              <tr>
-                <td class="quantity-button">
-                  <div class="quantity-controller">
-                    <input class="quantity" min="1" name="quantity" value="1" type="number">
-                  </div>
-                </td>
-
-
-                <td>
-
-
-                    <div class="size-button">
-                        <select name="select-profession" id="select-profession">
-                          <option value="designer">XS</option>
-                          <option value="hacker">S</option>
-                          <option value="gamer">M</option>
-                          <option value="developer">L</option>
-                          <option value="programmer">XL</option>
-                          
-                        </select>
-                      </div>
-
-
-                </td>
-              </tr>
-                        </table>
-
-            </tbody>
-          
-        </div>
-        <button type="button" class="">Buy now</button>
-        <button type="button" class="">
-            <i class="fas fa-shopping-cart pr-2"></i>Add to cart</button>
+        <button class="button-product">Buy now</button>
+        <button class="button-product">Add to basket</button>
 
 
 
       </div>
+
     </div>
-  
 
+    <div class="bottom"> <span>BOTTOM (1400 x 100) </div>
 
+  </div>
 
-
-    
-  </section>
 
 
 
 </body>
+
 </html>
