@@ -6,11 +6,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="layout-product.css">
   <link rel="stylesheet" href="layout-product.js">
-  
+  <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    />
+    <link rel="icon" href="#" />
+    <title>Home</title>
+    <link
+      rel="stylesheet"
+      href="./style2.css"/>
+
 </head>
 
 <body>
 
+  <div class="nav" id="navbar" style="position: sticky; top: 0px">
+    <a href="index.html" class="homeIcon">
+      <h1 style="font-size: 50px">ICONIC 🐈</h1></a
+    >
+    <a class="nav-section" href="homepage/about-us.html">About Us</a>
+    <a class="nav-section" href="homepage/fees.html">Fees</a>
+    <a class="nav-section" href="homepage/myAccount/login.html">Account</a>
+    <div class="dropdown2">
+      <button class="dropbtn2">
+        Browse
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="./homepage/browse/browse-stores-by-name.html"
+          >Browse Store <br />
+          by name</a
+        >
+        <a href="./homepage/browse/browse-stores-by-categories.html"
+          >Browse Store <br />by Categories</a
+        >
+      </div>
+    </div>
+    <a class="nav-section" href="homepage/faqs.html">FAQs</a>
+    <a class="nav-section" href="homepage/contact.html">Contact</a>
+    <a
+      href="javascript:void(0);"
+      style="font-size: 15px"
+      class="icon"
+      onclick="handleResponsiveNavBar()"
+      >&#9776;</a
+    >
+  </div>
 
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img src="./images/close.png" width="20px"></a>
@@ -63,7 +104,7 @@
 <div class="on-top">
     <button type="button" class="button-top">LOGIN</button> 
     <button type="button" class="button-top">MY PAGE</button>
-    <button type="button" class="button-top">MY BASKET</button>
+    <button type="button" class="button-top"> <a href="./basket.html" style="color: black;"> MY BASKET</button></a>
 </div>
 
 <div class="container">
@@ -74,11 +115,10 @@
 
   <!-- TOP -->
     <div class="top">
-                <div class="sticky">
                     <a href="../storepages/store-2.html">
-                        <img src="./images/logo1.png" style="object-fit:covor;width:500px;">
+                        <img src="./images/logo1.png" style="width:500px;">
                     </a>
-                </div>
+
     </div>
 
   <!-- MIDDLE -->
@@ -92,7 +132,7 @@
 
         <div class="middle-right-1"></div>
 
-        <div class="middle-right-2"><p>LINEN WORKER JACKET</p>
+        <div class="middle-right-2" "><p>LINEN WORKER JACKET</p>
         </div>
 
         <div class="middle-right-3">
@@ -174,7 +214,7 @@
       class="product_image"/>
     
     
-    <div class="product-detail" style="text-align: center;">
+    <div class="product-detail" style="text-align: center;color: black;">
       <h4><b>LINEN WORKER JACKET</b></h4>
       <p>$100.99</p>
     
@@ -191,8 +231,8 @@
     class="product_image"/>
   
   
-  <div class="product-detail" style="text-align: center;">
-    <h4><b>LINEN WORKER JACKET</b></h4>
+  <div class="product-detail" style="text-align: center; color: black;">
+    <h4><b>FABRIC BOMBER JACKET</b></h4>
     <p>$100.99</p>
   
   </div>
@@ -207,7 +247,7 @@
     class="product_image"/>
   
   
-  <div class="product-detail" style="text-align: center;">
+  <div class="product-detail" style="text-align: center; color: black;"">
     <h4><b>LEATHER BIKER JACKET</b></h4>
     <p>$190.99</p>
   
@@ -223,7 +263,7 @@
     class="product_image"/>
   
   
-  <div class="product-detail" style="text-align: center;">
+  <div class="product-detail" style="text-align: center;color: black;">
     <h4><b>BOMBER JACKET WITH POCKETS</b></h4>
     <p>$79.99</p>
   
@@ -233,10 +273,17 @@
 
 
 
-
+<br><br><br><br><br>
 <div class="bottom"> 
   <hr>
-  <div class="bottom-info"> POLICES 
+
+  <br>
+
+
+
+
+
+  <div class="bottom-info"> POLICES <br>
     <a href="../storepages/category-1.html"><div class="bottom-info-detail"> SHOP AT 26St.ore </div></a>
     <a href="#"><div class="bottom-info-detail">PRODUCT</div></a>
     <a href="#"><div class="bottom-info-detail">PAYMENT</div></a>
@@ -246,21 +293,9 @@
 
 
 
-  <div class="bottom-info"> POLICES 
-    <a href="../storepages/category-1.html"><div class="bottom-info-detail"> SHOP AT 26St.ore </div></a>
-    <a href="#"><div class="bottom-info-detail">PRODUCT</div></a>
-    <a href="#"><div class="bottom-info-detail">PAYMENT</div></a>
-    <a href="#"><div class="bottom-info-detail">SHIPPING</div></a>
-</div>  
-
-
-
-
-  <div class="bottom-info"> POLICES 
-    <a href="../storepages/category-1.html"><div class="bottom-info-detail"> SHOP AT 26St.ore </div></a>
-    <a href="#"><div class="bottom-info-detail">PRODUCT</div></a>
-    <a href="#"><div class="bottom-info-detail">PAYMENT</div></a>
-    <a href="#"><div class="bottom-info-detail">SHIPPING</div></a>
+  <div class="bottom-info"> TEAM <br>
+    <a href="../storepages/category-1.html"><div class="bottom-info-detail"> ABOUT US</div></a>
+    <a href="#"><div class="bottom-info-detail">STORES</div></a>
 </div>    
 </div>
   

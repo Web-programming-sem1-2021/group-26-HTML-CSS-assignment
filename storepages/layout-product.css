@@ -18,8 +18,7 @@
         display: table;
     }
     .sidebar-button{
-        position: -webkit-sticky; /* Safari */
-        position: sticky;
+
         top: 0;
     }
     .on-top{
@@ -27,18 +26,14 @@
         margin-top: 10px;
         float: right;
         padding: 0;
-        position: -webkit-sticky; /* Safari */
-        position: sticky;
         top: 0;
-        display: flex;
     }
     .top{
         width: 300px;
         height: 100px;
         display: table;
         padding: 0px;
-        position: -webkit-sticky; /* Safari */
-        position: sticky;
+
         top: 0;
     }
     .middle{
