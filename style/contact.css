@@ -21,8 +21,7 @@ h2 {
 }
 .form-item {
   margin-bottom: 0.7rem;
-  max-width:100%;
-  
+  max-width: 100%;
 }
 label,
 input,
@@ -43,7 +42,6 @@ textarea {
   background-color: rgba(250, 250, 250, 0.85);
 }
 
-
 .button {
   border: none;
   color: white;
@@ -57,12 +55,20 @@ textarea {
   border-radius: 12px;
 }
 
-.button1 {background-color: #4fda54;} 
-.button2 {background-color: #1fc1f7;} 
+.button1 {
+  background-color: #4fda54;
+  text-transform: uppercase;
+}
+.button2 {
+  background-color: #1fc1f7;
+  text-transform: uppercase;
+}
 
 /*checkbox*/
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -94,11 +100,12 @@ textarea {
 }
 
 .form-group label:before {
-  content:'';
+  content: "";
   -webkit-appearance: none;
   background-color: transparent;
   border: 2px solid #0079bf;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05),
+    inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
   padding: 10px;
   display: inline-block;
   position: relative;
@@ -108,7 +115,7 @@ textarea {
 }
 
 .form-group input:checked + label:after {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   top: 2px;

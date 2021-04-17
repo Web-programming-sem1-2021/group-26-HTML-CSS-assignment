@@ -8,8 +8,11 @@
     <link rel="stylesheet" href="../../style/login.css" />
   </head>
   <body>
+    <!-- referenced from : "https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp" -->
     <div class="nav" id="navbar">
-      <a href="../../index.html" class="homeIcon"> <h1>ICONIC</h1></a>
+      <a href="../../index.html" class="homeIcon">
+        <img src="../../icons/ICONIC MALL.svg"
+      /></a>
       <a class="nav-section" href="../about-us.html">About Us</a>
       <a class="nav-section" href="../fees.html">Fees</a>
       <a class="nav-section" href="./login.html">Account</a>
@@ -40,43 +43,54 @@
     </div>
 
     <div class="form">
-      
       <form class="login-form">
         <input type="text" placeholder="username" />
         <input type="password" placeholder="password" />
-        <a class="login-button"href="./my-account.html">login</a>
-        <p class="message">Not registered? <a href="../register.html">Create an account</a></p>
-        <p class="message"><a href="./forgot-password.html">Forgot password?</a></p>
+        <a class="login-button" href="./my-account.html"
+          >login <em style="color:navy;">(Click here to see user's profile page)</em></a
+        >
+        <p class="message">
+          Not registered? <a href="../register.html">Create an account</a>
+        </p>
+        <p class="message">Forgot password?
+          <a href="./forgot-password.html"> Recover now</a>
+        </p>
       </form>
     </div>
     <footer>
       <div class="footer">
         <div class="footer-content">
           <div class="footer-section">
-            <h3>Copyright</h3>
-            <ul></ul>
-          </div>
-          <div class="footer-section">
-            <h3>Term of Service</h3>
-            <ul></ul>
-          </div>
-          <div class="footer-section">
-            <h3>Privacy Policy</h3>
-            <ul></ul>
+            <h3>Other Authorities</h3>
+            <h3>
+              <a href="/homepage/footer/copyright.html"> Copyright</a>
+            </h3>
+            <h3><a href="/homepage/footer/privacy.html">Privacy Policy</a></h3>
+            <h3><a href="/homepage/footer/terms.html">Terms of Service</a></h3>
           </div>
           <div class="footer-section">
             <h3>Student contributors</h3>
             <ol>
               <li>Nguyen Thi Quynh Giang <b>[s3866617]</b></li>
               <br />
-              <li>Joo Jeong-hyeon<b>[sid]</b></li>
+              <li>Joo Jeong-hyeon<b>[s3865746]</b></li>
               <br />
-              <li>Vo Khai Minh<b>[s3866617]</b></li>
+              <li>Vo Khai Minh<b>[s3879953]</b></li>
+              <br />
+              <li>Ramanaharan Ramcharan<b>[s3775271]</b></li>
             </ol>
           </div>
           <div class="footer-section">
-            <h3>Source Code</h3>
-            <ul></ul>
+            <h3>Application Information</h3>
+            <a
+              href="https://github.com/Web-programming-sem1-2021/group-26-HTML-CSS-assignment"
+              ><img class="footer-icon" src="../../icons/github-character.svg" />
+              Source Code</a
+            >
+            <a href=""
+              ><img class="footer-icon" src="../../icons/footerIcons/globe.svg" />
+              Website</a
+            >
           </div>
         </div>
       </div>
