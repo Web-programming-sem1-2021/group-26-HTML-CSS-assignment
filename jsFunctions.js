@@ -1,3 +1,12 @@
+
+/*Reference
+Available: https://codepen.io/doodlemarks/pen/aFcly. [Accessed: 12- Apr- 2021].   
+Available: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_responsive_navbar_dropdown. [Accessed: 13- Apr- 2021].
+Available: https://codepen.io/virgilpana/pen/ZYqJXN. [Accessed: 14- Apr- 2021]
+*/
+
+
+
 function handleResponsiveNavBar() {
   var x = document.getElementById("navbar");
   if (x.className === "nav") {
