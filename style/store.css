@@ -1,104 +1,615 @@
-* {
+/* CSS Document */
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Bree+Serif);
+
+.toggle,
+[id^="drop"] {
+  display: none;
+}
+
+/* Giving a background-color to the nav container. */
+nav {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  font-size: "Poppins", sans-serif;
+  background-color: #ffffff;
 }
 
-.slider1 {
+.logo-img {
+  float: left;
   position: relative;
-  width: 100%;
-  min-height: 75vh;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  background: #000;
+  margin: 0px;
 }
 
-.slider1 .Simg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  padding: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: 0.5s;
-  transition-delay: 0s;
-  z-index: 1;
-  clip-path: circle(0px at center);
+#logo {
+  display: block;
+  margin-bottom: -40px;
+  float: left;
+  overflow: hidden;
 }
 
-.slider1 input[type="radio"]:checked + .Simg {
-  z-index: 10;
-  clip-path: circle(1500px at center);
-  transition-delay: 0.75s;
+/* Since we'll have the "ul li" "float:left"
+ * we need to add a clear after the container. */
+
+nav:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
-.slider1 .Simg img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.slider1 .Simg .content {
+/* Removing padding, margin and "list-style" from the "ul",
+ * and adding "position:reltive" */
+nav ul {
+  float: right;
+  padding: 0;
+  margin: 0;
+  list-style: none;
   position: relative;
-  text-align: center;
-  max-width: 800px;
 }
 
-.slider1 .Simg .content h2 {
-  font-size: 6em;
-  line-height: 1em;
-  color: #fff;
-}
-
-.slider1 .Simg .content p {
-  font-size: 1.1em;
-  color: #fff;
-}
-
-.slider1 .Simg .content a {
-  position: relative;
+/* Positioning the navigation items inline */
+nav ul li {
+  margin: 0px;
   display: inline-block;
-  background: #fff;
-  padding: 10px 30px;
-  color: #111;
-  font-weight: 500;
-  margin-top: 20px;
+  float: left;
+  background-color: #ffffff;
+}
+
+/* Styling the links */
+nav a {
+  display: block;
+  padding: 25px 100px;
+  color: rgb(0, 0, 0);
+  font-size: 17px;
   text-decoration: none;
 }
 
-.slider1 input[type="radio"] {
-  position: relative;
-  z-index: 1000;
-  margin: 5px;
-  margin-bottom: 40px;
-  outline: none;
-  cursor: pointer;
+nav ul li ul li:hover {
+  background: #640909;
 }
 
-@media (max-width: 768px) {
-  header {
-    padding: 20px 40px;
+/* Background color change on Hover */
+nav a:hover {
+  background-color: #cd2026;
+}
+
+/* Hide Dropdowns by Default
+ * and giving it a position of absolute */
+nav ul ul {
+  display: none;
+  position: absolute;
+  /* has to be the same number as the "line-height" of "nav a" */
+  top: 60px;
+}
+
+/* Display Dropdowns on Hover */
+nav ul li:hover > ul {
+  display: inherit;
+}
+
+/* Fisrt Tier Dropdown */
+nav ul ul li {
+  width: 275px;
+  float: none;
+  display: list-item;
+  position: relative;
+  z-index: 100;
+}
+
+/* Second, Third and more Tiers	
+ * We move the 2nd and 3rd etc tier dropdowns to the left
+ * by the amount of the width of the first tier.
+*/
+nav ul ul ul li {
+  position: relative;
+  top: -60px;
+  /* has to be the same number as the "width" of "nav ul ul li" */
+  left: 170px;
+}
+
+/* Change ' +' in order to change the Dropdown symbol */
+li > a:after {
+  content: " +";
+}
+li > a:only-child:after {
+  content: "";
+}
+
+/* Media Queries
+--------------------------------------------- */
+
+@media all and (max-width: 768px) {
+  #logo {
+    display: block;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+    float: none;
   }
 
-  .slider1 .Simg {
-    padding: 40px;
+  nav {
+    margin: 0;
   }
 
-  .slider1 .Simg .content h2 {
-    font-size: 3em;
+  /* Hide the navigation menu by default */
+  /* Also hide the  */
+  .toggle + a,
+  .menu {
+    display: none;
   }
 
-  .slider1 .Simg .content p {
-    font-size: 1em;
-    color: #fff;
-    margin-top: 10px;
+  /* Stylinf the toggle lable */
+  .toggle {
+    display: block;
+    background-color: #ffffff;
+    padding: 14px 100px;
+    color: rgb(0, 0, 0);
+    font-size: 17px;
+    text-decoration: none;
+    border: none;
+  }
+
+  .toggle:hover {
+    background-color: #cd2026;
+  }
+
+  /* Display Dropdown when clicked on Parent Lable */
+  [id^="drop"]:checked + ul {
+    display: block;
+  }
+
+  /* Change menu item's width to 100% */
+  nav ul li {
+    display: block;
+    width: 100%;
+  }
+
+  nav ul ul .toggle,
+  nav ul ul a {
+    padding: 0 40px;
+  }
+
+  nav ul ul ul a {
+    padding: 0 80px;
+  }
+
+  nav a:hover,
+  nav ul ul ul a {
+    background-color: #cd2026;
+  }
+
+  nav ul li ul li .toggle,
+  nav ul ul a,
+  nav ul ul ul a {
+    padding: 14px 20px;
+    color: rgb(0, 0, 0);
+    font-size: 17px;
+  }
+
+  nav ul li ul li .toggle,
+  nav ul ul a {
+    background-color: #cd2026;
+  }
+
+  /* Hide Dropdowns by Default */
+  nav ul ul {
+    float: none;
+    position: static;
+    color: #000000;
+    /* has to be the same number as the "line-height" of "nav a" */
+  }
+
+  /* Hide menus on hover */
+  nav ul ul li:hover > ul,
+  nav ul li:hover > ul {
+    display: none;
+  }
+
+  /* Fisrt Tier Dropdown */
+  nav ul ul li {
+    display: block;
+    width: 100%;
+  }
+
+  nav ul ul ul li {
+    position: static;
+    /* has to be the same number as the "width" of "nav ul ul li" */
+  }
+}
+
+@media all and (max-width: 330px) {
+  nav ul li {
+    display: block;
+    width: 94%;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  overflow-x: hidden;
+  background: #f3f3f3ee;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.home {
+  height: 60vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.home .slide {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+  display: none;
+  padding: 0 15px;
+  animation: slide 2s ease;
+}
+.home .slide.active {
+  display: flex;
+}
+@keyframes slide {
+  0% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.container {
+  max-width: 1170px;
+  margin: auto;
+}
+
+.home .container {
+  flex-grow: 1;
+}
+.home .caption {
+  width: 50%;
+}
+.home .caption h1 {
+  font-size: 42px;
+  color: #000000;
+  margin: 0;
+}
+.home .slide.active .caption h1 {
+  opacity: 0;
+  animation: captionText 0.5s ease forwards;
+  animation-delay: 1s;
+}
+.home .caption p {
+  font-size: 18px;
+  margin: 15px 0 30px;
+  color: #222222;
+}
+.home .slide.active .caption p {
+  opacity: 0;
+  animation: captionText 0.5s ease forwards;
+  animation-delay: 1.2s;
+}
+.home .caption a {
+  display: inline-block;
+  padding: 10px 30px;
+  background-color: #000000;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.home .slide.active .caption a {
+  opacity: 0;
+  animation: captionText 0.5s ease forwards;
+  animation-delay: 1.4s;
+}
+
+@keyframes captionText {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.home .controls .prev,
+.home .controls .next {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  height: 40px;
+  width: 40px;
+  margin-top: -20px;
+  color: #ffffff;
+  background-color: #cd2026;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.home .controls .prev:hover,
+.home .controls .next:hover {
+  background-color: #000000;
+}
+.home .controls .prev {
+  left: 0;
+}
+.home .controls .next {
+  right: 0;
+}
+
+.home .indicator {
+  position: absolute;
+  left: 50%;
+  bottom: 30px;
+  z-index: 2;
+  transform: translateX(-50%);
+}
+
+.home .indicator div {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  color: #ffffff;
+  background-color: #cd2026;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 25px;
+  margin: 0 3px;
+}
+
+.home .indicator div.active {
+  background-color: #000;
+}
+
+/*responsive*/
+@media (max-width: 767px) {
+  .controls {
+    display: none;
+  }
+}
+
+/*Product of the day*/
+
+.Cardhead {
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 16px;
+}
+
+.Product_row {
+  width: 100%;
+  justify-content: flex-start;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.row {
+  width: 100%;
+  justify-content: flex-start;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.product,
+.product--col {
+  box-shadow: 1px 5px 15px #ccc;
+  width: 15em;
+  height: auto;
+  border-radius: 3px;
+  padding: 2em;
+  margin: 1em;
+  overflow: hidden;
+  position: relative;
+  flex: auto;
+}
+
+.Product_row {
+  background: linear-gradient(-45deg, #e90a15bb 50%, rgba(0, 0, 0, 0.5) 50%);
+}
+.product--col {
+  background: linear-gradient(
+    -45deg,
+    #f11515bb 50%,
+    rgba(255, 255, 255, 0.5) 50%
+  );
+}
+
+.product img,
+.product--rowcol img {
+  max-width: 100%;
+  height: auto !important;
+  text-align: center;
+}
+.product img,
+.product--col img {
+  max-width: 100%;
+  height: auto !important;
+  text-align: center;
+}
+.product_inner {
+  display: flex;
+  align-items: center;
+  flex-flow: column wrap;
+}
+.product_inner p {
+  color: rgba(0, 0, 0, 0.9);
+}
+.product_inner button {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  color: #fff;
+  border-radius: 3px;
+  padding: 1em 3em;
+  margin: 1em 0 0 0;
+  background: none;
+  cursor: pointer;
+  transition: background ease-in 0.25s;
+}
+.product_inner button:hover {
+  background: white;
+  color: #2b2d42;
+}
+.product_inner button:before {
+  font-family: FontAwesome;
+  content: "";
+  color: #fff;
+  position: absolute;
+  font-size: 1.5em;
+  margin: 0 -1.5em;
+}
+.product_inner button:hover:before {
+  color: #2b2d42;
+}
+.product_overlay {
+  background: rgba(255, 255, 255, 0.9);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  transform: translateY(-500px);
+  opacity: 0;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+.product_overlay h2 {
+  color: rgba(43, 45, 66, 0.7);
+  font-size: 1.2em;
+  margin: 1em 0;
+}
+.product_overlay i {
+  color: rgba(43, 45, 66, 0.7);
+  font-size: 1.5em;
+}
+
+/* FOOTER */
+.footer {
+  width: 100%;
+  background: #000000;
+  display: block;
+}
+
+.inner-footer {
+  width: 95%;
+  margin: auto;
+  padding: 30px 10px;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  justify-content: center;
+}
+
+.footer-items {
+  width: 25%;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  color: #fff;
+}
+
+.footer-items p {
+  font-size: 16px;
+  text-align: justify;
+  line-height: 25px;
+  color: #fff;
+}
+
+.footer-items h1 {
+  color: #fff;
+}
+
+.border1 {
+  height: 3px;
+  width: 40px;
+  background: #ff9800;
+  color: #ff9800;
+  background-color: #ff9800;
+  border: 0px;
+}
+
+.footer-items ul {
+  list-style: none;
+  color: #fff;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+}
+
+.footer-items ul a {
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.footer-items ul a:hover {
+  color: #ff9800;
+}
+
+.footer-items ul li {
+  margin: 10px 0;
+  height: 25px;
+}
+
+.footer-items li i {
+  margin-right: 20px;
+}
+
+.social-media {
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+}
+
+.social-media a {
+  text-decoration: none;
+}
+
+.social-media i {
+  height: 25px;
+  width: 25px;
+  margin: 20px 10px;
+  padding: 4px;
+  color: #fff;
+  transition: 0.5s;
+}
+
+.social-media i:hover {
+  transform: scale(1.5);
+}
+
+.footer-bottom {
+  padding: 10px;
+  background: #6a6c6d;
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
+}
+
+/* for tablet mode view */
+
+@media screen and (max-width: 1275px) {
+  .footer-items {
+    width: 50%;
+  }
+}
+
+/* for mobile screen view */
+
+@media screen and (max-width: 660px) {
+  .footer-items {
+    width: 100%;
   }
 }
