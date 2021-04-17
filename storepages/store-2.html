@@ -1,12 +1,278 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Store</title>
-  </head>
-  <body>
-    //TODO:Ram
-  </body>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="layout-category.css">
+  <link rel="stylesheet" href="store-2-style.css">
+  <link rel="stylesheet" href="layout-product.js">
+  
+</head>
+
+<body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img src="./images/close.png" width="20px"></a>
+    <!-- <div class="selected">
+      <a href="../storepages/category-1.html">Jacket</a>
+    </div>
+  <a href="#">Dresses</a>
+  <a href="#">Jeans</a>
+  <a href="#">T-shirt</a>
+  <a href="#">Shoes</a> -->
+  <div class="dropdown">
+    <button class="dropbtn">UNISEX</button>
+    <div class="dropdown-content">
+      <a href="../storepages/category-1.html">Jacket</a>
+      <a href="#">Dresses</a>
+      <a href="#">Jeans</a>
+      <a href="#">T-shirt</a>
+      <a href="#">Shoes</a>
+    </div>
+  </div>
+
+  <div class="dropdown">
+    <button class="dropbtn">+ INFO</button>
+    <div class="dropdown-content">
+      <a href="#">Contact Us</a>
+      <a href="#">Help</a>
+      <a href="#">Newsletter</a>
+      <a href="#">Company</a>
+    </div>
+  </div>
+</div>
+
+
+<!-- <div class="sidenav"></div> -->
+<div class="sidebar-button">
+    <span style="font-size:28px;cursor:pointer;margin-left: 30px;" onclick="openNav()"><img src="./images/menu.png" width="20px" ></span>
+                    
+    <script>
+    function openNav() {
+    document.getElementById("mySidenav").style.width = "240px";
+    }
+
+    function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    }
+    </script>
+
+</div>
+
+<div class="on-top">
+    <button type="button" class="button-top">LOGIN</button> 
+    <button type="button" class="button-top">MY PAGE</button>
+    <button type="button" class="button-top">MY BASKET</button>
+</div>
+
+<div class="container">
+
+    <!-- <div class="sticky">
+        <img src="./images/logo1.png" style="object-fit:covor;width:350px">
+    </div> -->
+
+  <!-- TOP -->
+    <div class="top">
+                <div class="sticky">
+                    <a href="../storepages/store-2.html">
+                        <img src="./images/logo1.png" style="object-fit:covor;width:500px">
+                    </a>
+                </div>
+    </div>
+
+  <!-- MIDDLE -->
+
+
+
+
+  <div class="middle">
+
+
+
+
+<section class="carousel" aria-label="Gallery">
+  <ol class="carousel__viewport">
+    <li id="carousel__slide1"
+        tabindex="0"
+        class="carousel__slide">
+      <div class="carousel__snapper">
+        <!-- <img src="./images/Jacket/jacket1.jpeg" style="background-size: cover;"> -->
+        <div class="carousel-pic1">
+        </div>
+        <a href="#carousel__slide4"
+           class="carousel__prev">Go to last slide</a>
+        <a href="#carousel__slide2"
+           class="carousel__next">Go to next slide</a>
+      </div>
+    </li>
+    <li id="carousel__slide2"
+        tabindex="0"
+        class="carousel__slide">
+      <div class="carousel__snapper"></div>
+      <a href="#carousel__slide1"
+         class="carousel__prev">Go to previous slide</a>
+      <a href="#carousel__slide3"
+         class="carousel__next">Go to next slide</a>
+    </li>
+    <li id="carousel__slide3"
+        tabindex="0"
+        class="carousel__slide">
+      <div class="carousel__snapper"></div>
+      <a href="#carousel__slide2"
+         class="carousel__prev">Go to previous slide</a>
+      <a href="#carousel__slide4"
+         class="carousel__next">Go to next slide</a>
+    </li>
+    <li id="carousel__slide4"
+        tabindex="0"
+        class="carousel__slide">
+      <div class="carousel__snapper"></div>
+      <a href="#carousel__slide3"
+         class="carousel__prev">Go to previous slide</a>
+      <a href="#carousel__slide1"
+         class="carousel__next">Go to first slide</a>
+    </li>
+  </ol>
+  <aside class="carousel__navigation">
+    <ol class="carousel__navigation-list">
+      <li class="carousel__navigation-item">
+        <a href="#carousel__slide1"
+           class="carousel__navigation-button">Go to slide 1</a>
+      </li>
+      <li class="carousel__navigation-item">
+        <a href="#carousel__slide2"
+           class="carousel__navigation-button">Go to slide 2</a>
+      </li>
+      <li class="carousel__navigation-item">
+        <a href="#carousel__slide3"
+           class="carousel__navigation-button">Go to slide 3</a>
+      </li>
+      <li class="carousel__navigation-item">
+        <a href="#carousel__slide4"
+           class="carousel__navigation-button">Go to slide 4</a>
+      </li>
+    </ol>
+  </aside>
+</section>
+
+
+
+
+
+    <div class="item">
+      <a href="./product-1.html" style="display: block; width: 100%; height: 100%;">
+      <img
+        src="./images/Jacket/jacket1.jpeg"
+        class="product_image"/>
+      
+      
+      <div class="product-detail" style="text-align: center;">
+        <h4><b>Clothes</b></h4>
+        <p>fklanflkdsn</p>
+      
+      </div>
+    </a>
+    </div>
+
+
+    <div class="item">
+      <a href="./product-2.html" style="display: block; width: 100%; height: 100%;">
+      <img
+        src="./images/Jacket/jacket2.jpeg"
+        class="product_image"/>
+      
+      
+      <div class="product-detail" style="text-align: center;">
+        <h4><b>Clothes</b></h4>
+        <p>fklanflkdsn</p>
+      
+      </div>
+    </a>
+    </div>
+
+    <div class="item">
+      <a href="./product-3.html" style="display: block; width: 100%; height: 100%;">
+      <img
+        src="./images/Jacket/jacket3.jpeg"
+        class="product_image"/>
+      
+      
+      <div class="product-detail" style="text-align: center;">
+        <h4><b>Clothes</b></h4>
+        <p>fklanflkdsn</p>
+      
+      </div>
+    </a>
+    </div>
+
+    <div class="item">
+      <a href="./product-4.html" style="display: block; width: 100%; height: 100%;">
+      <img
+        src="./images/Jacket/jacket4.jpeg"
+        class="product_image"/>
+      
+      
+      <div class="product-detail" style="text-align: center;">
+        <h4><b>Clothes</b></h4>
+        <p>fklanflkdsn</p>
+      
+      </div>
+    </a>
+    </div>
+
+  </div>
+
+  <div class="bottom">
+      <hr>
+        <div class="bottom-info"> POLICES 
+          <a href="../storepages/category-1.html"><div class="bottom-info-detail"> SHOP AT 26St.ore </div></a>
+          <a href="#"><div class="bottom-info-detail">PRODUCT</div></a>
+          <a href="#"><div class="bottom-info-detail">PAYMENT</div></a>
+          <a href="#"><div class="bottom-info-detail">SHIPPING</div></a>
+      </div>  
+
+
+
+
+        <div class="bottom-info"> POLICES 
+          <a href="../storepages/category-1.html"><div class="bottom-info-detail"> SHOP AT 26St.ore </div></a>
+          <a href="#"><div class="bottom-info-detail">PRODUCT</div></a>
+          <a href="#"><div class="bottom-info-detail">PAYMENT</div></a>
+          <a href="#"><div class="bottom-info-detail">SHIPPING</div></a>
+      </div>  
+
+
+
+
+        <div class="bottom-info"> POLICES 
+          <a href="../storepages/category-1.html"><div class="bottom-info-detail"> SHOP AT 26St.ore </div></a>
+          <a href="#"><div class="bottom-info-detail">PRODUCT</div></a>
+          <a href="#"><div class="bottom-info-detail">PAYMENT</div></a>
+          <a href="#"><div class="bottom-info-detail">SHIPPING</div></a>
+      </div>  
+
+
+      </div>
+  </div>
+
+
+
+
+</body>
 </html>
