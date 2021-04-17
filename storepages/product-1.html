@@ -12,14 +12,36 @@
 <body>
 
 
-
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img src="./images/close.png" width="20px"></a>
-  <a href="../storepages/category-1.html">Jacket</a>
+    <!-- <div class="selected">
+      <a href="../storepages/category-1.html">Jacket</a>
+    </div>
   <a href="#">Dresses</a>
   <a href="#">Jeans</a>
   <a href="#">T-shirt</a>
-  <a href="#">Shoes</a>
+  <a href="#">Shoes</a> -->
+  <div class="dropdown">
+    <button class="dropbtn">UNISEX</button>
+    <div class="dropdown-content">
+      <a href="../storepages/category-1.html">Jacket</a>
+      <a href="#">Dresses</a>
+      <a href="#">Jeans</a>
+      <a href="#">T-shirt</a>
+      <a href="#">Shoes</a>
+    </div>
+  </div>
+
+  <div class="dropdown">
+    <button class="dropbtn">+ INFO</button>
+    <div class="dropdown-content">
+      <a href="../storepages/category-1.html">+ INFO</a>
+      <a href="#">Dresses</a>
+      <a href="#">Jeans</a>
+      <a href="#">T-shirt</a>
+      <a href="#">Shoes</a>
+    </div>
+  </div>
 </div>
 
 
@@ -55,7 +77,7 @@
     <div class="top">
                 <div class="sticky">
                     <a href="../storepages/store-1.html">
-                        <img src="./images/logo1.png" style="object-fit:covor;width:500px">
+                        <img src="./images/logo1.png" style="object-fit:covor;width:500px;">
                     </a>
                 </div>
     </div>
@@ -122,20 +144,57 @@
         </div>
         
             <button class="button-product">Buy now</button>
-            <button class="button-product">Add to basket</button>
-        
+            <a href="./pop-up.html" onclick="window.open(this.href, '_blank', 'width=200px,height=200px,toolbars=no,scrollbars=no'); return false;"><button class="button-product">Add to basket</button></a>
+            <div module="Product_BasketAdd">
+
+              
+
+
+
+
+
+
 
 
     </div>
 
   </div>
 
-  <div class="bottom"> <span>BOTTOM (1400 x 100) </div>
+
 
 </div>
 
 
+<div class="bottom"> 
+  <hr>
+  <div class="bottom-info"> POLICES 
+    <a href="../storepages/category-1.html"><div class="bottom-info-detail"> SHOP AT 26St.ore </div></a>
+    <a href="#"><div class="bottom-info-detail">PRODUCT</div></a>
+    <a href="#"><div class="bottom-info-detail">PAYMENT</div></a>
+    <a href="#"><div class="bottom-info-detail">SHIPPING</div></a>
+</div>  
 
+
+
+
+  <div class="bottom-info"> POLICES 
+    <a href="../storepages/category-1.html"><div class="bottom-info-detail"> SHOP AT 26St.ore </div></a>
+    <a href="#"><div class="bottom-info-detail">PRODUCT</div></a>
+    <a href="#"><div class="bottom-info-detail">PAYMENT</div></a>
+    <a href="#"><div class="bottom-info-detail">SHIPPING</div></a>
+</div>  
+
+
+
+
+  <div class="bottom-info"> POLICES 
+    <a href="../storepages/category-1.html"><div class="bottom-info-detail"> SHOP AT 26St.ore </div></a>
+    <a href="#"><div class="bottom-info-detail">PRODUCT</div></a>
+    <a href="#"><div class="bottom-info-detail">PAYMENT</div></a>
+    <a href="#"><div class="bottom-info-detail">SHIPPING</div></a>
+</div>    
+</div>
+  
 
 </body>
 </html>

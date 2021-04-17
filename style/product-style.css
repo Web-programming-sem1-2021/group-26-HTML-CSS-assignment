@@ -1,0 +1,48 @@
+body {
+  background-color: rgb(255, 255, 255);
+}
+
+.jacket1 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: right;
+}
+
+.order-basket-button {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.pl-0 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.size-button {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.jacket-image {
+  width: 30%;
+}
+
+button {
+  width: 150px;
+
+  background-color: #000000;
+
+  border: none;
+
+  color: #fff;
+
+  padding: 15px;
+
+  text-align: center;
+
+  display: inline-block;
+
+  font-size: 20px;
+
+  margin: 5px;
+
+  cursor: pointer;
+}
+
+button:hover {
+  background: #cfcfcf;
+  color: #000000;
+}
