@@ -297,13 +297,13 @@ body{
 		transform: scale(1);
 	}
 }
-.container{
+.container1{
 	max-width: 1170px;
 	margin:auto;
 	
 }
 
-.home .container{
+.home .container1{
 	 flex-grow: 1;
 }
 .home .caption{
@@ -533,7 +533,53 @@ body{
   font-size: 1.5em;
 }
 
-
+/*--------------- store sections carousels ---------------- */
+/* -------------------------------------------------------- */
+.carousel {
+	display: flex;
+	overflow-x: auto;
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+	margin: 0 auto 0 auto;
+	width: 90vw;
+	height: fit-content;
+	border: solid #b9b9b9 0.5px;
+	background-color: #8d8d8d;
+  }
+  .carousel::-webkit-scrollbar {
+	display: none;
+	-webkit-overflow-scrolling: auto;
+  }
+  .item {
+	min-width: 300px;
+	height: 300px;
+	margin: 15px;
+	font-size: 5em;
+	text-align: center;
+	background-color: #fff9ef;
+	border-radius: 7px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	display: inline-table;
+	position: static;
+	width: 40%;
+	transition: 0.3s;
+  }
+  .item:hover {
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  }
+  .container {
+	padding: 0;
+	font-size: small;
+	margin: 10px;
+	display: block;
+	justify-content: space-around;
+  }
+  
+  .carousel .item .card-image {
+	display: flex;
+	width: 120px;
+	height: 200px;
+  }
 
 
 /* FOOTER */
