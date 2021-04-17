@@ -1,96 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-    />
-    <link rel="icon" href="#" />
-    <title>Home</title>
-    <link
-      rel="stylesheet"
-      href="
-    style.css"
-    />
-  </head>
 
-  <body>
-    <!-- referenced from : "https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp" -->
-    <div class="nav" id="navbar">
-      <a href="index.html" class="homeIcon">
-        <h1 style="font-size: 50px">ICONIC 🐈</h1></a
-      >
-      <a class="nav-section" href="homepage/about-us.html">About Us</a>
-      <a class="nav-section" href="homepage/fees.html">Fees</a>
-      <a class="nav-section" href="homepage/myAccount/my-account.html"
-        >Account</a
-      >
-      <div class="dropdown">
-        <button class="dropbtn">
-          Browse
-          <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-content">
-          <a href="./homepage/browse/browse-stores-by-name.html"
-            >Browse Store <br />
-            by name</a
-          >
-          <a href="./homepage/browse/browse-stores-by-categories.html"
-            >Browse Store <br />by Categories</a
-          >
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" />
+  <link rel="icon" href="#" />
+  <title>Home</title>
+  <link rel="stylesheet" href="
+    style.css" />
+</head>
+
+<body>
+  <!-- referenced from : "https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp" -->
+  <div class="nav" id="navbar">
+    <a href="index.html" class="homeIcon">
+      <h1 style="font-size: 50px">ICONIC 🐈</h1>
+    </a>
+    <a class="nav-section" href="homepage/about-us.html">About Us</a>
+    <a class="nav-section" href="homepage/fees.html">Fees</a>
+    <a class="nav-section" href="homepage/myAccount/my-account.html">Account</a>
+    <div class="dropdown">
+      <button class="dropbtn">
+        Browse
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="./homepage/browse/browse-stores-by-name.html">Browse Store <br />
+          by name</a>
+        <a href="./homepage/browse/browse-stores-by-categories.html">Browse Store <br />by Categories</a>
+      </div>
+    </div>
+    <a class="nav-section" href="homepage/faqs.html">FAQs</a>
+    <a class="nav-section" href="homepage/contact.html">Contact</a>
+    <a href="javascript:void(0);" style="font-size: 15px" class="icon" onclick="handleResponsiveNavBar()">&#9776;</a>
+  </div>
+  <br />
+  <main>
+    <h1 class="store-title">New stores</h1>
+    <div class="carousel">
+      <div class="item">
+        <img class="card-image" src="/images/homeImages/fashion1.jpeg" alt="Avatar" style="width: 100%; padding: 0px" />
+        <div class="container">
+          <h4><b>Clothes</b></h4>
+          <p>111</p>
         </div>
       </div>
-      <a class="nav-section" href="homepage/faqs.html">FAQs</a>
-      <a class="nav-section" href="homepage/contact.html">Contact</a>
-      <a
-        href="javascript:void(0);"
-        style="font-size: 15px"
-        class="icon"
-        onclick="handleResponsiveNavBar()"
-        >&#9776;</a
-      >
-    </div>
-    <br />
-    <main>
-      <h1 class="store-title">New stores</h1>
-      <div class="carousel">
-        <div class="item">
-          <img
-            class="card-image"
-            src="/images/homeImages/fashion1.jpeg"
-            alt="Avatar"
-            style="width: 100%; padding: 0px"
-          />
-          <div class="container">
-            <h4><b>Clothes</b></h4>
-            <p>111</p>
-          </div>
+      <div class="item">
+        <img class="card-image" src="/images/homeImages/tech1.jpeg" alt="Avatar" style="width: 100%" />
+        <div class="container">
+          <h4><b>Clothes</b></h4>
+          <p>fklanflkdsn</p>
         </div>
-        <div class="item">
-          <img
-            class="card-image"
-            src="/images/homeImages/tech1.jpeg"
-            alt="Avatar"
-            style="width: 100%"
-          />
-          <div class="container">
-            <h4><b>Clothes</b></h4>
-            <p>fklanflkdsn</p>
-          </div>
-        </div>
-        <div class="item">
-          <img
-            class="card-image"
-            src="/images/img1.jpg"
-            alt="Avatar"
-            style="width: 100%"
-          />
-          <div class="container">
-            <h4><b>Clothes</b></h4>
-            <p>fklanflkdsn</p>
-          </div>
+      </div>
+      <div class="item">
+        <img class="card-image" src="/images/img1.jpg" alt="Avatar" style="width: 100%" />
+        <div class="container">
+          <h4><b>Clothes</b></h4>
+          <p>fklanflkdsn</p>
         </div>
         <div class="item">
           <img
@@ -222,6 +189,7 @@
           </div>
         </div>
       </div>
+    </div>
 
       <h1 class="store-title">Featured Products</h1>
       <div class="carousel">
@@ -272,7 +240,33 @@
           </div>
         </div>
       </div>
-    </main>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>
+            <a href="/homepage/footer/copyright.html"> Copyright</a>
+          </h3>
+          <h3><a href="/homepage/footer/privacy.html">Privacy Policy</a></h3>
+          <h3><a href="/homepage/footer/terms.html">Terms of Service</a></h3>
+        </div>
+        <div class="footer-section">
+          <h3>Student contributors</h3>
+          <ol>
+            <li>Nguyen Thi Quynh Giang <b>[s3866617]</b></li>
+            <br />
+            <li>Joo Jeong-hyeon<b>[sid]</b></li>
+            <br />
+            <li>Vo Khai Minh<b>[s3866617]</b></li>
+          </ol>
+        </div>
+        <div class="footer-section">
+          <h3>Source Code</h3>
+          <a href="https://github.com/Web-programming-sem1-2021/group-26-HTML-CSS-assignment"><img
+              src="../icons/github-character.svg"></img></a>
 
     <footer>
       <div class="footer">
@@ -304,7 +298,11 @@
           </div>
         </div>
       </div>
-    </footer>
-    <script src="/jsFunctions.js"></script>
-  </body>
+    </div>
+  </footer>
+
+  <script src="/jsFunctions.js"></script>
+
+</body>
+
 </html>
