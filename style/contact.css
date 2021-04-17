@@ -21,6 +21,7 @@ h2 {
 }
 .form-item {
   margin-bottom: 0.7rem;
+  max-width:90%;
 }
 label,
 input,
@@ -68,7 +69,7 @@ input[type="submit"]:hover {
 
 .button1 {background-color: #4CAF50;} /* Green */
 .button2 {background-color: #008CBA;} /* Blue */
-</style>
+
 /*checkbox*/
 
 *, *:before, *:after {
