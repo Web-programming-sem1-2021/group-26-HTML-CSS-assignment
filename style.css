@@ -48,6 +48,7 @@ a {
   text-align: center;
   padding: 16px;
   text-decoration: none;
+  margin: 0px auto 0px auto;
   font-size: 20px;
   transition: all 800ms cubic-bezier(0.18, 1, 0.23, 1);
 }
@@ -56,10 +57,17 @@ a {
   display: inline-block;
   color: var(--nav-text-color);
   text-align: center;
-  padding: 16px 16px;
-  font-size: 20;
   widows: 2px;
   width: 20%;
+}
+
+.nav img{
+  display: inline-block;
+  text-align: center;
+  padding: 0px;
+  height: 2cm;
+  object-fit: cover;
+  background-size: cover;
 }
 
 .nav .icon {
@@ -168,7 +176,7 @@ a {
   .nav.responsive .dropdown .dropbtn {
     display: block;
     width: 100%;
-    text-align: left;
+    text-align: center;
   }
 }
 
