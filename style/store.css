@@ -1,8 +1,15 @@
 /* CSS Document */
+@import url(“https://fonts.googlecpis.com/css2?family=Poppins:wght@300;400&display=swap”);
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 @import url(https://fonts.googleapis.com/css?family=Bree+Serif);
 
+*{
+  font-family: Poppins, sans-serif;
+}
+a{
+  text-decoration: none;
+}
 .toggle,
 [id^="drop"] {
   display: none;
@@ -12,7 +19,7 @@
 nav {
   margin: 0;
   padding: 0;
-  background-color: #ffffff;
+  background-color: #ffffff;  
 }
 
 .logo-img {
@@ -23,7 +30,7 @@ nav {
 
 #logo {
   display: block;
-  margin-bottom: -40px;
+  margin: 10px auto 10px auto;
   float: left;
   overflow: hidden;
 }
@@ -63,6 +70,13 @@ nav a {
   font-size: 17px;
   text-decoration: none;
 }
+nav .logo {
+  display: block;
+  padding: 0;
+  color: rgb(0, 0, 0);
+  font-size: 17px;
+  text-decoration: none;
+}
 
 nav ul li ul li:hover {
   background: #640909;
@@ -71,6 +85,10 @@ nav ul li ul li:hover {
 /* Background color change on Hover */
 nav a:hover {
   background-color: #cd2026;
+}
+
+nav .logo:hover {
+  background-color: transparent;
 }
 
 /* Hide Dropdowns by Default
@@ -109,7 +127,7 @@ nav ul ul ul li {
 
 /* Change ' +' in order to change the Dropdown symbol */
 li > a:after {
-  content: " +";
+  content: "";
 }
 li > a:only-child:after {
   content: "";
@@ -404,7 +422,7 @@ body {
 .product,
 .product--col {
   box-shadow: 1px 5px 15px #ccc;
-  width: 15em;
+  
   height: auto;
   border-radius: 3px;
   padding: 2em;
@@ -444,6 +462,10 @@ body {
 }
 .product_inner p {
   color: rgba(0, 0, 0, 0.9);
+}
+
+.product_inner:hover p{
+  color: #2196f3;
 }
 .product_inner button {
   border: 1px solid rgba(255, 255, 255, 0.5);
@@ -494,6 +516,202 @@ body {
   color: rgba(43, 45, 66, 0.7);
   font-size: 1.5em;
 }
+
+/*Browse products by categories*/
+
+.category-section section {
+  border-radius:  20px;
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-around;
+  background-color: #615d5d;
+  margin: 20px auto 20px auto;
+  padding: 20px 20px 20px 20px;
+}
+
+@media all and (min-width: 600px) {
+  aside {
+    float: left;
+    padding-left: 24px;
+    position: relative;
+  }
+  footer {
+    clear: both;
+  }
+}
+/* The container */
+.conta {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+/* Hide the browser's default checkbox */
+.conta input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.conta:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.conta input:checked ~ .checkmark {
+  background-color: #2196f3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.conta input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.conta .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.row1 {
+  display: flex;
+  border: 0px solid #b1b1b1;
+  width: 2.5cm;
+  margin: 10px;
+  padding: 0;
+}
+
+.column {
+  margin: 0;
+  padding: 0;
+  width: 2.5cm;
+  flex: 50%;
+  border: 0px solid #b1b1b1;
+}
+
+
+
+
+
+
+
+
+
+
+.carousel {
+  display: flex;
+  overflow-x: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  margin: 0 auto 0 auto;
+  width: 95vw;
+  height: fit-content;
+  border: solid #7daeee 0.5px;
+  background-color: #282b2bd2;
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+  -webkit-overflow-scrolling: auto;
+}
+
+.item {
+  min-width: 300px;
+  height: 300px;
+  margin: 15px;
+  font-size: 5em;
+  text-align: center;
+  background-color: #fff9ef;
+  border-radius: 7px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  display: inline-table;
+  position: static;
+  width: 40%;
+  transition: 0.3s;
+}
+
+.item:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card-container {
+  padding: 0;
+  font-size: small;
+  margin: 10px;
+  display: block;
+  justify-content: space-around;
+  background-color: none;
+}
+
+.carousel .item .card-image {
+  display: flex;
+  width: 120px;
+  height: 200px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* FOOTER */
 .footer {
