@@ -1,8 +1,9 @@
 @import url(“https://fonts.googlecpis.com/css2?family=Poppins:wght@300;400&display=swap”);
 /* @media url(“https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css”); */
 :root {
-  --background-color: #b6f8f8;
-  --nav-color: #8ac6d1;
+  --background-color: #fff4f4;
+  --store-slider-bg-color: white;
+  --nav-color: #ece9d0;
   --nav-text-color: rgb(80, 78, 78);
   --nav-hover-color: rgb(119, 119, 119);
 }
@@ -172,7 +173,154 @@ a {
   }
 }
 
+/* images sliders */
+.home {
+  height: 60vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.home .slide {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+  display: none;
+  padding: 0 15px;
+  animation: slide 2s ease;
+}
+.home .slide.active {
+  display: flex;
+}
+@keyframes slide {
+  0% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.slide-container {
+  max-width: 1170px;
+  margin: auto;
+}
+
+.home .slide-container {
+  flex-grow: 1;
+}
+.home .caption {
+  width: 50%;
+}
+.home .caption h1 {
+  font-size: 42px;
+  color: #000000;
+  margin: 0;
+}
+.home .slide.active .caption h1 {
+  opacity: 0;
+  animation: captionText 0.5s ease forwards;
+  animation-delay: 1s;
+}
+.home .caption p {
+  font-size: 18px;
+  margin: 15px 0 30px;
+  color: #222222;
+}
+.home .slide.active .caption p {
+  opacity: 0;
+  animation: captionText 0.5s ease forwards;
+  animation-delay: 1.2s;
+}
+.home .caption a {
+  display: inline-block;
+  padding: 10px 30px;
+  background-color: #000000;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.home .slide.active .caption a {
+  opacity: 0;
+  animation: captionText 0.5s ease forwards;
+  animation-delay: 1.4s;
+}
+
+@keyframes captionText {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.home .controls .prev,
+.home .controls .next {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  height: 40px;
+  width: 40px;
+  margin-top: -20px;
+  color: #ffffff;
+  background-color: #cd2026;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.home .controls .prev:hover,
+.home .controls .next:hover {
+  background-color: #000000;
+}
+.home .controls .prev {
+  left: 0;
+}
+.home .controls .next {
+  right: 0;
+}
+
+.home .indicator {
+  position: absolute;
+  left: 50%;
+  bottom: 30px;
+  z-index: 2;
+  transform: translateX(-50%);
+}
+
+.home .indicator div {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  color: #ffffff;
+  background-color: #cd2026;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 25px;
+  margin: 0 3px;
+}
+
+.home .indicator div.active {
+  background-color: #000;
+}
+
+/*responsive*/
+@media (max-width: 767px) {
+  .controls {
+    display: none;
+  }
+}
+
+/* ------------------------------------ */
 /*footer */
+/* ---------------------------------- */
 .footer {
   width: 95%;
   height: 350px;
@@ -188,23 +336,42 @@ a {
   padding: 40px 60px;
   width: 100%;
   border-bottom: 1px solid #84849d;
+  padding: 1rem;
+  height: 4rem;
 }
 .footer-section {
   width: 20%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 1rem;
 }
 
 .footer-section li {
   list-style: inherit;
   padding-bottom: 7px;
 }
-.footer-section li a {
+.footer-section a {
+  display: inline;
+  text-align: left;
+  justify-content: space-between;
   text-decoration: none;
   color: #000948;
+  font-size: 24px;
 }
 .footer-section h3 {
   color: #010837;
 }
 
+.footer-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.footer-section:hover a {
+  text-decoration: bold;
+  color: pink;
+}
 @media screen and (max-width: 600px) {
   .footer {
     width: 70%;
@@ -224,7 +391,7 @@ a {
   width: 90vw;
   height: fit-content;
   border: solid #7daeee 0.5px;
-  background-color: #a8d1d1;
+  background-color: var(--store-slider-bg-color);
 }
 
 .carousel::-webkit-scrollbar {
@@ -257,7 +424,6 @@ a {
   margin: 10px;
   display: block;
   justify-content: space-around;
-  background-color: darkorange;
 }
 
 .carousel .item .card-image {
@@ -269,7 +435,13 @@ a {
 /* Section tile */
 
 .store-title {
-  text-align: left;
-  color: rgb(0, 0, 0);
+  text-align: center;
+  color: var(--nav-text-color);
   padding: 15px;
+}
+
+/* Section dividers */
+
+hr.dashed {
+  border-top: 4px dashed #bbb;
 }
