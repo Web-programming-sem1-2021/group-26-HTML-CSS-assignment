@@ -1,6 +1,4 @@
-body {
-  background-color: #b6f8f8;
- 
+body { 
   height: 100vh;
 }
 .card {
@@ -15,7 +13,7 @@ body {
   justify-content: left;
   text-align: center;
   width: 80%;
-  margin: 20px auto 10px auto;
+  margin: 50px auto 50px auto;
   border-radius: 10px;
 }
 

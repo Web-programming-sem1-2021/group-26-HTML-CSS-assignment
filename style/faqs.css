@@ -1,3 +1,7 @@
+:root{
+  --section-color:#7BB0B8;
+}
+
 .hidden_box {
   margin: 2em auto;
   padding: 0;
@@ -8,7 +12,7 @@
   display: block;
   font-weight: bold;
   line-height: 3;
-  background: #e99ca6;
+  background: var(--section-color);
   border-radius: 5px;
   cursor: pointer;
   transition: 0.2s;
@@ -44,7 +48,7 @@
 
 .hidden_box label:after {
   display: block;
-  content: "🛒";
+  content: "❔";
   font-weight: 90;
   font-size: 30px;
   transition: 1s;

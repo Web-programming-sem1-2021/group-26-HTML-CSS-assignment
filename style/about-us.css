@@ -104,7 +104,19 @@ ul li {
   content: "";
   box-sizing: content-box;
 }
+.social ul {
+  margin-top: 22px;
+  list-style-type: none;
+}
+.social li {
+  display: inline;
+  font-size: 30px;
+  cursor: pointer;
+  color: #17a589;
+  margin: auto 12px auto 12px; 
+}
 
+  
 /* Hover effect */
 /* .icon-effect .icon {
   .transition-animation;
