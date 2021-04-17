@@ -18,15 +18,13 @@
 
   <body>
     <!-- referenced from : "https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp" -->
-    <div class="nav" id="navbar">
+    <div class="nav" id="navbar" style="position: sticky; top: 0px">
       <a href="index.html" class="homeIcon">
         <h1 style="font-size: 50px">ICONIC 🐈</h1></a
       >
       <a class="nav-section" href="homepage/about-us.html">About Us</a>
       <a class="nav-section" href="homepage/fees.html">Fees</a>
-      <a class="nav-section" href="homepage/myAccount/login.html"
-        >Account</a
-      >
+      <a class="nav-section" href="homepage/myAccount/login.html">Account</a>
       <div class="dropdown">
         <button class="dropbtn">
           Browse
@@ -272,6 +270,28 @@
           </div>
         </div>
       </div>
+      <br />
+      <div style="justify-content: space-around; margin: 10px auto 10px auto">
+        <a
+          href="#navbar"
+          style="
+            border-radius: 10px;
+            border: 3px black;
+            background-color: rgb(100, 150, 160);
+            appearance: button;
+            bottom: 20px;
+            left: 40px;
+            width: 100px;
+            height: 50px;
+            position: sticky;
+            display: table-cell;
+            vertical-align: middle;
+            margin: 0 auto;
+            padding: 0;
+          "
+          >Top</a
+        >
+      </div>
     </main>
 
     <footer>
@@ -295,9 +315,14 @@
             </ol>
           </div>
           <div class="footer-section">
-            <h3>Source Code</h3>
-            <a href="https://github.com/Web-programming-sem1-2021/group-26-HTML-CSS-assignment"><img src="../icons/github-character.svg"></img></a>
-              
+            <h3>Application Information</h3>
+            <a
+              href="https://github.com/Web-programming-sem1-2021/group-26-HTML-CSS-assignment"
+              ><img
+                class="footer-icon"
+                src="../icons/github-character.svg"
+              />Source Code</a
+            >
           </div>
         </div>
       </div>

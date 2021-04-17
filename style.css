@@ -184,23 +184,42 @@ a {
   padding: 40px 60px;
   width: 100%;
   border-bottom: 1px solid #84849d;
+  padding: 1rem;
+  height: 4rem;
 }
 .footer-section {
   width: 20%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 1rem;
 }
 
 .footer-section li {
   list-style: inherit;
   padding-bottom: 7px;
 }
-.footer-section li a {
+.footer-section a {
+  display: flex;
+  justify-content: space-around;
   text-decoration: none;
   color: #000948;
+  font-size: 24px;
 }
 .footer-section h3 {
   color: #010837;
 }
 
+.footer-icon{
+  width: 24px;
+  height: 24px;
+}
+
+.footer-section:hover a{
+  text-decoration: bold;
+  color: pink;
+
+}
 @media screen and (max-width: 600px) {
   .footer {
     width: 70%;
