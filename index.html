@@ -52,22 +52,74 @@
         >&#9776;</a
       >
     </div>
-    <br />
     <main>
-      <h1 class="store-title">New stores</h1>
-      <div class="carousel">
-        <div class="item">
-          <img
-            class="card-image"
-            src="/images/homeImages/fashion1.jpeg"
-            alt="Avatar"
-            style="width: 100%; padding: 0px"
-          />
-          <div class="container">
-            <h4><b>Clothes</b></h4>
-            <p>111</p>
+      <section class="home">
+        <div class="slider">
+          <div
+            class="slide active"
+            style="background-image: url('./images/homeImages/fashion1.jpeg')"
+          >
+            <div class="slide-container">
+              <div class="caption">
+                <h1>1. Winter Collection 2020</h1>
+                <p>Lorem ipsum dummy text goes here.</p>
+                <a href="">Shop Now</a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="slide"
+            style="background-image: url('images/homeImages/fashion2.jpeg')"
+          >
+            <div class="slide-container">
+              <div class="caption">
+                <h1>2. Winter Collection 2020</h1>
+                <p>Lorem ipsum dummy text goes here.</p>
+                <a href="">Shop Now</a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="slide"
+            style="background-image: url('images/homeImages/fashion3.jpeg')"
+          >
+            <div class="slide-container">
+              <div class="caption">
+                <h1>3. Winter Collection 2020</h1>
+                <p>Lorem ipsum dummy text goes here.</p>
+                <a href="">Shop Now</a>
+              </div>
+            </div>
           </div>
         </div>
+
+        <!-- controls  -->
+        <div class="controls">
+          <div class="prev"><</div>
+          <div class="next">></div>
+        </div>
+
+        <!-- indicators -->
+        <div class="indicator"></div>
+      </section>
+      <h1 class="store-title">New stores</h1>
+      <hr class="dashed" />
+
+      <div class="carousel">
+        <a href="./storepages/store-1.html">
+          <div class="item">
+            <img
+              class="card-image"
+              src="/images/homeImages/fashion1.jpeg"
+              alt="Avatar"
+              style="width: 100%; padding: 0px"
+            />
+            <div class="container">
+              <h4><b>Clothes</b></h4>
+              <p>111</p>
+            </div>
+          </div>
+        </a>
         <div class="item">
           <img
             class="card-image"
@@ -296,8 +348,10 @@
           </div>
           <div class="footer-section">
             <h3>Source Code</h3>
-            <a href="https://github.com/Web-programming-sem1-2021/group-26-HTML-CSS-assignment"><img src="../icons/github-character.svg"></img></a>
-              
+            <a
+              href="https://github.com/Web-programming-sem1-2021/group-26-HTML-CSS-assignment"
+              ><img class="footer-icon" src="../icons/github-character.svg"
+            /></a>
           </div>
         </div>
       </div>
