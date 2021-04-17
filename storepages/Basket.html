@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>쇼핑몰 장바구니 예제</title>
+<link rel="stylesheet" type="text/css" href="./basket.css" />
+</head>
+<body>
+
+
+	<div id="bg1"></div>
+	<div id="main_in">
+		<div id="menu">
+			<div id="logo"><img src="./images/logo1.png" alt="shop_icon" title="shop_icon" style="width: 20%;"/></div>
+				<form action="/shop/search.php" method="post">
+
+				</form>
+			</div>	
+				<div id="content">
+					<h2>My Basket</h2>
+					 <table class="list-table">
+				      <thead>
+				          <tr>
+				              <th width="350">Product Name</th>
+				              <th width="120">Price</th>
+				           </tr>
+				        </thead>
+
+				        <tbody>
+				        <tr>
+				          <td width="300">
+				          	<div class="bak_item">
+							<div class="pro_img"><img src="./images/Jacket/jacket1.jpeg" alt="propic" title="propic" style="max-width: 50px;"/></div>
+							<div class="pro_nt"><?php echo $bask['pro_name'];?></div>
+						</div>
+				          </td>
+				          <td width="150"><?php echo $bask['price'];?></td>
+				    
+				      </tbody>
+				  <?php } ?>
+				    </table>
+				</div>
+			</div>
+		<footer></footer>
+</body>
+</html>

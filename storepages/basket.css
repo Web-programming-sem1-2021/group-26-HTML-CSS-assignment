@@ -1,0 +1,27 @@
+/* basket */
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.list-table {
+	margin-top: 40px;
+	position: relative;
+	
+}
+.list-table thead th{
+	height:40px;
+	border-top:2px solid #09C;
+	border-bottom:1px solid #CCC;
+	/* font-weight: bold; */
+	font-size: 17px;
+}
+.list-table tbody td{
+	text-align:center;
+	padding:10px 0;
+	border-bottom:1px solid	 #CCC; height:20px;
+	font-size: 14px 
+}
+.bak_item {
+	
+	height: 170px;
+	margin-top: 20px;
+}

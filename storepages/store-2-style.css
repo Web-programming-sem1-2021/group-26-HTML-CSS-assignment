@@ -107,10 +107,34 @@ ol, li {
 .carousel-pic1{
     width: 100%;
     height: 100%;
-    background-image: url(./images/Jacket/jacket2.jpeg);
+    background-image: url(./images/Carousel/carousel1.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+}
+.carousel-pic2{
+  width: 100%;
+  height: 100%;
+  background-image: url(./images/Carousel/carousel2.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.carousel-pic3{
+  width: 100%;
+  height: 100%;
+  background-image: url(./images/Carousel/carousel3.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.carousel-pic4{
+  width: 100%;
+  height: 100%;
+  background-image: url(./images/Carousel/carousel4.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .carousel__slide:before {
   content: counter(item);

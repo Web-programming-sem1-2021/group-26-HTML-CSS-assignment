@@ -261,6 +261,12 @@ body {
       .dropdown {
         position: relative;
         display: inline-block;
+
+      }
+      .dropdown-2 {
+        position: relative;
+        display: inline-block;
+
       }
       
       .dropdown-content {
