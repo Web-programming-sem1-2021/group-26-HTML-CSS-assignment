@@ -159,7 +159,9 @@ img,
 
 img.store-image {
   flex: start;
-  width: 98%;
+  
+  max-width: 100%;
+
   height: 10rem;
 }
 p.thumbnail-description {

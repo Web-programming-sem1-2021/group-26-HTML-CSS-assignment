@@ -18,15 +18,13 @@
 
   <body>
     <!-- referenced from : "https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp" -->
-    <div class="nav" id="navbar">
+    <div class="nav" id="navbar" style="position: sticky; top: 0px">
       <a href="index.html" class="homeIcon">
         <h1 style="font-size: 50px">ICONIC 🐈</h1></a
       >
       <a class="nav-section" href="homepage/about-us.html">About Us</a>
       <a class="nav-section" href="homepage/fees.html">Fees</a>
-      <a class="nav-section" href="homepage/myAccount/my-account.html"
-        >Account</a
-      >
+      <a class="nav-section" href="homepage/myAccount/login.html">Account</a>
       <div class="dropdown">
         <button class="dropbtn">
           Browse
@@ -52,14 +50,132 @@
         >&#9776;</a
       >
     </div>
-    <br />
+
+    <section class="home">
+      <div class="slider">
+        <div
+          class="slide active"
+          style="background-image: url('images/homeImages/home-slider1.png')"
+        >
+          <div class="slide-container">
+            <div class="caption">
+              <h1>1. Winter Collection 2020</h1>
+              <p>Lorem ipsum dummy text goes here.</p>
+              <a href="">Shop Now</a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="slide"
+          style="background-image: url('images/homeImages/home-slider2.png')"
+        >
+          <div class="slide-container">
+            <div class="caption">
+              <h1>2. Winter Collection 2020</h1>
+              <p>Lorem ipsum dummy text goes here.</p>
+              <a href="">Shop Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="slide" style="background-image: url('images/slide-3.jpg')">
+          <div class="slide-container">
+            <div class="caption">
+              <h1>3. Winter Collection 2020</h1>
+              <p>Lorem ipsum dummy text goes here.</p>
+              <a href="">Shop Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- controls  -->
+      <div class="controls">
+        <div class="prev"></div>
+        <div class="next">></div>
+      </div>
+
+      <!-- indicators -->
+      <div class="indicator"></div>
+    </section>
     <main>
+<<<<<<< HEAD
      
-      <h1 class="store-title">Featured Store</h1>
+=======
+      <h1 class="store-title">New stores</h1>
       <div class="carousel">
         <div class="item">
           <img
-            src="./images/img1.jpg"
+            class="card-image"
+            src="/images/homeImages/fashion1.jpeg"
+            alt="Avatar"
+            style="width: 100%; padding: 0px"
+          />
+          <div class="container">
+            <h4><b>Clothes</b></h4>
+            <p>111</p>
+          </div>
+        </div>
+        <div class="item">
+          <img
+            class="card-image"
+            src="/images/homeImages/tech1.jpeg"
+            alt="Avatar"
+            style="width: 100%"
+          />
+          <div class="container">
+            <h4><b>Clothes</b></h4>
+            <p>fklanflkdsn</p>
+          </div>
+        </div>
+        <div class="item">
+          <img
+            class="card-image"
+            src="/images/img1.jpg"
+            alt="Avatar"
+            style="width: 100%"
+          />
+          <div class="container">
+            <h4><b>Clothes</b></h4>
+            <p>fklanflkdsn</p>
+          </div>
+        </div>
+        <div class="item">
+          <img
+            class="card-image"
+            src="/images/img1.jpg"
+            alt="Avatar"
+            style="width: 100%"
+          />
+          <div class="container">
+            <h4><b>Clothes</b></h4>
+            <p>fklanflkdsn</p>
+          </div>
+        </div>
+        <div class="item">
+          <img
+            class="card-image"
+            src="/images/img1.jpg"
+            alt="Avatar"
+            style="width: 100%"
+          />
+          <div class="container">
+            <h4><b>Clothes</b></h4>
+            <p>fklanflkdsn</p>
+          </div>
+        </div>
+        <div class="item">
+          <img src="/images/img1.jpg" alt="Avatar" style="width: 100%" />
+          <div class="container">
+            <h4><b>Clothes</b></h4>
+            <p>fklanflkdsn</p>
+          </div>
+        </div>
+      </div>
+      <h1 class="store-title">New Products</h1>
+      <div class="carousel">
+        <div class="item">
+          <img
+            src="/images/img1.jpg"
             alt="Avatar"
             style="width: 100%; padding: 0px"
           />
@@ -69,35 +185,85 @@
           </div>
         </div>
         <div class="item">
-          <img src="./images/img1.jpg" alt="Avatar" style="width: 100%" />
+          <img src="/images/img1.jpg" alt="Avatar" style="width: 100%" />
           <div class="container">
             <h4><b>Clothes</b></h4>
             <p>fklanflkdsn</p>
           </div>
         </div>
         <div class="item">
-          <img src="./images/img1.jpg" alt="Avatar" style="width: 100%" />
+          <img src="/images/img1.jpg" alt="Avatar" style="width: 100%" />
           <div class="container">
             <h4><b>Clothes</b></h4>
             <p>fklanflkdsn</p>
           </div>
         </div>
         <div class="item">
-          <img src="./images/img1.jpg" alt="Avatar" style="width: 100%" />
+          <img src="/images/img1.jpg" alt="Avatar" style="width: 100%" />
           <div class="container">
             <h4><b>Clothes</b></h4>
             <p>fklanflkdsn</p>
           </div>
         </div>
         <div class="item">
-          <img src="./images/img1.jpg" alt="Avatar" style="width: 100%" />
+          <img src="/images/img1.jpg" alt="Avatar" style="width: 100%" />
           <div class="container">
             <h4><b>Clothes</b></h4>
             <p>fklanflkdsn</p>
           </div>
         </div>
         <div class="item">
-          <img src="./images/img1.jpg" alt="Avatar" style="width: 100%" />
+          <img src="/images/img1.jpg" alt="Avatar" style="width: 100%" />
+          <div class="container">
+            <h4><b>Clothes</b></h4>
+            <p>fklanflkdsn</p>
+          </div>
+        </div>
+      </div>
+>>>>>>> main
+      <h1 class="store-title">Featured Store</h1>
+      <div class="carousel">
+        <div class="item">
+          <img
+            src="/images/img1.jpg"
+            alt="Avatar"
+            style="width: 100%; padding: 0px"
+          />
+          <div class="container">
+            <h4><b>Clothes</b></h4>
+            <p>fklanflkdsn</p>
+          </div>
+        </div>
+        <div class="item">
+          <img src="/images/img1.jpg" alt="Avatar" style="width: 100%" />
+          <div class="container">
+            <h4><b>Clothes</b></h4>
+            <p>fklanflkdsn</p>
+          </div>
+        </div>
+        <div class="item">
+          <img src="/images/img1.jpg" alt="Avatar" style="width: 100%" />
+          <div class="container">
+            <h4><b>Clothes</b></h4>
+            <p>fklanflkdsn</p>
+          </div>
+        </div>
+        <div class="item">
+          <img src="/images/img1.jpg" alt="Avatar" style="width: 100%" />
+          <div class="container">
+            <h4><b>Clothes</b></h4>
+            <p>fklanflkdsn</p>
+          </div>
+        </div>
+        <div class="item">
+          <img src="/images/img1.jpg" alt="Avatar" style="width: 100%" />
+          <div class="container">
+            <h4><b>Clothes</b></h4>
+            <p>fklanflkdsn</p>
+          </div>
+        </div>
+        <div class="item">
+          <img src="/images/img1.jpg" alt="Avatar" style="width: 100%" />
           <div class="container">
             <h4><b>Clothes</b></h4>
             <p>fklanflkdsn</p>
@@ -109,7 +275,7 @@
       <div class="carousel">
         <div class="item">
           <img
-            src="./images/img1.jpg"
+            src="/images/img1.jpg"
             alt="Avatar"
             style="width: 100%; padding: 0px"
           />
@@ -119,40 +285,62 @@
           </div>
         </div>
         <div class="item">
-          <img src="./images/img1.jpg" alt="Avatar" style="width: 100%" />
+          <img src="/images/img1.jpg" alt="Avatar" style="width: 100%" />
           <div class="container">
             <h4><b>Clothes</b></h4>
             <p>fklanflkdsn</p>
           </div>
         </div>
         <div class="item">
-          <img src="./images/img1.jpg" alt="Avatar" style="width: 100%" />
+          <img src="/images/img1.jpg" alt="Avatar" style="width: 100%" />
           <div class="container">
             <h4><b>Clothes</b></h4>
             <p>fklanflkdsn</p>
           </div>
         </div>
         <div class="item">
-          <img src="./images/img1.jpg" alt="Avatar" style="width: 100%" />
+          <img src="/images/img1.jpg" alt="Avatar" style="width: 100%" />
           <div class="container">
             <h4><b>Clothes</b></h4>
             <p>fklanflkdsn</p>
           </div>
         </div>
         <div class="item">
-          <img src="./images/img1.jpg" alt="Avatar" style="width: 100%" />
+          <img src="/images/img1.jpg" alt="Avatar" style="width: 100%" />
           <div class="container">
             <h4><b>Clothes</b></h4>
             <p>fklanflkdsn</p>
           </div>
         </div>
         <div class="item">
-          <img src="./images/img1.jpg" alt="Avatar" style="width: 100%" />
+          <img src="/images/img1.jpg" alt="Avatar" style="width: 100%" />
           <div class="container">
             <h4><b>Clothes</b></h4>
             <p>fklanflkdsn</p>
           </div>
         </div>
+      </div>
+      <br />
+      <div style="justify-content: space-around; margin: 10px auto 10px auto">
+        <a
+          href="#navbar"
+          style="
+            border-radius: 10px;
+            border: 3px black;
+            background-color: rgb(100, 150, 160);
+            appearance: button;
+            bottom: 20px;
+            left: 40px;
+            width: 100px;
+            height: 50px;
+            position: sticky;
+            display: table-cell;
+            vertical-align: middle;
+            margin: 0 auto;
+            padding: 0;
+          "
+          >Top</a
+        >
       </div>
     </main>
 
@@ -160,6 +348,7 @@
       <div class="footer">
         <div class="footer-content">
           <div class="footer-section">
+            <h3>Other Authorities</h3>
             <h3>
               <a href="/homepage/footer/copyright.html"> Copyright</a>
             </h3>
@@ -170,19 +359,30 @@
             <h3>Student contributors</h3>
             <ol>
               <li>Nguyen Thi Quynh Giang <b>[s3866617]</b></li>
+              <br />
+              <li>Joo Jeong-hyeon<b>[s3865746]</b></li>
+              <br />
+              <li>Vo Khai Minh<b>[s3879953]</b></li>
               <br>
-              <li>Joo Jeonghyeon <b>[s3865746]</b></li>
-              <br>
-              <li>Vo Khai Minh <b>[s3866617]</b></li>
-              <br>
-              <li>Ramanaharan Ramcharan <b>[sNumber]</b></li>
-
+              <li>Ramanaharan Ramcharan<b>[s3775271]</b></li>
             </ol>
           </div>
           <div class="footer-section">
-            <h3>Source Code</h3>
-            <a href="https://github.com/Web-programming-sem1-2021/group-26-HTML-CSS-assignment"><img src="../icons/github-character.svg"></img></a>
-              
+            <h3>Application Information</h3>
+            <a
+              href="https://github.com/Web-programming-sem1-2021/group-26-HTML-CSS-assignment"
+              ><img
+                class="footer-icon"
+                src="./icons/github-character.svg"
+              /> Source Code</a
+            >
+             <a
+              href=""
+              ><img
+                class="footer-icon"
+                src="./icons/footerIcons/globe.svg"
+              /> Website</a
+            >
           </div>
         </div>
       </div>
