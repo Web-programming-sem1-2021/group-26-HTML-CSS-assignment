@@ -39,13 +39,16 @@ a {
   overflow: hidden;
   background-color: var(--nav-color);
 }
-.nav .nav-section {
+.nav .nav-section,
+.dropdown {
   display: inline-block;
+  background-color: var(--nav-color);
   width: 10%;
   outline-offset: 0px;
   text-shadow: none;
   color: var(--nav-text-color);
   text-align: center;
+  justify-content: space-around;
   padding: 16px;
   text-decoration: none;
   margin: 0px auto 0px auto;
@@ -84,34 +87,36 @@ a {
 }
 .nav .nav-section:hover,
 .nav .nav-section:active,
-.dropdown:hover .dropbtn {
+.dropdown:hover .dropbtn,
+.dropdown-content a:hover {
   background-color: var(--nav-hover-color);
   color: white;
   letter-spacing: 5px;
 }
 
 .dropdown {
-  overflow: hidden;
-  display: inline-block;
-  background-color: var(--nav-color);
   position: relative;
-  justify-content: stretch;
+  width: 13%;
 }
 
 .dropdown .dropbtn {
-  display: inline;
+  float: inline-end;
+  position: relative;
+  display: flex;
   width: 10%;
   text-shadow: none;
   background-color: var(--nav-color);
   text-align: center;
   padding: 16px;
   text-decoration: none;
+  justify-content: space-evenly;
   font-size: 20px;
   transition: all 800ms cubic-bezier(0.18, 1, 0.23, 1);
 }
 
 .dropdown-content a {
   background-color: #ddd;
+  position: relative;
   color: black;
   z-index: 20;
 }
