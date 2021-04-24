@@ -39,13 +39,16 @@ a {
   overflow: hidden;
   background-color: var(--nav-color);
 }
-.nav .nav-section {
+.nav .nav-section,
+.dropdown {
   display: inline-block;
+  background-color: var(--nav-color);
   width: 10%;
   outline-offset: 0px;
   text-shadow: none;
   color: var(--nav-text-color);
   text-align: center;
+  justify-content: space-around;
   padding: 16px;
   text-decoration: none;
   margin: 0px auto 0px auto;
@@ -83,34 +86,39 @@ a {
   transition: all 800ms cubic-bezier(0.18, 1, 0.23, 1);
 }
 .nav .nav-section:hover,
-.nav .dropdown:hover,
 .nav .nav-section:active,
-.dropdown:hover .dropbtn {
+.dropdown:hover .dropbtn,
+.dropdown-content a:hover {
   background-color: var(--nav-hover-color);
   color: white;
   letter-spacing: 5px;
 }
+
 .dropdown {
-  overflow: hidden;
-  display: inline;
-  background-color: var(--nav-color);
+  position: relative;
+  width: 13%;
 }
 
 .dropdown .dropbtn {
-  display: inline-block;
+  float: inline-end;
+  position: relative;
+  display: flex;
   width: 10%;
   text-shadow: none;
   background-color: var(--nav-color);
   text-align: center;
   padding: 16px;
   text-decoration: none;
+  justify-content: space-evenly;
   font-size: 20px;
   transition: all 800ms cubic-bezier(0.18, 1, 0.23, 1);
 }
 
-.dropdown-content a:hover {
+.dropdown-content a {
   background-color: #ddd;
+  position: relative;
   color: black;
+  z-index: 20;
 }
 
 .dropdown-content {
@@ -118,8 +126,6 @@ a {
   position: relative;
   background-color: #f9f9f9;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
 }
 
 .dropdown-content a {
@@ -131,8 +137,9 @@ a {
   text-align: center;
 }
 
-.dropdown:hover .dropdown-content {
-  display: inline-table;
+.dropdown .dropdown-content {
+  display: grid;
+  z-index: 100;
 }
 
 @media screen and (max-width: 600px) {
@@ -170,8 +177,10 @@ a {
     display: block;
     width: auto;
   }
-  .nav.responsive .dropdown .dropdown-content {
+  .nav.responsive .dropdown .dropdown-content a {
     position: relative;
+    display: block;
+    width: 100%;
   }
   .nav.responsive .dropdown .dropbtn {
     display: block;
@@ -389,7 +398,8 @@ a {
     justify-content: space-between;
   }
   .footer-section,
-  .footer-section a, li{
+  .footer-section a,
+  li {
     width: 30%;
     display: grid;
     font-size: small;
