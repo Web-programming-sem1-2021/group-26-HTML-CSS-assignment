@@ -34,13 +34,20 @@ a {
   text-decoration: none;
   color: blueviolet;
 }
+
+details summary::-webkit-details-marker {
+  display: none;
+}
 /* navigation bar */
 .nav {
+  position: relative;
   overflow: hidden;
   background-color: var(--nav-color);
 }
 .nav .nav-section,
 .dropdown {
+  position: relative;
+  width: 13%;
   display: inline-block;
   background-color: var(--nav-color);
   width: 10%;
@@ -94,16 +101,15 @@ a {
   letter-spacing: 5px;
 }
 
-.dropdown {
-  position: relative;
-  width: 13%;
-}
-
 .dropdown .dropbtn {
+  overflow: hidden;
   float: inline-end;
   position: relative;
   display: flex;
-  width: 10%;
+  outline: none;
+  width: 100%;
+  position: relative;
+  border: none;
   text-shadow: none;
   background-color: var(--nav-color);
   text-align: center;
@@ -122,6 +128,7 @@ a {
 }
 
 .dropdown-content {
+  overflow: hidden;
   display: none;
   position: relative;
   background-color: #f9f9f9;

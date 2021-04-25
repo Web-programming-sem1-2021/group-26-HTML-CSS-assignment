@@ -11,15 +11,15 @@
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     />
-    <script src="../../jsFunctions.js" async></script>
-
+    <script src="../../jsFunctions.js" defer></script>
   </head>
 
   <body>
     <!-- referenced from : "https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp" -->
     <div class="nav" id="navbar">
       <a href="../index.html" class="homeIcon">
-        <img src="../icons/ICONIC MALL.svg"></img></a>
+        <img src="../icons/ICONIC MALL.svg"
+      /></a>
       <a class="nav-section" href="about-us.html">About Us</a>
       <a class="nav-section" href="fees.html">Fees</a>
       <a class="nav-section" href="./myAccount/login.html">Account</a>
@@ -50,11 +50,11 @@
     </div>
     <section class="contact">
       <div class="form-box">
-        <h2 style="text-align: center;">Register Account</h2>
-        
+        <h2 style="text-align: center">Register Account</h2>
+
         <div class="form-item">
           <label for="email-address">Email address:</label>
-          <input type="email" name="email-address" id="email-address" />
+          <input type="email" id="email-address" />
         </div>
         <div class="form-item">
           <label for="phone">phone number:</label>
@@ -62,7 +62,7 @@
         </div>
         <div class="form-item">
           <label for="password">Password:</label>
-          <input type="text" name="password" id="password" />
+          <input type="text" id="password" />
         </div>
         <div class="form-item">
           <label for="retype-password">Retype password:</label>
@@ -98,8 +98,7 @@
           <option value="country2">CU</option>
         </select>
         <br /><br />
-        
-       </body>
+
         <form>
           <div class="form-item">
             <p>Account types:</p>
@@ -145,17 +144,23 @@
             <h3>Application Information</h3>
             <a
               href="https://github.com/Web-programming-sem1-2021/group-26-HTML-CSS-assignment"
-              ><img class="footer-icon" src="../../icons/github-character.svg" />
+              ><img
+                class="footer-icon"
+                src="../../icons/github-character.svg"
+              />
               Source Code</a
             >
-            <a href="https://web-programming-sem1-2021.github.io/group-26-HTML-CSS-assignment/"
-              ><img class="footer-icon" src="../../icons/footerIcons/globe.svg" />
+            <a
+              href="https://web-programming-sem1-2021.github.io/group-26-HTML-CSS-assignment/"
+              ><img
+                class="footer-icon"
+                src="../../icons/footerIcons/globe.svg"
+              />
               Website</a
             >
           </div>
         </div>
       </div>
     </footer>
-
   </body>
 </html>
