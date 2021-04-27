@@ -10,21 +10,23 @@
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     />
+    <script src="../../jsFunctions.js" async></script>
   </head>
   <body>
     <!-- referenced from : "https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp" -->
     <div class="nav" id="navbar">
       <a href="../../index.html" class="homeIcon">
-        <img src="../../icons/ICONIC MALL.svg"></img></a>
+        <img src="../../icons/ICONIC MALL.svg"
+      /></a>
       <a class="nav-section" href="../about-us.html">About Us</a>
       <a class="nav-section" href="../fees.html">Fees</a>
       <a class="nav-section" href="../myAccount/login.html">Account</a>
-      <div class="dropdown">
-        <button class="dropbtn">
-          Browse
-          <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-content">
+
+      <details class="dropdown">
+        <summary class="dropbtn">
+          Browse<i class="fa fa-caret-down"></i>
+        </summary>
+        <div onclick="" class="dropdown-content">
           <a href="../browse/browse-stores-by-name.html"
             >Browse Store <br />
             by name</a
@@ -33,7 +35,7 @@
             >Browse Store <br />by Categories</a
           >
         </div>
-      </div>
+      </details>
       <a class="nav-section" href="../faqs.html">FAQs</a>
       <a class="nav-section" href="../contact.html">Contact</a>
       <a
@@ -187,13 +189,46 @@
           </section>
         </section>
       </section>
-
     </aside>
     <div class="store-cards">
       <div class="store-card">
-        <a href="../../storepages/store-1.html"><h2>Store ne</h2></a>
+        <a href="../../storepages/store-2.html"><h2>Store ne</h2></a>
+        <p>
+          <a href="../../storepages/store-2.html">
+            <img
+              class="store-image"
+              src="../../storepages/images/Jacket/jacket5.jpg"
+              alt="Picture of Helen"
+            />
+          </a>
+        </p>
+        <p class="thumbnail-description">
+          Helen has fourth grade piano but in secret prefers to play electronic
+          keyboards. She loves synthesizer sounds and arguing with Jean over who
+          should play the basslines.
+        </p>
+      </div>
+      <div class="store-card">
+        <a href="../../storepages/store-1.html"><h2>Store name</h2></a>
         <p>
           <a href="../../storepages/store-1.html">
+            <img
+              class="store-image"
+              src="../../storepages/images/laptop.png"
+              alt="Picture of Helen"
+            />
+          </a>
+        </p>
+        <p class="thumbnail-description">
+          Helen has fourth grade piano but in secret prefers to play electronic
+          keyboards. She loves synthesizer sounds and arguing with Jean over who
+          should play the basslines.
+        </p>
+      </div>
+      <div class="store-card">
+        <a href="../../storepages/store-2.html"><h2>Store name</h2></a>
+        <p>
+          <a href="../../storepages/store-2.html">
             <img
               class="store-image"
               src="../../storepages/images/Jacket/jacket5.jpg"
@@ -230,23 +265,6 @@
           <a href="../../storepages/store-1.html">
             <img
               class="store-image"
-              src="../../storepages/images/Jacket/jacket5.jpg"
-              alt="Picture of Helen"
-            />
-          </a>
-        </p>
-        <p class="thumbnail-description">
-          Helen has fourth grade piano but in secret prefers to play electronic
-          keyboards. She loves synthesizer sounds and arguing with Jean over who
-          should play the basslines.
-        </p>
-      </div>
-      <div class="store-card">
-        <a href="../../storepages/store-1.html"><h2>Store name</h2></a>
-        <p>
-          <a href="../../storepages/store-1.html">
-            <img
-              class="store-image"
               src="../../storepages/images/laptop.png"
               alt="Picture of Helen"
             />
@@ -259,26 +277,9 @@
         </p>
       </div>
       <div class="store-card">
-        <a href="../../storepages/store-1.html"><h2>Store name</h2></a>
+        <a href="../../storepages/store-2.html"><h2>Store name</h2></a>
         <p>
-          <a href="../../storepages/store-1.html">
-            <img
-              class="store-image"
-              src="../../storepages/images/laptop.png"
-              alt="Picture of Helen"
-            />
-          </a>
-        </p>
-        <p class="thumbnail-description">
-          Helen has fourth grade piano but in secret prefers to play electronic
-          keyboards. She loves synthesizer sounds and arguing with Jean over who
-          should play the basslines.
-        </p>
-      </div>
-      <div class="store-card">
-        <a href="../../storepages/store-1.html"><h2>Store name</h2></a>
-        <p>
-          <a href="../../storepages/store-1.html">
+          <a href="../../storepages/store-2.html">
             <img
               class="store-image"
               src="../../storepages/images/Jacket/jacket5.jpg"
@@ -310,9 +311,9 @@
         </p>
       </div>
       <div class="store-card">
-        <a href="../../storepages/store-1.html"><h2>Store name</h2></a>
+        <a href="../../storepages/store-2.html"><h2>Store name</h2></a>
         <p>
-          <a href="../../storepages/store-1.html">
+          <a href="../../storepages/store-2.html">
             <img
               class="store-image"
               src="../../storepages/images/Jacket/jacket5.jpg"
@@ -327,9 +328,9 @@
         </p>
       </div>
       <div class="store-card">
-        <a href="../../storepages/store-1.html"><h2>Store name</h2></a>
+        <a href="../../storepages/store-2.html"><h2>Store name</h2></a>
         <p>
-          <a href="../../storepages/store-1.html">
+          <a href="../../storepages/store-2.html">
             <img
               class="store-image"
               src="../../storepages/images/Jacket/jacket5.jpg"
@@ -361,9 +362,9 @@
         </p>
       </div>
       <div class="store-card">
-        <a href="../../storepages/store-1.html"><h2>Store name</h2></a>
+        <a href="../../storepages/store-2.html"><h2>Store name</h2></a>
         <p>
-          <a href="../../storepages/store-1.html">
+          <a href="../../storepages/store-2.html">
             <img
               class="store-image"
               src="../../storepages/images/Jacket/jacket5.jpg"
@@ -423,18 +424,23 @@
             <h3>Application Information</h3>
             <a
               href="https://github.com/Web-programming-sem1-2021/group-26-HTML-CSS-assignment"
-              ><img class="footer-icon" src="../../icons/github-character.svg" />
+              ><img
+                class="footer-icon"
+                src="../../icons/github-character.svg"
+              />
               Source Code</a
             >
-            <a href=""
-              ><img class="footer-icon" src="../../icons/footerIcons/globe.svg" />
+            <a
+              href="https://web-programming-sem1-2021.github.io/group-26-HTML-CSS-assignment/"
+              ><img
+                class="footer-icon"
+                src="../../icons/footerIcons/globe.svg"
+              />
               Website</a
             >
           </div>
         </div>
       </div>
     </footer>
-
-    <script src="../../jsFunctions.js"></script>
   </body>
 </html>

@@ -20,8 +20,11 @@ img.small2 {
   margin-left: 24px;
 }
 
-h2{
+h2 {
   font-size: 30px;
+}
+.homeIcon {
+  border: none;
 }
 section,
 img {
@@ -50,7 +53,6 @@ body {
 }
 
 /* Mixins */
-
 
 .transition-animation {
   -webkit-transition: all 0.5s;
@@ -90,7 +92,7 @@ ul li {
   height: 50px;
   border-radius: 50%;
   font-size: 24px;
-  color:--white-color;
+  color: --white-color;
   line-height: 52px;
   text-align: center;
   background-color: --main-color;
@@ -113,10 +115,9 @@ ul li {
   font-size: 30px;
   cursor: pointer;
   color: #17a589;
-  margin: auto 12px auto 12px; 
+  margin: auto 12px auto 12px;
 }
 
-  
 /* Hover effect */
 /* .icon-effect .icon {
   .transition-animation;

@@ -4,42 +4,41 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./../style.css" />
-    <link rel="stylesheet" href="../style/about-us.css"/>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"/>
+    <link rel="stylesheet" href="../style/about-us.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    />
     <title>About Us</title>
+    <script src="../jsFunctions.js"></script>
   </head>
-  
+
   <body>
     <!-- referenced from : "https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp" -->
-    <div class="nav" id="navbar" >
-      <a href="../index.html" class="homeIcon">
-        <img src="../icons/ICONIC MALL.svg"></a
-      >
+    <div class="nav" id="navbar">
+      <a style="border: none" href="../index.html" class="homeIcon">
+        <img src="../icons/ICONIC MALL.svg"
+      /></a>
       <a class="nav-section" href="./about-us.html">About Us</a>
       <a class="nav-section" href="./fees.html">Fees</a>
       <a class="nav-section" href="./myAccount/login.html">Account</a>
-      <div class="dropdown">
-        <button class="dropbtn">
-          Browse
-          <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-content">
-          <a href="../homepage/browse/browse-stores-by-name.html"
+
+      <details class="dropdown">
+        <summary class="dropbtn">
+          Browse<i class="fa fa-caret-down"></i>
+        </summary>
+        <div onclick="" class="dropdown-content">
+          <a href="./browse/browse-stores-by-name.html"
             >Browse Store <br />
             by name</a
           >
-          <a href="../homepage/browse/browse-stores-by-categories.html"
+          <a href="./browse/browse-stores-by-categories.html"
             >Browse Store <br />by Categories</a
           >
         </div>
-      </div>
-      <a class="nav-section" href="./about-us.html">FAQs</a>
-      <a
-        class="nav-section"
-        href="./contact.html
-      "
-        >Contact</a
-      >
+      </details>
+      <a class="nav-section" href="./faqs.html">FAQs</a>
+      <a class="nav-section" href="./contact.html">Contact</a>
       <a
         href="javascript:void(0);"
         style="font-size: 15px"
@@ -48,6 +47,7 @@
         >&#9776;</a
       >
     </div>
+
     <section>
       <h2 style="position: relative">Nguyễn Thị Quỳnh Giang</h2>
       <p>
@@ -57,22 +57,27 @@
           alt="Picture of Giang"
         />
       </p>
-      <p>
-       <h3>Major: Information Technology</h3>
-       <b>Date of birth:</b> May 18th, 2020 <br>
-       <b>Personality type:</b> INTP <br>
-       <b>Interests:</b>  <br>
-      </p>
+      <div>
+        <h3>Major: Information Technology</h3>
+        <b>Date of birth:</b> May 18th, 2020 <br />
+        <b>Personality type:</b> INTP <br />
+        <b>Hobbies:</b>Technology, cats and dogs petting, front-end coding<br />
+      </div>
+      <br />
       <div class="social">
         <div>
-          <a href="https://www.facebook.com/nguyenthi.quynhgiang.52"><li><i class="fab fa-facebook"></i></li></a>
-          <a href="https://github.com/GiangNguyennhttps://github.com/GiangNguyenn"><li><i class="fab fa-github"></i></li></a>
-          <a href=""><li><i class="fas fa-link"></i></li></a>
+          <a href="https://www.facebook.com/nguyenthi.quynhgiang.52"
+            ><li><i class="fab fa-facebook"></i></li
+          ></a>
+          <a
+            href="https://github.com/GiangNguyennhttps://github.com/GiangNguyenn"
+            ><li><i class="fab fa-github"></i></li
+          ></a>
         </div>
-      </div> 
+      </div>
     </section>
     <section>
-      <h2 style="display: block; position: relative;">Joo Jeong-hyeon</h2>
+      <h2 style="display: block; position: relative">Joo Jeong-hyeon</h2>
       <p>
         <img
           class="small2"
@@ -80,23 +85,28 @@
           alt="Picture of Jeong-hyeon"
         />
       </p>
-        <p>Major: Information Technology</p>
-        <p>Full Name: Joo Jeong-hyeon</p>
-        <p>Nationality: Korean </p>>
-        <p>Date of Birth: 27/04/1999</p>
-        <p>Hobbies: Singing, Video games</p>
-  
+      <div>
+        <h3>Major: Information Technology</h3>
+        <b>Date of birth:</b> April 27th, 1999 <br />
+        <b>Nationality</b>: Korea<br />
+        <b>Personality type:</b> ISFP <br />
+        <b>Interests</b> : Playing the Ukulele and Piano. Mobile application
+        development as well. <br />
+      </div>
+      <br />
       <div class="social">
         <div>
-          <a href="https://www.facebook.com/profile.php?id=100024240333444"><li><i class="fab fa-facebook"></i></li></a>
-          <a href="https://github.com/JooJeonghyeon99"><li><i class="fab fa-github"></i></li></a>
-
-          <a href=""><li><i class="fas fa-link"></i></li></a>
+          <a href="https://www.facebook.com/profile.php?id=100024240333444"
+            ><li><i class="fab fa-facebook"></i></li
+          ></a>
+          <a href="https://github.com/JooJeonghyeon99"
+            ><li><i class="fab fa-github"></i></li
+          ></a>
         </div>
       </div>
     </section>
     <section>
-      <h2 style="display: block; position: relative;">Ramcharan Ramacharan</h2>
+      <h2 style="display: block; position: relative">Ramcharan Ramacharan</h2>
       <p>
         <img
           class="small1"
@@ -109,51 +119,48 @@
       <p>Nationality: Sri Lankan</p>
       <p>Date of Birth: 1998/10/10</p>
       <p>Hobbies: Video Games, Swimming</p>
+      <br />
 
       <div class="social">
-        <div>
-          <a href="https://www.facebook.com/profile.php?id=100038263066152"><li><i class="fab fa-facebook"></i></li></a>
-          <a href="https://github.com/ramcharan10"><li><i class="fab fa-github"></i></li></a>
-          <a href=""><li><i class="fas fa-link"></i></li></a>
-        </div>
+        <a href="https://www.facebook.com/profile.php?id=100038263066152"
+          ><li><i class="fab fa-facebook"></i></li
+        ></a>
+        <a href="https://github.com/ramcharan10"
+          ><li><i class="fab fa-github"></i></li
+        ></a>
       </div>
     </section>
     <section>
-      <h2 style="display: block; position: relative;">Võ Khải Minh</h2>
+      <h2 style="display: block; position: relative">Võ Khải Minh</h2>
       <p>
         <img
           class="small2"
           src="../images/team/Minh.png"
-          alt="Picture of Jean"
+          alt="Picture of Minh"
         />
       </p>
 
-      <br>
-        <h3>Major: Information technology</h3>
-        <b>Hơme town:</b>Quãng Ngãi City<br>
-        <b>date of birth</b>November 8th, 2002<br>
-        <b>hobbies:</b>read books, read wikipidia, listen to <br>
-        <b>background:</b> studied in Lê Khiết Specialized and gifted highschool, curently studing in RMIT uni and major in Information Technology.
-      
+      <br />
+      <h3>Major: Information technology</h3>
+      <p><b>Hometown:</b>Quãng Ngãi City</p>
+      <p><b>Date of birth:</b>November 8th, 2002</p>
+      <p><b>Hobbies:</b>read books, read wikipidia, listen to</p>
+      <p>
+        <b>Background:</b> studied in Lê Khiết Specialized and gifted
+        highschool, curently studing in RMIT uni and major in Information
+        Technology.
+      </p>
+
       <div class="social">
-        <div>
-          <a href="https://www.facebook.com/vokhaiminhheo/"><li><i class="fab fa-facebook"></i></li></a>
-          <a href="https://github.com/Minh0811"><li><i class="fab fa-github"></i></li></a>
-          <a href=""><li><i class="fas fa-link"></i></li></a>
-        </div>
+        <a href="https://www.facebook.com/vokhaiminhheo/"
+          ><li><i class="fab fa-facebook"></i></li
+        ></a>
+        <a href="https://github.com/Minh0811"
+          ><li><i class="fab fa-github"></i></li
+        ></a>
       </div>
     </section>
-    <ul class="icon-effect icon-effect-1a">
-      <li>
-        <a href="#" class="icon"><i class="fa fa-facebook"></i></a>
-      </li>
-      <li>
-        <a href="#" class="icon"><i class="fa fa-twitter"></i></a>
-      </li>
-      <li>
-        <a href="#" class="icon"><i class="fa fa-github"></i></a>
-      </li>
-    </ul>
+
     <footer>
       <div class="footer">
         <div class="footer-content">
@@ -162,8 +169,12 @@
             <h3>
               <a href="../homepage/footer/copyright.html"> Copyright</a>
             </h3>
-            <h3><a href="../homepage/footer/privacy.html">Privacy Policy</a></h3>
-            <h3><a href="../homepage/footer/terms.html">Terms of Service</a></h3>
+            <h3>
+              <a href="../homepage/footer/privacy.html">Privacy Policy</a>
+            </h3>
+            <h3>
+              <a href="../homepage/footer/terms.html">Terms of Service</a>
+            </h3>
           </div>
           <div class="footer-section">
             <h3>Student contributors</h3>
@@ -184,7 +195,8 @@
               ><img class="footer-icon" src="../icons/github-character.svg" />
               Source Code</a
             >
-            <a href=""
+            <a
+              href="https://web-programming-sem1-2021.github.io/group-26-HTML-CSS-assignment/"
               ><img class="footer-icon" src="../icons/footerIcons/globe.svg" />
               Website</a
             >
@@ -193,8 +205,5 @@
         </div>
       </div>
     </footer>
-
-    <script src="../jsFunctions.js">
-    </script>
   </body>
 </html>

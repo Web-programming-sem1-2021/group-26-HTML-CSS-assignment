@@ -10,33 +10,34 @@
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     />
+    <script src="../jsFunctions.js"></script>
   </head>
   <body>
     <!-- referenced from : "https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp" -->
     <div class="nav" id="navbar">
-      <a href="../index.html" class="homeIcon">
-        <img src="../icons/ICONIC MALL.svg"></img></a
-      >
-      <a class="nav-section" href="about-us.html">About Us</a>
-      <a class="nav-section" href="fees.html">Fees</a>
+      <a href="./index.html" class="homeIcon">
+        <img src="../icons/ICONIC MALL.svg"
+      /></a>
+      <a class="nav-section" href="./about-us.html">About Us</a>
+      <a class="nav-section" href="./fees.html">Fees</a>
       <a class="nav-section" href="./myAccount/login.html">Account</a>
-      <div class="dropdown">
-        <button class="dropbtn">
-          Browse
-          <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-content">
-          <a href="../homepage/browse/browse-stores-by-name.html"
+
+      <details class="dropdown">
+        <summary class="dropbtn">
+          Browse<i class="fa fa-caret-down"></i>
+        </summary>
+        <div onclick="" class="dropdown-content">
+          <a href="./browse/browse-stores-by-name.html"
             >Browse Store <br />
             by name</a
           >
-          <a href="../homepage/browse/browse-stores-by-categories.html"
+          <a href="./browse/browse-stores-by-categories.html"
             >Browse Store <br />by Categories</a
           >
         </div>
-      </div>
-      <a class="nav-section" href="faqs.html">FAQs</a>
-      <a class="nav-section" href="contact.html">Contact</a>
+      </details>
+      <a class="nav-section" href="./faqs.html">FAQs</a>
+      <a class="nav-section" href="./contact.html">Contact</a>
       <a
         href="javascript:void(0);"
         style="font-size: 15px"
@@ -46,12 +47,14 @@
       >
     </div>
     <div class="container">
-      <h1 style="font-size: 5em; color: palevioletred; padding-top:24px">Store owners</h1>
+      <h1 style="font-size: 5em; color: palevioletred; padding-top: 24px">
+        Store owners
+      </h1>
       <table>
         <thead>
           <tr>
             <th>Membership</th>
-            <th>Renting's fees </th>
+            <th>Renting's fees</th>
             <th>Commission</th>
             <th>Duration</th>
           </tr>
@@ -84,7 +87,9 @@
           </tr>
         </tbody>
       </table>
-      <h1 style="font-size: 5em; color: palevioletred; padding-top:24px">Shoppers</h1>
+      <h1 style="font-size: 5em; color: palevioletred; padding-top: 24px">
+        Shoppers
+      </h1>
       <table>
         <thead>
           <tr>
@@ -153,7 +158,8 @@
               ><img class="footer-icon" src="../icons/github-character.svg" />
               Source Code</a
             >
-            <a href=""
+            <a
+              href="https://web-programming-sem1-2021.github.io/group-26-HTML-CSS-assignment/"
               ><img class="footer-icon" src="../icons/footerIcons/globe.svg" />
               Website</a
             >
@@ -161,9 +167,5 @@
         </div>
       </div>
     </footer>
-
-    <script src= "../jsFunctions.js">
-     
-    </script>
   </body>
 </html>
