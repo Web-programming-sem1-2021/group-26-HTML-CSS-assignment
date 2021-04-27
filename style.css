@@ -43,15 +43,16 @@ details summary::-webkit-details-marker {
 .nav {
   position: relative;
   overflow: hidden;
+  width: 100%;
+  justify-content: ;
   background-color: var(--nav-color);
 }
 .nav .nav-section,
 .dropdown {
   position: relative;
-  width: 13%;
-  display: inline-block;
+  width: 16%;
+  display: inline-flex;
   background-color: var(--nav-color);
-  width: 10%;
   outline-offset: 0px;
   text-shadow: none;
   color: var(--nav-text-color);
@@ -75,9 +76,10 @@ details summary::-webkit-details-marker {
   border: none;
 }
 
-.nav img {
+.nav a.homeIcon {
   display: inline-block;
   text-align: center;
+  width: 100%;
   padding: 0px;
   height: 2cm;
   object-fit: cover;
@@ -359,6 +361,7 @@ details summary::-webkit-details-marker {
   background-color: #fff;
   border-radius: 20px;
   margin: 20px auto 10px auto;
+  z-index: -1 !important;
 }
 .footer-content {
   height: 300px;
