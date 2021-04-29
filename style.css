@@ -110,6 +110,18 @@ details summary::-webkit-details-marker {
 .dropdown-content a:hover {
   background-color: var(--nav-hover-color);
   color: white;
+  transition-delay: 0.5s;
+}
+.dropdown-content a:before,
+.dropdown-content a:after {
+  content: "";
+  position: absolute;
+  transition: inherit;
+  z-index: -1;
+}
+
+.dropdown-content a:hover:before {
+  transition-delay: 0s;
 }
 
 .dropdown .dropbtn {
@@ -364,7 +376,7 @@ details summary::-webkit-details-marker {
   background-color: #fff;
   border-radius: 20px;
   margin: 20px auto 10px auto;
-  z-index: -1 !important;
+  z-index: 0;
 }
 .footer-content {
   height: 300px;
