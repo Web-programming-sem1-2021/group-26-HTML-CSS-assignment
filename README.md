@@ -5,13 +5,13 @@ This is the root repository for Assignment 1 of Web Programming 1 course(COSC243
 
 ###### Website: https://web-programming-sem1-2021.github.io/group-26-HTML-CSS-assignment
 
-#Students:
+#*Students*:
 1. Nguyen Thi Quynh Giang - s3866617
 2. Joo Jeong-hyeon - s3865746
 3. Vo Khai Min - s3879953
 4. Ramanaharan Ramcharan - s3775271
 
-#Project Tree:
+#*Project Tree:*
 
 ```
 group-26-HTML-CSS-assignment
