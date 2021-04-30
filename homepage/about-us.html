@@ -5,80 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./../style.css" />
     <link rel="stylesheet" href="../style/about-us.css" />
+
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     />
     <title>About Us</title>
     <script src="../script/modal.js" defer></script>
-    <style>
-      *,
-      *::after,
-      *::before {
-        box-sizing: border-box;
-      }
-
-      .modal {
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%) scale(0);
-        transition: 200ms ease-in-out;
-        border: 1px solid black;
-        border-radius: 10px;
-        z-index: 20;
-        background-color: white;
-        width: 500px;
-        max-width: 80%;
-      }
-
-      .modal.active {
-        transform: translate(-50%, -50%) scale(1);
-      }
-
-      .modal-header {
-        padding: 10px 15px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        border-bottom: 1px solid black;
-      }
-
-      .modal-header .title {
-        font-size: 1.25rem;
-        font-weight: bold;
-      }
-
-      .modal-header .close-button {
-        cursor: pointer;
-        border: none;
-        outline: none;
-        background: none;
-        font-size: 1.25rem;
-        font-weight: bold;
-      }
-
-      .modal-body {
-        padding: 10px 15px;
-      }
-
-      #overlay {
-        position: fixed;
-        opacity: 0;
-        transition: 200ms ease-in-out;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-color: rgba(0, 0, 0, 0.5);
-        pointer-events: none;
-      }
-
-      #overlay.active {
-        opacity: 1;
-        pointer-events: all;
-      }
-    </style>
+    <style></style>
     <script src="../jsFunctions.js"></script>
   </head>
 
@@ -119,7 +57,7 @@
 
     <section>
       <h2 style="position: relative">Nguyễn Thị Quỳnh Giang</h2>
-      <p data-modal-target="#modal">
+      <p class="modal-open" data-modal="modal-giang">
         <img
           class="small1"
           src="../images/team/Giang.jpg"
@@ -127,7 +65,6 @@
         />
       </p>
       <div>
-        
         <h3>Major: Information Technology</h3>
         <b>Date of birth:</b> May 18th, 2020 <br />
         <b>Personality type:</b> INTP <br />
@@ -148,7 +85,7 @@
     </section>
     <section>
       <h2 style="display: block; position: relative">Joo Jeong-hyeon</h2>
-      <p data-modal-target="#modal">
+      <p class="modal-open" data-modal="modal-joo">
         <img
           class="small2"
           src="../images/team/Jeong-hyeon.png"
@@ -177,7 +114,7 @@
     </section>
     <section>
       <h2 style="display: block; position: relative">Ramcharan Ramacharan</h2>
-      <p data-modal-target="#modal">
+      <p class="modal-open" data-modal="modal-ramcharan">
         <img
           class="small1"
           src="../images/team/Ram.jpg"
@@ -202,7 +139,7 @@
     </section>
     <section>
       <h2 style="display: block; position: relative">Võ Khải Minh</h2>
-      <p data-modal-target="#modal">
+      <p class="modal-open" data-modal="modal-minh">
         <img
           class="small2"
           src="../images/team/Minh.png"
@@ -231,21 +168,84 @@
       </div>
     </section>
 
-    <div class="modal" id="modal">
-      <div class="modal-header">
-        <div class="title">Example Modal</div>
-        <button data-close-button class="close-button">&times;</button>
+    <div class="modal" id="modal-giang">
+      <div class="modal-content">
+        <div class="modal-header">
+          Giang
+          <button class="icon modal-close">
+            <i class="material-icons">close</i>
+          </button>
+        </div>
+        <span
+          style="
+            display: block;
+            border: 1px solid rgb(0, 107, 139);
+            margin: auto 5px auto 5px;
+          "
+        >
+        </span>
+        <div class="modal-body">Giang</div>
+        <div class="modal-footer">Giang</div>
       </div>
-      <div class="modal-body">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quod alias
-        ut illo doloremque eum ipsum obcaecati distinctio debitis reiciendis
-        quae quia soluta totam doloribus quos nesciunt necessitatibus,
-        consectetur quisquam accusamus ex, dolorum, dicta vel? Nostrum
-        voluptatem totam, molestiae rem at ad autem dolor ex aperiam. Amet
-        assumenda eos architecto, dolor placeat deserunt voluptatibus tenetur
-        sint officiis perferendis atque! Voluptatem maxime eius eum dolorem
-        dolor exercitationem quis iusto totam! Repudiandae nobis nesciunt sequi
-        iure! Eligendi, eius libero. Ex, repellat sapiente!
+    </div>
+    <div class="modal" id="modal-joo">
+      <div class="modal-content">
+        <div class="modal-header">
+          Joo
+          <button class="icon modal-close">
+            <i class="material-icons">close</i>
+          </button>
+        </div>
+        <span
+          style="
+            display: block;
+            border: 1px solid rgb(0, 107, 139);
+            margin: auto 5px auto 5px;
+          "
+        >
+        </span>
+        <div class="modal-body">Joo</div>
+        <div class="modal-footer">Joo</div>
+      </div>
+    </div>
+    <div class="modal" id="modal-ramcharan">
+      <div class="modal-content">
+        <div class="modal-header">
+          ramcharan
+          <button class="icon modal-close">
+            <i class="material-icons">close</i>
+          </button>
+        </div>
+        <span
+          style="
+            display: block;
+            border: 1px solid rgb(0, 107, 139);
+            margin: auto 5px auto 5px;
+          "
+        >
+        </span>
+        <div class="modal-body">ramcharan</div>
+        <div class="modal-footer">ramcharan</div>
+      </div>
+    </div>
+    <div class="modal" id="modal-minh">
+      <div class="modal-content">
+        <div class="modal-header">
+          minh
+          <button class="icon modal-close">
+            <i class="material-icons">close</i>
+          </button>
+        </div>
+        <span
+          style="
+            display: block;
+            border: 1px solid rgb(0, 107, 139);
+            margin: auto 5px auto 5px;
+          "
+        >
+        </span>
+        <div class="modal-body">minh</div>
+        <div class="modal-footer">minhy</div>
       </div>
     </div>
     <div id="overlay"></div>
