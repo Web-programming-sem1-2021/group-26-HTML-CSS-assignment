@@ -46,8 +46,6 @@ details summary::-webkit-details-marker {
   width: 100%;
   justify-content: space-between;
   background-color: var(--nav-color);
-  display: flex;
-  
 }
 .nav .nav-section,
 .dropdown {
@@ -66,11 +64,9 @@ details summary::-webkit-details-marker {
   font-size: 20px;
   clear: both;
   transition: all 800ms cubic-bezier(0.18, 1, 0.23, 1);
-  
 }
 .nav a.homeIcon img {
   text-decoration: none !important;
-  margin: none !important;
   display: inline-block;
   color: var(--nav-text-color);
   text-align: center;
@@ -79,8 +75,6 @@ details summary::-webkit-details-marker {
   padding: none;
   margin: none;
   border: none;
-  display: inline-block;
-  height: inherit;
 }
 
 .nav a.homeIcon {
@@ -92,7 +86,6 @@ details summary::-webkit-details-marker {
   object-fit: cover;
   background-size: cover;
 }
-
 
 .nav .icon {
   display: none;

@@ -11,8 +11,25 @@
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     />
-    <script src="../script/textValidation.js"></script>
+    <script src="../script/textValidation.js" async></script>
     <script src="../../jsFunctions.js" defer></script>
+    <style>
+      #notify {
+        margin-top: 5px;
+        padding: 10px;
+        font-size: 12px;
+        width: 100%;
+        color: #fff;
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+      }
+      #notify.error {
+        background-color: #dd2c00;
+      }
+    </style>
   </head>
 
   <body>
@@ -61,19 +78,38 @@
         </select>
         <br /><br />
 
-        <form action="/homepage/contact.html" method="GET">
+        <form>
           <div id="error">
             <div class="form-item">
               <label for="name">Your name:</label>
-              <input id="name" name="name" type="text" required pattern="[a-z]{3}"/>
+              <input
+                placeholder="Enter your name"
+                id="name"
+                name="name"
+                type="text"
+                required
+                pattern="[A-Za-z].{3,}"
+              />
             </div>
             <div class="form-item">
-              <label for="email">Your email:</label>
-              <input type="email" name="email" id="email" />
+              <label for="email">Your e-mail:</label>
+              <input
+                placeholder="Enter your e-mail"
+                type="email"
+                name="email"
+                id="email"
+              />
             </div>
             <div class="form-item">
-              <label for="phone">phone number:</label>
-              <input type="tel" name="phone" id="phone" />
+              <label for="phone">Phone number:</label>
+              <input
+                placeholder="Enter your phone number"
+                type="tel"
+                name="phone"
+                id="phone"
+                pattern="[0-9]{0,12}"
+                required
+              />
             </div>
             <label for="Contact-method">Preferred contact method:</label>
             <select name="reason" id="reason">
@@ -89,6 +125,7 @@
                     <input type="checkbox" id="day1" />
                     <label for="day1">Monday</label>
                   </div>
+                  <div id="notify"></div>
                   <div class="form-group">
                     <input type="checkbox" id="day2" />
                     <label for="day2">Tuesday</label>
@@ -127,7 +164,9 @@
               <div class="form-item"></div>
               <div class="form-item">
                 <button class="button button1">clear</button>
-                <button type="submit" id="submit" class="button button2" id='submitButton' >send</button>
+                <button type="submit" class="button button2" id="submitButton">
+                  send
+                </button>
               </div>
             </form>
           </div>
