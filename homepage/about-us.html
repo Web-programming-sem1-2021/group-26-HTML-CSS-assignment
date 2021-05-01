@@ -5,11 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./../style.css" />
     <link rel="stylesheet" href="../style/about-us.css" />
+
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     />
     <title>About Us</title>
+    <script src="../script/modal.js" defer></script>
+    <style></style>
     <script src="../jsFunctions.js"></script>
   </head>
 
@@ -50,7 +57,7 @@
 
     <section>
       <h2 style="position: relative">Nguyễn Thị Quỳnh Giang</h2>
-      <p>
+      <p class="modal-open" data-modal="modal-giang">
         <img
           class="small1"
           src="../images/team/Giang.jpg"
@@ -78,7 +85,7 @@
     </section>
     <section>
       <h2 style="display: block; position: relative">Joo Jeong-hyeon</h2>
-      <p>
+      <p class="modal-open" data-modal="modal-joo">
         <img
           class="small2"
           src="../images/team/Jeong-hyeon.png"
@@ -107,7 +114,7 @@
     </section>
     <section>
       <h2 style="display: block; position: relative">Ramcharan Ramacharan</h2>
-      <p>
+      <p class="modal-open" data-modal="modal-ramcharan">
         <img
           class="small1"
           src="../images/team/Ram.jpg"
@@ -132,7 +139,7 @@
     </section>
     <section>
       <h2 style="display: block; position: relative">Võ Khải Minh</h2>
-      <p>
+      <p class="modal-open" data-modal="modal-minh">
         <img
           class="small2"
           src="../images/team/Minh.png"
@@ -160,6 +167,88 @@
         ></a>
       </div>
     </section>
+
+    <div class="modal" id="modal-giang">
+      <div class="modal-content">
+        <div class="modal-header">
+          Giang
+          <button class="icon modal-close">
+            <i class="material-icons">close</i>
+          </button>
+        </div>
+        <span
+          style="
+            display: block;
+            border: 1px solid rgb(0, 107, 139);
+            margin: auto 5px auto 5px;
+          "
+        >
+        </span>
+        <div class="modal-body">Giang</div>
+        <div class="modal-footer">Giang</div>
+      </div>
+    </div>
+    <div class="modal" id="modal-joo">
+      <div class="modal-content">
+        <div class="modal-header">
+          Joo
+          <button class="icon modal-close">
+            <i class="material-icons">close</i>
+          </button>
+        </div>
+        <span
+          style="
+            display: block;
+            border: 1px solid rgb(0, 107, 139);
+            margin: auto 5px auto 5px;
+          "
+        >
+        </span>
+        <div class="modal-body">Joo</div>
+        <div class="modal-footer">Joo</div>
+      </div>
+    </div>
+    <div class="modal" id="modal-ramcharan">
+      <div class="modal-content">
+        <div class="modal-header">
+          ramcharan
+          <button class="icon modal-close">
+            <i class="material-icons">close</i>
+          </button>
+        </div>
+        <span
+          style="
+            display: block;
+            border: 1px solid rgb(0, 107, 139);
+            margin: auto 5px auto 5px;
+          "
+        >
+        </span>
+        <div class="modal-body">ramcharan</div>
+        <div class="modal-footer">ramcharan</div>
+      </div>
+    </div>
+    <div class="modal" id="modal-minh">
+      <div class="modal-content">
+        <div class="modal-header">
+          minh
+          <button class="icon modal-close">
+            <i class="material-icons">close</i>
+          </button>
+        </div>
+        <span
+          style="
+            display: block;
+            border: 1px solid rgb(0, 107, 139);
+            margin: auto 5px auto 5px;
+          "
+        >
+        </span>
+        <div class="modal-body">minh</div>
+        <div class="modal-footer">minhy</div>
+      </div>
+    </div>
+    <div id="overlay"></div>
 
     <footer>
       <div class="footer">
