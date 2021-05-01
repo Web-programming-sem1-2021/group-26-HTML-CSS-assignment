@@ -43,6 +43,8 @@ details summary::-webkit-details-marker {
 .nav {
   position: relative;
   overflow: hidden;
+  width: 100%;
+  justify-content: space-between;
   background-color: var(--nav-color);
   display: flex;
   
@@ -51,9 +53,8 @@ details summary::-webkit-details-marker {
 .dropdown {
   position: relative;
   width: 13%;
-  display: inline-block;
+  display: inline-flex;
   background-color: var(--nav-color);
-  width: 10%;
   outline-offset: 0px;
   text-shadow: none;
   color: var(--nav-text-color);
@@ -67,8 +68,7 @@ details summary::-webkit-details-marker {
   transition: all 800ms cubic-bezier(0.18, 1, 0.23, 1);
   
 }
-
-.nav .homeIcon img {
+.nav a.homeIcon img {
   text-decoration: none !important;
   margin: none !important;
   display: inline-block;
@@ -77,15 +77,20 @@ details summary::-webkit-details-marker {
   widows: 2px;
   width: 20%;
   padding: none;
+  margin: none;
   border: none;
   display: inline-block;
   height: inherit;
 }
 
-.nav .homeIcon{
-  padding: none;
-  border:none;
+.nav a.homeIcon {
+  text-align: center;
+  width: 100%;
   margin: none;
+  padding: none;
+  height: 2cm;
+  object-fit: cover;
+  background-size: cover;
 }
 
 
@@ -112,6 +117,18 @@ details summary::-webkit-details-marker {
 .dropdown-content a:hover {
   background-color: var(--nav-hover-color);
   color: white;
+  transition-delay: 0.5s;
+}
+.dropdown-content a:before,
+.dropdown-content a:after {
+  content: "";
+  position: absolute;
+  transition: inherit;
+  z-index: -1;
+}
+
+.dropdown-content a:hover:before {
+  transition-delay: 0s;
 }
 
 .dropdown .dropbtn {
@@ -172,7 +189,9 @@ details summary::-webkit-details-marker {
   .nav a.icon {
     float: right;
     display: block;
-    font-size: large;
+  }
+  .nav a.homeIcon img {
+    width: 50%;
   }
 }
 
@@ -364,6 +383,7 @@ details summary::-webkit-details-marker {
   background-color: #fff;
   border-radius: 20px;
   margin: 20px auto 10px auto;
+  z-index: 0;
 }
 .footer-content {
   height: 300px;
