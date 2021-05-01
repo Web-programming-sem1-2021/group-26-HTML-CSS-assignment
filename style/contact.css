@@ -1,3 +1,8 @@
+:root{
+  --theme-color:#17a589
+}
+
+
 section {
   padding: 5rem 10px;
   background-position: center center;
@@ -8,16 +13,16 @@ section {
   padding: 2rem;
   background-color: #fff;
   background-position: center center;
-  box-shadow: 10px 10px #17a589;
+  box-shadow: 10px 10px var(--theme-color);
   border-radius: 10px;
-  border: 2px solid #17a589;
+  border: 2px solid var(--theme-color);
 }
 h2 {
   text-transform: uppercase;
   margin-bottom: 0.7rem;
   font-size: 40px;
   font-weight: 700;
-  color: #17a589;
+  color: var(--theme-color);
 }
 .form-item {
   margin-bottom: 0.7rem;
@@ -150,7 +155,6 @@ textarea {
   }
 }
 
-/* Add a green text color and a checkmark when the requirements are right */
 .valid {
   color: green;
 }
@@ -161,7 +165,6 @@ textarea {
   content: "✔";
 }
 
-/* Add a red text color and an "x" when the requirements are wrong */
 .invalid {
   color: red;
 }

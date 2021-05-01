@@ -2,30 +2,31 @@
 
 const questions = [4, 6];
 
-const name = document.getElementById("name");
+const userName = document.getElementById("name");
 const email = document.getElementById("email");
 const phone = document.getElementById("phone");
-const form = document.getElementById("form");
-const errorElement = document.getElementById('error') 
+console.log('phone :>> ', phone);
+const submitButton = document.getElementById("submitButton");
+console.log('form :>> ', submitButton);
+const errorElement = document.getElementById("error");
 
-
+let messages = [];
 //name
-form.addEventListener("submit", (e) => {
-  let messages = [];
-  if (name.value === "" || name.value == null) {
+submitButton.addEventListener("mouseover", () => {
+  if (userName.value === "" || userName.value == null) {
     messages.push("Name is required");
   }
 });
 
-if (name.value.length <= 3) {
+if (userName.value.length <= 3) {
   messages.push("Password must be longer than 3 characters");
 }
 
 if (messages.length > 0) {
-  e.preventDefault()
-  errorElement.innerText = messages.join(', ')
+  e.preventDefault();
+  alert(message)
 }
-})
+
 //email
 function ValidateEmail(mail) {
   if (
@@ -38,3 +39,16 @@ function ValidateEmail(mail) {
   alert("You have entered an invalid email address!");
   return false;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -61,11 +61,11 @@
         </select>
         <br /><br />
 
-        <form id="form" action="/homepage/contact.html" method="GET">
+        <form action="/homepage/contact.html" method="GET">
           <div id="error">
             <div class="form-item">
               <label for="name">Your name:</label>
-              <input id="name" name="name" type="text" required />
+              <input id="name" name="name" type="text" required pattern="[a-z]{3}"/>
             </div>
             <div class="form-item">
               <label for="email">Your email:</label>
@@ -127,7 +127,7 @@
               <div class="form-item"></div>
               <div class="form-item">
                 <button class="button button1">clear</button>
-                <button type="submit" class="button button2">send</button>
+                <button type="submit" id="submit" class="button button2" id='submitButton' >send</button>
               </div>
             </form>
           </div>
