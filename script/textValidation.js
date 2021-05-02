@@ -5,12 +5,15 @@ const questions = [4, 6];
 const userName = document.getElementById("name");
 const email = document.getElementById("email");
 const phone = document.getElementById("phone");
-console.log("phone :>> ", phone);
 const submitButton = document.getElementById("submitButton");
 const errorElement = document.getElementById("error");
 
 submitButton.addEventListener("click", () => {
   const error = document.getElementById("notify");
+  const namePattern = /[A-Za-z]{3,}/;
+  const phoneNumberPattern = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{3,5}$/im;
+  const emailPattern = /^([a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-])+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+  
   // userName.setCustomValidity("");
   // phone.setCustomValidity("");
 
@@ -29,16 +32,33 @@ submitButton.addEventListener("click", () => {
   //   "    Array.from(userName).map((item) => (isNaN(item) ?) :>> ",
   //   checkIfNameHasNumber
   // );
-  userName.patternMismatch
-    ? userName.setCustomValidity(
-        "Name must exceeds 3 characters and contain letters only!"
-      )
-    : {};
 
-  !phone.patternMismatch
-    ? phone.setCustomValidity("Phone number should contains number only!")
-    : {};
+  //Name
+  console.log("object :>> ", namePattern.test(userName.value));
+  namePattern.test(userName.value)
+    ? userName.setCustomValidity("")
+    : userName.setCustomValidity(
+        "Name must exceeds 3 characters and contain letters only!"
+      );
+
+  //E-mail
+  console.log(emailPattern.test(email.value));
+  emailPattern.test(email.value)
+  ? email.setCustomValidity("")
+  : email.setCustomValidity(
+      "Your email must be in a correct form (abc#def@mail.com)"
+    );
+  //Phone number
+  console.log(
+    " phoneNumberPattern.test(phone.value) :>> ",
+    phoneNumberPattern.test(phone.value)
+  );
+  phoneNumberPattern.test(phone.value)
+    ? phone.setCustomValidity("")
+    : phone.setCustomValidity("Phone number should contains number only!");
 });
+
+
 //  else if (!userName.patternMismatch) {
 //   userName.setCustomValidity("Name must exceed 3 characters!");
 
