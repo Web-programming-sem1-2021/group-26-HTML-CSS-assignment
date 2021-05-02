@@ -3,10 +3,11 @@
 :root {
   --background-color: #fff4f4;
   --store-slider-bg-color: white;
-  --nav-color: #ece9d0;
+  --nav-color: #cec8ef;
   --nav-text-color: rgb(80, 78, 78);
   --nav-hover-color: rgb(119, 119, 119);
 }
+
 * {
   padding: 0;
   margin-top: 0;
@@ -186,6 +187,14 @@ details summary::-webkit-details-marker {
   .nav a.homeIcon img {
     width: 50%;
   }
+
+  /* .dropdown{
+    width: 100%;
+  } */
+  /* .nav details{
+    width: 100%;
+    display: block;
+  } */
 }
 
 @media screen and (max-width: 600px) {
@@ -218,6 +227,7 @@ details summary::-webkit-details-marker {
     width: 100%;
     text-align: center;
   }
+  
 }
 
 /* images sliders */
