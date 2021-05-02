@@ -11,7 +11,7 @@
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     />
-    <script src="../script/textValidation.js" async></script>
+    <script src="../script/contactTextValidation.js" async></script>
     <script src="../../jsFunctions.js" defer></script>
     <style>
       #notify {
@@ -79,17 +79,15 @@
         <br /><br />
 
         <form>
-          <div id="error">
-            <div class="form-item">
-              <label for="name">Your name:</label>
-              <input
-                placeholder="Enter your name"
-                id="name"
-                name="name"
-                type="text"
-                required
-              />
-            </div>
+          <div class="form-item">
+            <label for="name">Your name:</label>
+            <input
+              placeholder="Enter your name"
+              id="name"
+              name="name"
+              type="text"
+              required
+            />
             <div class="form-item">
               <label for="email">Your E-mail:</label>
               <input
@@ -163,7 +161,11 @@
               <div class="form-item"></div>
               <div class="form-item">
                 <button class="button button1">clear</button>
-                <button type="submit" class="button button2" id="submitButton">
+                <button
+                  type="submit"
+                  class="button button2"
+                  id="contactSubmitButton"
+                >
                   send
                 </button>
               </div>

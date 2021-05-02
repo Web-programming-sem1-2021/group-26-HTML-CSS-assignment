@@ -5,15 +5,16 @@ const questions = [4, 6];
 const userName = document.getElementById("name");
 const email = document.getElementById("email");
 const phone = document.getElementById("phone");
-const submitButton = document.getElementById("submitButton");
+const contactSubmitButton = document.getElementById("contactSubmitButton");
 const errorElement = document.getElementById("error");
 
-submitButton.addEventListener("click", () => {
+//Contact
+contactSubmitButton.addEventListener("click", () => {
   const error = document.getElementById("notify");
   const namePattern = /[A-Za-z]{3,}/;
   const phoneNumberPattern = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{3,5}$/im;
   const emailPattern = /^([a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-])+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-  
+
   // userName.setCustomValidity("");
   // phone.setCustomValidity("");
 
@@ -44,10 +45,10 @@ submitButton.addEventListener("click", () => {
   //E-mail
   console.log(emailPattern.test(email.value));
   emailPattern.test(email.value)
-  ? email.setCustomValidity("")
-  : email.setCustomValidity(
-      "Your email must be in a correct form (abc#def@mail.com)"
-    );
+    ? email.setCustomValidity("")
+    : email.setCustomValidity(
+        "Your email must be in a correct form (abc#def@mail.com)"
+      );
   //Phone number
   console.log(
     " phoneNumberPattern.test(phone.value) :>> ",
@@ -56,8 +57,20 @@ submitButton.addEventListener("click", () => {
   phoneNumberPattern.test(phone.value)
     ? phone.setCustomValidity("")
     : phone.setCustomValidity("Phone number should contains number only!");
-});
 
+  console.log(namePattern.test(firstName.value));
+  namePattern.test(firstName.value)
+    ? firstName.setCustomValidity("")
+    : firstName.setCustomValidity(
+        "Your first name must exceeds 3 characters and contain letters only!"
+      );
+
+  namePattern.test(lastName.value)
+    ? lastName.setCustomValidity("")
+    : lastName.setCustomValidity(
+        "Your last name must exceeds 3 characters and contain letters only!"
+      );
+});
 
 //  else if (!userName.patternMismatch) {
 //   userName.setCustomValidity("Name must exceed 3 characters!");
