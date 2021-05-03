@@ -13,23 +13,6 @@
     />
     <script src="../script/contactTextValidation.js" async></script>
     <script src="../../jsFunctions.js" defer></script>
-    <style>
-      #notify {
-        margin-top: 5px;
-        padding: 10px;
-        font-size: 12px;
-        width: 100%;
-        color: #fff;
-        display: none;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-      }
-      #notify.error {
-        background-color: #dd2c00;
-      }
-    </style>
   </head>
 
   <body>
@@ -78,7 +61,7 @@
         </select>
         <br /><br />
 
-        <form>
+        <form id="sectionForm">
           <div class="form-item">
             <label for="name">Your name:</label>
             <input
@@ -88,26 +71,28 @@
               type="text"
               required
             />
-            <div class="form-item">
-              <label for="email">Your E-mail:</label>
-              <input
-                placeholder="Enter your e-mail"
-                type="email"
-                name="email"
-                id="email"
-                required
-              />
-            </div>
-            <div class="form-item">
-              <label for="phone">Phone number:</label>
-              <input
-                placeholder="Enter your phone number"
-                type="tel"
-                name="phone"
-                id="phone"
-                required
-              />
-            </div>
+          </div>
+          <div class="form-item">
+            <label for="email">Your E-mail:</label>
+            <input
+              placeholder="Enter your e-mail"
+              type="email"
+              name="email"
+              id="email"
+              required
+            />
+          </div>
+          <div class="form-item">
+            <label for="phone">Phone number:</label>
+            <input
+              placeholder="Enter your phone number"
+              type="tel"
+              name="phone"
+              id="phone"
+              required
+            />
+          </div>
+          <div class="form-item">
             <label for="Contact-method">Preferred contact method:</label>
             <select name="reason" id="reason">
               <option value="reason1">Email</option>
@@ -115,61 +100,92 @@
             </select>
             <br /><br />
             <label for="phone">Contact days:</label>
-            <form>
-              <div class="new">
-                <form>
-                  <div class="form-group">
-                    <input type="checkbox" id="day1" />
-                    <label for="day1">Monday</label>
-                  </div>
-                  <div id="notify"></div>
-                  <div class="form-group">
-                    <input type="checkbox" id="day2" />
-                    <label for="day2">Tuesday</label>
-                  </div>
-                  <div class="form-group">
-                    <input type="checkbox" id="day3" />
-                    <label for="day3">Wednesday</label>
-                  </div>
-                  <div class="form-group">
-                    <input type="checkbox" id="day4" />
-                    <label for="day4">Thursday</label>
-                  </div>
-                  <div class="form-group">
-                    <input type="checkbox" id="day5" />
-                    <label for="day5">Friday</label>
-                  </div>
-                  <div class="form-group">
-                    <input type="checkbox" id="day6" />
-                    <label for="day6">Saturday</label>
-                  </div>
-                  <div class="form-group">
-                    <input type="checkbox" id="day7" />
-                    <label for="day7">Sunday</label>
-                  </div>
-                </form>
+
+            <div class="form-item">
+              <div class="form-group">
+                <input
+                  name="date"
+                  type="checkbox"
+                  id="day1"
+                  class="schedule-checkbox"
+                />
+                <label for="day1">Monday</label>
               </div>
-              <div class="form-item">
-                <label for="message">Your message:</label>
-                <textarea
-                  name="message"
-                  id="message"
-                  cols="30"
-                  rows="7"
-                ></textarea>
+              <div class="form-group">
+                <input
+                  name="date"
+                  type="checkbox"
+                  id="day2"
+                  class="schedule-checkbox"
+                />
+                <label for="day2">Tuesday</label>
               </div>
-              <div class="form-item"></div>
-              <div class="form-item">
-                <button class="button button1">clear</button>
-                <button
-                  type="submit"
-                  class="button button2"
-                  id="contactSubmitButton"
-                >
-                  send
-                </button>
+              <div class="form-group">
+                <input
+                  name="date"
+                  type="checkbox"
+                  id="day3"
+                  class="schedule-checkbox"
+                />
+                <label for="day3">Wednesday</label>
               </div>
-            </form>
+              <div class="form-group">
+                <input
+                  name="date"
+                  type="checkbox"
+                  id="day4"
+                  class="schedule-checkbox"
+                />
+                <label for="day4">Thursday</label>
+              </div>
+              <div class="form-group">
+                <input
+                  name="date"
+                  type="checkbox"
+                  id="day5"
+                  class="schedule-checkbox"
+                />
+                <label for="day5">Friday</label>
+              </div>
+              <div class="form-group">
+                <input
+                  name="date"
+                  type="checkbox"
+                  id="day6"
+                  class="schedule-checkbox"
+                />
+                <label for="day6">Saturday</label>
+              </div>
+              <div class="form-group">
+                <input
+                  name="date"
+                  type="checkbox"
+                  id="day7"
+                  class="schedule-checkbox"
+                />
+                <label for="day7">Sunday</label>
+              </div>
+            </div>
+            <div class="form-item">
+              <label for="message">Your message:</label>
+              <div><p id="counter-message"></p></div>
+              <textarea
+                name="message"
+                id="message"
+                cols="30"
+                rows="7"
+              > </textarea>
+            </div>
+            <div class="form-item">
+              <button class="button button1">clear</button>
+              <button
+                type="submit"
+                class="button button2"
+                id="contactSubmitButton"
+              >
+                send
+              </button>
+            </div>
           </div>
         </form>
       </div>
