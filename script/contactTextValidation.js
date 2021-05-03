@@ -16,7 +16,7 @@ const validateCheckboxes = () => {
   Array.from(scheduleCheckboxes).forEach((checkbox) => {
     checkbox.checked ? (checkNumber += 1) : checkNumber === checkNumber;
   });
-  return checkNumber >= 1;
+  return { checkNumber };
 };
 
 console.log("scheduleCheckboxes :>> ", scheduleCheckboxes);
@@ -25,17 +25,18 @@ console.log("scheduleCheckboxes :>> ", scheduleCheckboxes);
 contactSubmitButton.addEventListener("click", (e) => {
   const error = document.getElementById("notify");
   const namePattern = /[A-Za-z]{3,}/;
-  const phoneNumberPattern = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{3,5}$/im;
+  const phoneNumberPattern = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{3,6}$/im;
   const emailPattern = /^([a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-])+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 
-  !validateCheckboxes()
-    ? (firstScheduleCheckbox.setCustomValidity("Check atleast 1 checkbox!"),
-      console.log("hahaahaa :>> ", validateCheckboxes()),
-      Array.from(scheduleCheckboxes).forEach(
-        (checkbox) => (checkbox.style.boxShadow = "0 0 10px red")
-      ),
-      e.preventDefault())
-    : null;
+  const validate = () =>
+    !(validateCheckboxes().checkNumber >= 1)
+      ? (firstScheduleCheckbox.setCustomValidity("Check atleast 1 checkbox!"),
+        firstScheduleCheckbox.reportValidity(),
+        Array.from(scheduleCheckboxes).forEach(
+          (checkbox) => (checkbox.style.boxShadow = "0 0 10px red !important")
+        ),
+        console.log("hahaahaa :>> ", validateCheckboxes()))
+      : {};
 
   // userName.setCustomValidity("");
   // phone.setCustomValidity("");
@@ -78,9 +79,11 @@ contactSubmitButton.addEventListener("click", (e) => {
     phoneNumberPattern.test(phone.value)
   );
   phoneNumberPattern.test(phone.value)
-    ? phone.setCustomValidity("")
+    ? (phone.setCustomValidity(""), (phone.style.boxShadow = "none"))
     : (phone.setCustomValidity("Phone number should contains number only!"),
       (phone.style.boxShadow = "0 0 10px red"));
+  validate();
+  e.preventDefault();
 });
 
 //  else if (!userName.patternMismatch) {
