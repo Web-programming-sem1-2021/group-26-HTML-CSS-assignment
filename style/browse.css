@@ -1,3 +1,7 @@
+:root {
+  --theme-color: #cec8ef;
+}
+
 *:before,
 *:after {
   box-sizing: inherit;
@@ -10,7 +14,7 @@ body {
 /* general */
 aside section {
   width: 6.5cm;
-  background-color: #96e5f8;
+  background-color: var(--theme-color);
   margin-bottom: 24px;
   margin-top: 30px;
   padding-left: 24px;
@@ -148,7 +152,7 @@ img,
 }
 
 .store-card {
-  background-color: #a2c1c9;
+  background-color: var(--theme-color);
   color: white;
   margin: 20px;
   padding: 1rem;
@@ -159,7 +163,7 @@ img,
 
 img.store-image {
   flex: start;
-  
+
   max-width: 100%;
 
   height: 10rem;

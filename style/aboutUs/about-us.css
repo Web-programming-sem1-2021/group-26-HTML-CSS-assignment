@@ -1,3 +1,7 @@
+:root {
+  --theme-color: #807bb8;
+}
+
 section {
   background-color: #ffffff;
   margin-bottom: 24px;
@@ -38,13 +42,6 @@ section {
 }
 
 /*
-* Basic styles
-*
-* There are basic styles for body.
-*/
-body {
-  background-color: #ddd;
-}
 
 /* Color variables */
 :root {
@@ -152,11 +149,6 @@ ul li {
   margin-right: 20px;
 }
 
-/*
-* Icon styles
-*
-* There are styles for icon and everything which are connected with it.
-*/
 .icon {
   display: inline-block;
   position: relative;
