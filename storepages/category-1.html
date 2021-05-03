@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="layout-category.css" />
+    <link rel="stylesheet" href="layout-product.js" />
+  </head>
+
+  <body>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        ><img src="./images/close.png" width="20px"
+      /></a>
+      <!-- <div class="selected">
+      <a href="../storepages/category-1.html">Jacket</a>
+    </div>
+  <a href="#">Dresses</a>
+  <a href="#">Jeans</a>
+  <a href="#">T-shirt</a>
+  <a href="#">Shoes</a> -->
+      <div class="dropdown">
+        <button class="dropbtn">UNISEX</button>
+        <div class="dropdown-content">
+          <a href="../storepages/category-1.html">Jacket</a>
+          <a href="#">Dresses</a>
+          <a href="#">Jeans</a>
+          <a href="#">T-shirt</a>
+          <a href="#">Shoes</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <button class="dropbtn" style="margin-top: 250px">+ INFO</button>
+        <div class="dropdown-content">
+          <a href="#">Contact Us</a>
+          <a href="#">Help</a>
+          <a href="#">Newsletter</a>
+          <a href="#">Company</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="sidenav"></div> -->
+    <div class="sidebar-button">
+      <span
+        style="font-size: 28px; cursor: pointer; margin-left: 30px"
+        onclick="openNav()"
+        ><img src="./images/menu.png" width="20px"
+      /></span>
+
+      <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "240px";
+        }
+
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+        }
+      </script>
+    </div>
+
+    <div class="on-top">
+      <button type="button" class="button-top">LOGIN</button>
+      <button type="button" class="button-top">MY PAGE</button>
+      <button type="button" class="button-top">MY BASKET</button>
+    </div>
+
+    <div class="container">
+      <!-- <div class="sticky">
+        <img src="./images/logo1.png" style="object-fit:covor;width:350px">
+    </div> -->
+
+      <!-- TOP -->
+      <div class="top">
+        <div class="sticky">
+          <a href="../storepages/store-2.html">
+            <img
+              src="./images/logo1.png"
+              style="object-fit: covor; width: 500px"
+            />
+          </a>
+        </div>
+      </div>
+
+      <!-- MIDDLE -->
+
+      <div class="middle">
+        <div class="item">
+          <a
+            href="./product-1.html"
+            style="display: block; width: 100%; height: 100%"
+          >
+            <img src="./images/Jacket/jacket1.jpeg" class="product_image" />
+
+            <div class="product-detail" style="text-align: center">
+              <h4><b>JACKET</b></h4>
+              <p>99.99 $</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="item">
+          <a
+            href="./product-1.html"
+            style="display: block; width: 100%; height: 100%"
+          >
+            <img src="./images/Jacket/jacket2.jpeg" class="product_image" />
+
+            <div class="product-detail" style="text-align: center">
+              <h4><b>JUMPER</b></h4>
+              <p>109.99 $</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="item">
+          <a
+            href="./product-1.html"
+            style="display: block; width: 100%; height: 100%"
+          >
+            <img src="./images/Jacket/jacket3.jpeg" class="product_image" />
+
+            <div class="product-detail" style="text-align: center">
+              <h4><b>LINEN JACKET</b></h4>
+              <p>99.99 $</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="item">
+          <a
+            href="./product-1.html"
+            style="display: block; width: 100%; height: 100%"
+          >
+            <img src="./images/Jacket/jacket4.jpeg" class="product_image" />
+
+            <div class="product-detail" style="text-align: center">
+              <h4><b>SPECIAL JACKET</b></h4>
+              <p>89.99 $</p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="bottom">
+        <hr />
+        <div class="bottom-info">
+          POLICES
+          <a href="../storepages/category-1.html"
+            ><div class="bottom-info-detail">SHOP AT 26St.ore</div></a
+          >
+          <a href="#"><div class="bottom-info-detail">PRODUCT</div></a>
+          <a href="#"><div class="bottom-info-detail">PAYMENT</div></a>
+          <a href="#"><div class="bottom-info-detail">SHIPPING</div></a>
+        </div>
+
+        <div class="bottom-info">
+          POLICES
+          <a href="../storepages/category-1.html"
+            ><div class="bottom-info-detail">SHOP AT 26St.ore</div></a
+          >
+          <a href="#"><div class="bottom-info-detail">PRODUCT</div></a>
+          <a href="#"><div class="bottom-info-detail">PAYMENT</div></a>
+          <a href="#"><div class="bottom-info-detail">SHIPPING</div></a>
+        </div>
+
+        <div class="bottom-info">
+          POLICES
+          <a href="../storepages/category-1.html"
+            ><div class="bottom-info-detail">SHOP AT 26St.ore</div></a
+          >
+          <a href="#"><div class="bottom-info-detail">PRODUCT</div></a>
+          <a href="#"><div class="bottom-info-detail">PAYMENT</div></a>
+          <a href="#"><div class="bottom-info-detail">SHIPPING</div></a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

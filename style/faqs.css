@@ -1,0 +1,131 @@
+:root {
+  --section-color: #b4addd;
+}
+
+.hidden_box {
+  margin: 2em auto;
+  padding: 0;
+  max-width: 1200px;
+}
+
+.hidden_box label {
+  display: block;
+  font-weight: bold;
+  line-height: 3;
+  background: var(--section-color);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+  position: relative;
+  padding: 0 3em 0 4em;
+  text-align: justify;
+}
+
+@media screen and (max-width: 640px) {
+  .hidden_box label {
+    line-height: 2;
+    padding: 0.5em 3em 0.5em 4em;
+  }
+  .hidden_box {
+    margin: 10px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .hidden_box label {
+    line-height: 2;
+    padding: 0.5em 3em 0.5em 4em;
+  }
+  .hidden_box {
+    margin: 10px;
+  }
+}
+
+.hidden_box label:before {
+  display: block;
+  content: "Q";
+  font-weight: 900;
+  transition: 0.8s;
+  position: absolute;
+  top: 50%;
+  left: 1em;
+  transform: translateY(-50%);
+  width: 2em;
+  height: 2em;
+  line-height: 2;
+  text-align: center;
+  font-size: 1em;
+  background: #fff;
+  border-radius: 5px;
+}
+
+.hidden_box label:after {
+  display: block;
+  content: "❔";
+  font-weight: 90;
+  font-size: 30px;
+  transition: 1s;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 3em;
+  height: 3em;
+  line-height: 3;
+  text-align: center;
+}
+
+.hidden_box label:hover {
+  background: gray;
+  color: white;
+}
+
+.hidden_box input:checked ~ label:after {
+  color: #668ad8;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%) rotate(360deg);
+}
+
+.hidden_box input {
+  display: none;
+}
+
+.hidden_box .hidden_show {
+  height: 0;
+  padding: 0 0.6em;
+  overflow: hidden;
+  opacity: 0;
+  transition: 0.8s;
+}
+
+.hidden_box input:checked ~ .hidden_show {
+  padding: 10px 0.6em;
+  height: auto;
+  opacity: 1;
+}
+
+@media screen and (max-width: 640px) {
+  .hidden_box input:checked ~ .hidden_show {
+    padding: 10px 0.6em;
+  }
+}
+
+.question {
+  display: inline-block;
+  width: 80%;
+}
+
+.hidden_box p {
+  margin: 0;
+  text-align: justify;
+}
+
+.q {
+  font-size: 1em;
+  padding: 0.2em 0.6em;
+  margin-right: 0.8em;
+  background: #fff;
+  border-radius: 5px;
+}

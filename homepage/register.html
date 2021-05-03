@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../style/contact.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    />
+    <script src="../../jsFunctions.js" defer></script>
+    <script src="../script/login.js" defer></script>
+    <script src="../script/registerTextValidation.js" defer></script>
+  </head>
+
+  <body>
+    <!-- referenced from : "https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp" -->
+    <div class="nav" id="navbar">
+      <a href="./index.html" class="homeIcon">
+        <img src="../icons/ICONIC MALL.svg"
+      /></a>
+      <a class="nav-section" href="./about-us.html">About Us</a>
+      <a class="nav-section" href="./fees.html">Fees</a>
+      <a class="nav-section" href="./myAccount/login.html" id="nav-bar-acount"
+        >Account</a
+      >
+
+      <details class="dropdown">
+        <summary class="dropbtn">
+          Browse<i class="fa fa-caret-down"></i>
+        </summary>
+        <div onclick="" class="dropdown-content">
+          <a href="./browse/browse-stores-by-name.html"
+            >Browse Store <br />
+            by name</a
+          >
+          <a href="./browse/browse-stores-by-categories.html"
+            >Browse Store <br />by Categories</a
+          >
+        </div>
+      </details>
+      <a class="nav-section" href="./faqs.html">FAQs</a>
+      <a class="nav-section" href="./contact.html">Contact</a>
+      <a
+        href="javascript:void(0);"
+        style="font-size: 15px"
+        class="icon"
+        onclick="handleResponsiveNavBar()"
+        >&#9776;</a
+      >
+    </div>
+    <section class="contact">
+      <div class="form-box">
+        <h2 style="text-align: center">Register Account</h2>
+
+        <div class="form-item">
+          <label for="email-address">Email address:</label>
+          <input type="email" name="email" id="email-address" required />
+        </div>
+        <div class="form-item">
+          <label for="phone">Phone number:</label>
+          <input type="tel" name="phone" id="phone" required />
+        </div>
+        <div class="form-item">
+          <label for="password">Password:</label>
+          <input type="text" id="password" required />
+        </div>
+        <div class="form-item">
+          <label for="retype-password">Retype password:</label>
+          <input
+            type="password"
+            name="retype-password"
+            id="retype-password"
+            required
+          />
+        </div>
+        <div class="form-item">Profile picture:</div>
+        <form>
+          <input type="file" id="myFile" name="filename" />
+        </form>
+        <div class="form-item">
+          <label for="first-name">First name:</label>
+          <input type="text" name="first-name" id="first-name" required />
+        </div>
+        <div class="form-item">
+          <label for="last-name">Last name:</label>
+          <input type="text" name="last-name" id="last-name" required />
+        </div>
+        <div class="form-item">
+          <label for="address">Address:</label>
+          <input type="text" name="address" id="address" required />
+        </div>
+        <div class="form-item">
+          <label for="city">City:</label>
+          <input type="text" name="city" id="city" required />
+        </div>
+        <div class="form-item">
+          <label for="zip">Zip code:</label>
+          <input type="" name="zip" id="zip" required />
+        </div>
+        <label for="country">Country:</label>
+        <select name="country" id="country">
+          <option value="country1">VN</option>
+          <option value="country2">CU</option>
+        </select>
+        <br /><br />
+
+        <form>
+          <div class="form-item">
+            <p>Account types:</p>
+            <input type="radio" id="store-owners" name="store-owners" />
+            <label for="store-owners">Store owners</label><br />
+            <input type="radio" id="shoppers" name="shoppers" />
+            <label for="store-owners">Shoppers</label><br />
+          </div>
+        </form>
+        <form>
+          <div class="form-item">
+            <button class="button button1">clear</button>
+            <button
+              type="submit"
+              id="registerSubmitButton"
+              class="button button2"
+            >
+              send
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>Other Authorities</h3>
+            <h3>
+              <a href="/homepage/footer/copyright.html"> Copyright</a>
+            </h3>
+            <h3><a href="/homepage/footer/privacy.html">Privacy Policy</a></h3>
+            <h3><a href="/homepage/footer/terms.html">Terms of Service</a></h3>
+          </div>
+          <div class="footer-section">
+            <h3>Student contributors</h3>
+            <ol>
+              <li>Nguyen Thi Quynh Giang <b>[s3866617]</b></li>
+              <br />
+              <li>Joo Jeong-hyeon<b>[s3865746]</b></li>
+              <br />
+              <li>Vo Khai Minh<b>[s3879953]</b></li>
+              <br />
+              <li>Ramanaharan Ramcharan<b>[s3775271]</b></li>
+            </ol>
+          </div>
+          <div class="footer-section">
+            <h3>Application Information</h3>
+            <a
+              href="https://github.com/Web-programming-sem1-2021/group-26-HTML-CSS-assignment"
+              ><img
+                class="footer-icon"
+                src="../../icons/github-character.svg"
+              />
+              Source Code</a
+            >
+            <a
+              href="https://web-programming-sem1-2021.github.io/group-26-HTML-CSS-assignment/"
+              ><img
+                class="footer-icon"
+                src="../../icons/footerIcons/globe.svg"
+              />
+              Website</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
