@@ -10,30 +10,34 @@
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     />
+    <script src="../jsFunctions.js"></script>
   </head>
   <body>
+    <!-- referenced from : "https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp" -->
     <div class="nav" id="navbar">
-      <a href="../index.html" class="homeIcon"> <h1>ICONIC</h1></a>
-      <a class="nav-section" href="about-us.html">About Us</a>
-      <a class="nav-section" href="fees.html">Fees</a>
+      <a href="./index.html" class="homeIcon">
+        <img src="../icons/ICONIC MALL.svg"
+      /></a>
+      <a class="nav-section" href="./about-us.html">About Us</a>
+      <a class="nav-section" href="./fees.html">Fees</a>
       <a class="nav-section" href="./myAccount/login.html">Account</a>
-      <div class="dropdown">
-        <button class="dropbtn">
-          Browse
-          <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-content">
-          <a href="../homepage/browse/browse-stores-by-name.html"
+
+      <details class="dropdown">
+        <summary class="dropbtn">
+          Browse<i class="fa fa-caret-down"></i>
+        </summary>
+        <div onclick="" class="dropdown-content">
+          <a href="./browse/browse-stores-by-name.html"
             >Browse Store <br />
             by name</a
           >
-          <a href="../homepage/browse/browse-stores-by-categories.html"
+          <a href="./browse/browse-stores-by-categories.html"
             >Browse Store <br />by Categories</a
           >
         </div>
-      </div>
-      <a class="nav-section" href="faqs.html">FAQs</a>
-      <a class="nav-section" href="contact.html">Contact</a>
+      </details>
+      <a class="nav-section" href="./faqs.html">FAQs</a>
+      <a class="nav-section" href="./contact.html">Contact</a>
       <a
         href="javascript:void(0);"
         style="font-size: 15px"
@@ -42,14 +46,15 @@
         >&#9776;</a
       >
     </div>
-    <h1 style="font-size: 5em; color: palevioletred">:D ( ͡° ͜ʖ ͡°)</h1>
     <div class="container">
-      <h1>shop owner's fees</h1>
+      <h1 style="font-size: 5em; color: palevioletred; padding-top: 24px">
+        Store owners
+      </h1>
       <table>
         <thead>
           <tr>
             <th>Membership</th>
-            <th>Renting's fees </th>
+            <th>Renting's fees</th>
             <th>Commission</th>
             <th>Duration</th>
           </tr>
@@ -57,28 +62,68 @@
         <tbody>
           <tr>
             <td>Diamond</td>
-            <td>01/08/2019</td>
-            <td>10$</td>
-            <td>2h 58m</td>
+            <td>1000$</td>
+            <td>0.5%</td>
+            <td>1 Month</td>
           </tr>
 
           <tr>
             <td>Platinum</td>
-            <td>02/08/2019</td>
-            <td>12$</td>
-            <td>2h 5m</td>
+            <td>900$</td>
+            <td>1%</td>
+            <td>1 Month</td>
           </tr>
           <tr>
             <td>Gold</td>
-            <td>03/08/2019</td>
-            <td>14$</td>
-            <td>2h 7m</td>
+            <td>800$</td>
+            <td>2%</td>
+            <td>1 Month</td>
           </tr>
           <tr>
             <td>Silver</td>
-            <td>04/08/2019</td>
-            <td>12$</td>
-            <td>1h 56m</td>
+            <td>750$</td>
+            <td>2.5%</td>
+            <td>1 Month</td>
+          </tr>
+        </tbody>
+      </table>
+      <h1 style="font-size: 5em; color: palevioletred; padding-top: 24px">
+        Shoppers
+      </h1>
+      <table>
+        <thead>
+          <tr>
+            <th>Membership</th>
+            <th></th>
+            <th>Parking's fee</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Diamond</td>
+            <td>100$</td>
+            <td>Bike</td>
+            <td>1.000VND</td>
+          </tr>
+
+          <tr>
+            <td>Platinum</td>
+            <td>90$</td>
+            <td>Electic-bike</td>
+            <td>2.000VNDh</td>
+          </tr>
+          <tr>
+            <td>Gold</td>
+            <td>80$</td>
+            <td>Motocycle</td>
+            <td>4.000VND</td>
+          </tr>
+          <tr>
+            <td>Silver</td>
+            <td>75$</td>
+            <td>Car</td>
+            <td>7.000VND</td>
           </tr>
         </tbody>
       </table>
@@ -87,8 +132,9 @@
       <div class="footer">
         <div class="footer-content">
           <div class="footer-section">
+            <h3>Other Authorities</h3>
             <h3>
-              <a href="/homepage/footer/copyright.html">Copyright</a>
+              <a href="/homepage/footer/copyright.html"> Copyright</a>
             </h3>
             <h3><a href="/homepage/footer/privacy.html">Privacy Policy</a></h3>
             <h3><a href="/homepage/footer/terms.html">Terms of Service</a></h3>
@@ -98,21 +144,28 @@
             <ol>
               <li>Nguyen Thi Quynh Giang <b>[s3866617]</b></li>
               <br />
-              <li>Joo Jeong-hyeon<b>[sid]</b></li>
+              <li>Joo Jeong-hyeon<b>[s3865746]</b></li>
               <br />
-              <li>Vo Khai Minh<b>[s3866617]</b></li>
+              <li>Vo Khai Minh<b>[s3879953]</b></li>
+              <br />
+              <li>Ramanaharan Ramcharan<b>[s3775271]</b></li>
             </ol>
           </div>
           <div class="footer-section">
-            <h3>Source Code</h3>
-            <ul></ul>
+            <h3>Application Information</h3>
+            <a
+              href="https://github.com/Web-programming-sem1-2021/group-26-HTML-CSS-assignment"
+              ><img class="footer-icon" src="../icons/github-character.svg" />
+              Source Code</a
+            >
+            <a
+              href="https://web-programming-sem1-2021.github.io/group-26-HTML-CSS-assignment/"
+              ><img class="footer-icon" src="../icons/footerIcons/globe.svg" />
+              Website</a
+            >
           </div>
         </div>
       </div>
     </footer>
-
-    <script src= "../jsFunctions.js">
-     
-    </script>
   </body>
 </html>

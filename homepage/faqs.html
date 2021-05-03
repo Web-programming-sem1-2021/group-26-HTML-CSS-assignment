@@ -5,90 +5,172 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FAQs</title>
     <link rel="stylesheet" href="../style.css" />
-    <link rel="stylesheet" href="../style/faqs.css">
+    <link rel="stylesheet" href="../style/faqs.css" />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     />
+        <script src="/jsFunctions.js" async></script>
+
   </head>
   <body>
+    <!-- referenced from : "https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp" -->
     <div class="nav" id="navbar">
-      <a href="../index.html" class="homeIcon"> <h1>ICONIC</h1></a>
-      <a class="nav-section" href="about-us.html">About Us</a>
-      <a class="nav-section" href="fees.html">Fees</a>
+      <a href="../index.html" class="homeIcon">
+        <img src="../icons/ICONIC MALL.svg"
+      /></a>
+      <a class="nav-section" href="./about-us.html">About Us</a>
+      <a class="nav-section" href="./fees.html">Fees</a>
       <a class="nav-section" href="./myAccount/login.html">Account</a>
-      <div class="dropdown">
-        <button class="dropbtn">
-          Browse
-          <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-content">
-          <a href="../homepage/browse/browse-stores-by-name.html"
+
+      <details class="dropdown">
+        <summary class="dropbtn">
+          Browse<i class="fa fa-caret-down"></i>
+        </summary>
+        <div onclick="" class="dropdown-content">
+          <a href="./browse/browse-stores-by-name.html"
             >Browse Store <br />
             by name</a
           >
-          <a href="../homepage/browse/browse-stores-by-categories.html"
+          <a href="./browse/browse-stores-by-categories.html"
             >Browse Store <br />by Categories</a
           >
         </div>
-      </div>
-      <a class="nav-section" href="faqs.html">FAQs</a>
-      <a class="nav-section" href="contact.html">Contact</a>
-      
+      </details>
+      <a class="nav-section" href="./faqs.html">FAQs</a>
+      <a class="nav-section" href="./contact.html">Contact</a>
+      <a
+        href="javascript:void(0);"
+        style="font-size: 15px"
+        class="icon"
+        onclick="handleResponsiveNavBar()"
+        >&#9776;</a
+      >
     </div>
-      <div class="hidden_box">
-       <input type="checkbox" id="label1" />
-       <label for="label1">just a dumb question？</label>
-       <div class="hidden_show">
-       <p>this is a dumb answer for a dumb question</p>
-       </div>
-      </div>
-      <div class="hidden_box">
-      <input type="checkbox" id="label2" />
-      <label for="label2">another dum dum？</label>
+    <div class="hidden_box">
+      <input type="checkbox" id="label1" />
+      <label for="label1">How can I order?</label>
       <div class="hidden_show">
-      <p>maybe</p>
+        <p>
+          You can go to our mall online website and order; find a item you want,
+          add It to your purchase, fill your information and buy.
+        </p>
+      </div>
+    </div>
+    <div class="hidden_box">
+      <input type="checkbox" id="label2" />
+      <label for="label2">What information should I input when ordering?</label>
+      <div class="hidden_show">
+        <p>
+          When ordering online, you should put your address and your card number
+          precisely in order to have the best experience using our website.
+        </p>
       </div>
       <div class="hidden_box">
         <input type="checkbox" id="label3" />
-        <label for="label3">dont click</label>
+        <label for="label3">What payment methods can I use?</label>
         <div class="hidden_show">
-        <p>I said dont click, you dum dum</p>
+          <p>
+            There two main paying method, COD(Cash On Delivery) and online
+            banking via Mastercard or Visa. You can choose your method of paying
+            when ordering goods
+          </p>
         </div>
-        <div class="hidden_box">
-          <input type="checkbox" id="label4" />
-          <label for="label4">haha i just joking</label>
-          <div class="hidden_show">
-          <p>I luv u, here's a Potato 🥔</p>
-          </div>
       </div>
-  </body>
-  <footer>
-    <div class="footer">
-      <div class="footer-content">
-        <div class="footer-section">
-          <h3>
-            <a href="/homepage/footer/copyright.html">Copyright</a>
-          </h3>
-          <h3><a href="/homepage/footer/privacy.html">Privacy Policy</a></h3>
-          <h3><a href="/homepage/footer/terms.html">Terms of Service</a></h3>
+      <div class="hidden_box">
+        <input type="checkbox" id="label4" />
+        <label for="label4">How can I change delivery address?</label>
+        <div class="hidden_show">
+          <p>
+            Sign in to your account and go to "Account", you can change your
+            address there or change It when ordering
+          </p>
         </div>
-        <div class="footer-section">
-          <h3>Student contributors</h3>
-          <ol>
-            <li>Nguyen Thi Quynh Giang <b>[s3866617]</b></li>
-            <br />
-            <li>Joo Jeong-hyeon<b>[sid]</b></li>
-            <br />
-            <li>Vo Khai Minh<b>[s3866617]</b></li>
-          </ol>
+      </div>
+      <div class="hidden_box">
+        <input type="checkbox" id="label5" />
+        <label for="label5">What are the delivery charges?</label>
+        <div class="hidden_show">
+          <p>Order via air banking: Free</p>
+          <p>Pay ON Delivery: cost no more than 50.000VND</p>
         </div>
-        <div class="footer-section">
-          <h3>Source Code</h3>
-          <ul></ul>
+      </div>
+      <div class="hidden_box">
+        <input type="checkbox" id="label6" />
+        <label for="label6">What are the mall's hours?</label>
+        <div class="hidden_show">
+          <p>Monday to Friday: 7am-10pm</p>
+          <p>Saturday and sunday: 7am-11pm</p>
+        </div>
+      </div>
+      <div class="hidden_box">
+        <input type="checkbox" id="label7" />
+        <label for="label7">What's the mall address</label>
+        <div class="hidden_show">
+          <p>
+            The mall address is 702 Nguyễn Van Linh.st, Distict 7, Ho Chi Minh
+            City
+          </p>
+        </div>
+      </div>
+      <div class="hidden_box">
+        <input type="checkbox" id="label8" />
+        <label for="label8">Are pets allowed in the mall?</label>
+        <div class="hidden_show">
+          <p>
+            Unfortunately, no pets are allowed in the mall except for guide or
+            service pets.
+          </p>
+        </div>
+      </div>
+      <div class="hidden_box">
+        <input type="checkbox" id="label9" />
+        <label for="label9">How much is the parking at the mall</label>
+        <div class="hidden_show">
+          <p>
+            The parking lot will be free if you make a purchase in the mall; if
+            not, the fee will be 3.000VND
+          </p>
         </div>
       </div>
     </div>
-  </footer>
+    <footer>
+      <div class="footer">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>Other Authorities</h3>
+            <h3>
+              <a href="/homepage/footer/copyright.html"> Copyright</a>
+            </h3>
+            <h3><a href="/homepage/footer/privacy.html">Privacy Policy</a></h3>
+            <h3><a href="/homepage/footer/terms.html">Terms of Service</a></h3>
+          </div>
+          <div class="footer-section">
+            <h3>Student contributors</h3>
+            <ol>
+              <li>Nguyen Thi Quynh Giang <b>[s3866617]</b></li>
+              <br />
+              <li>Joo Jeong-hyeon<b>[s3865746]</b></li>
+              <br />
+              <li>Vo Khai Minh<b>[s3879953]</b></li>
+              <br />
+              <li>Ramanaharan Ramcharan<b>[s3775271]</b></li>
+            </ol>
+          </div>
+          <div class="footer-section">
+            <h3>Application Information</h3>
+            <a
+              href="https://github.com/Web-programming-sem1-2021/group-26-HTML-CSS-assignment"
+              ><img class="footer-icon" src="../../icons/github-character.svg" />
+              Source Code</a
+            >
+            <a href="https://web-programming-sem1-2021.github.io/group-26-HTML-CSS-assignment/"
+              ><img class="footer-icon" src="../../icons/footerIcons/globe.svg" />
+              Website</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

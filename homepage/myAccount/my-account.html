@@ -8,17 +8,20 @@
     <link rel="stylesheet" href="../../style/account.css" />
   </head>
   <body>
+    <!-- referenced from : "https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp" -->
     <div class="nav" id="navbar">
-      <a href="../../index.html" class="homeIcon"> <h1>ICONIC</h1></a>
+      <a href="../../index.html" class="homeIcon">
+        <img src="../../icons/ICONIC MALL.svg"
+      /></a>
       <a class="nav-section" href="../about-us.html">About Us</a>
       <a class="nav-section" href="../fees.html">Fees</a>
-      <a class="nav-section" href="./my-account.html">Account</a>
-      <div class="dropdown">
-        <button class="dropbtn">
-          Browse
-          <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-content">
+      <a class="nav-section" href="../myAccount/login.html">Account</a>
+
+      <details class="dropdown">
+        <summary class="dropbtn">
+          Browse<i class="fa fa-caret-down"></i>
+        </summary>
+        <div onclick="" class="dropdown-content">
           <a href="../browse/browse-stores-by-name.html"
             >Browse Store <br />
             by name</a
@@ -27,7 +30,7 @@
             >Browse Store <br />by Categories</a
           >
         </div>
-      </div>
+      </details>
       <a class="nav-section" href="../faqs.html">FAQs</a>
       <a class="nav-section" href="../contact.html">Contact</a>
       <a
@@ -43,7 +46,7 @@
         <img src="https://randomuser.me/api/portraits/men/75.jpg" />
       </div>
       <div class="title">
-        <h2>Joe Mama</h2>
+        <h2>Helen Mccory</h2>
       </div>
       <div class="description">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi
@@ -64,8 +67,9 @@
       <div class="footer">
         <div class="footer-content">
           <div class="footer-section">
+            <h3>Other Authorities</h3>
             <h3>
-              <a href="/homepage/footer/copyright.html">Copyright</a>
+              <a href="/homepage/footer/copyright.html"> Copyright</a>
             </h3>
             <h3><a href="/homepage/footer/privacy.html">Privacy Policy</a></h3>
             <h3><a href="/homepage/footer/terms.html">Terms of Service</a></h3>
@@ -75,21 +79,36 @@
             <ol>
               <li>Nguyen Thi Quynh Giang <b>[s3866617]</b></li>
               <br />
-              <li>Joo Jeong-hyeon<b>[sid]</b></li>
+              <li>Joo Jeong-hyeon<b>[s3865746]</b></li>
               <br />
-              <li>Vo Khai Minh<b>[s3866617]</b></li>
+              <li>Vo Khai Minh<b>[s3879953]</b></li>
+              <br />
+              <li>Ramanaharan Ramcharan<b>[s3775271]</b></li>
             </ol>
           </div>
           <div class="footer-section">
-            <h3>Source Code</h3>
-            <ul></ul>
+            <h3>Application Information</h3>
+            <a
+              href="https://github.com/Web-programming-sem1-2021/group-26-HTML-CSS-assignment"
+              ><img
+                class="footer-icon"
+                src="../../icons/github-character.svg"
+              />
+              Source Code</a
+            >
+            <a
+              href="https://web-programming-sem1-2021.github.io/group-26-HTML-CSS-assignment/"
+              ><img
+                class="footer-icon"
+                src="../../icons/footerIcons/globe.svg"
+              />
+              Website</a
+            >
           </div>
         </div>
       </div>
     </footer>
 
-    <script src="../../jsFunctions.js">
-    
-    </script>
+    <script src="../../jsFunctions.js"></script>
   </body>
 </html>

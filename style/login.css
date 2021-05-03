@@ -1,5 +1,5 @@
 :root {
-  --theme-color: #17a589;
+  --theme-color: #807bb8;
 }
 
 .form {
@@ -11,6 +11,7 @@
   padding: 45px;
   text-align: center;
   box-shadow: 10px 10px var(--theme-color);
+  border-radius: 10px;
 }
 .form input {
   outline: 0;
