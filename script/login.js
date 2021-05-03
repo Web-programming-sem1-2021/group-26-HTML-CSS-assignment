@@ -35,7 +35,8 @@ const handleLogin = () =>
               `object`,
               localStorage.getItem("password") === password.value
             ),
-            accountNavBarLink.replace("login.html", "my-account.html"),
+            accountNavBarLink.slice(accountNavBarLink.length - 10) ===
+              "my-account.html",
             console.log(`accountNavBarLink`, accountNavBarLink))
           : e.preventDefault();
       })
