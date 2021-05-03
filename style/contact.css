@@ -1,3 +1,6 @@
+:root {
+  --theme-color: #807bb8;
+}
 section {
   padding: 5rem 10px;
   background-position: center center;
@@ -8,16 +11,16 @@ section {
   padding: 2rem;
   background-color: #fff;
   background-position: center center;
-  box-shadow: 10px 10px #17a589;
+  box-shadow: 10px 10px var(--theme-color);
   border-radius: 10px;
-  border: 2px solid #17a589;
+  border: 2px solid var(--theme-color);
 }
 h2 {
   text-transform: uppercase;
   margin-bottom: 0.7rem;
   font-size: 40px;
   font-weight: 700;
-  color: #17a589;
+  color: var(--theme-color);
 }
 .form-item {
   margin-bottom: 0.7rem;
@@ -30,7 +33,7 @@ textarea {
   width: 100%;
   font-size: 1.2rem;
   line-height: 1.4;
-  outline-color: #007575;
+  outline-color: var(--theme-color);
   border-radius: 10px;
 }
 label {
@@ -148,4 +151,24 @@ textarea {
   100% {
     transform: scale(0.98);
   }
+}
+
+.valid {
+  color: green;
+}
+
+.valid:before {
+  position: relative;
+  left: -35px;
+  content: "✔";
+}
+
+.invalid {
+  color: red;
+}
+
+.invalid:before {
+  position: relative;
+  left: -35px;
+  content: "✖";
 }

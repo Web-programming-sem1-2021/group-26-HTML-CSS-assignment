@@ -5,20 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Us</title>
 
-    <link rel="stylesheet" href="../style.css">
-    <link rel="stylesheet" href="../style/contact.css">
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../style/contact.css" />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     />
-        <script src="../../jsFunctions.js"></script>
-
+    <script src="../script/contactTextValidation.js" async></script>
+    <script src="../../jsFunctions.js" defer></script>
+    <style>
+      #notify {
+        margin-top: 5px;
+        padding: 10px;
+        font-size: 12px;
+        width: 100%;
+        color: #fff;
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+      }
+      #notify.error {
+        background-color: #dd2c00;
+      }
+    </style>
   </head>
 
   <body>
     <!-- referenced from : "https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp" -->
     <div class="nav" id="navbar">
-      <a href="./index.html" class="homeIcon">
+      <a href="../index.html" class="homeIcon">
         <img src="../icons/ICONIC MALL.svg"
       /></a>
       <a class="nav-section" href="./about-us.html">About Us</a>
@@ -49,84 +66,110 @@
         >&#9776;</a
       >
     </div>
-    </div>
+
     <section class="contact">
       <div class="form-box">
         <h2>Contact Us</h2>
 
-        
-          <label for="Contact-purpose">Contact purpose:</label>
-          <select name="reason" id="reason">
-            <option value="reason1">shipping problems</option>
-            <option value="reason2">payment problems</option>
-          </select>
-          <br /><br />
-          
-        </form>
-        <form action="">
+        <label for="Contact-purpose">Contact purpose:</label>
+        <select name="reason" id="reason">
+          <option value="reason1">shipping problems</option>
+          <option value="reason2">payment problems</option>
+        </select>
+        <br /><br />
+
+        <form>
           <div class="form-item">
             <label for="name">Your name:</label>
-            <input type="text" name="name" id="name" />
-          </div>
-          <div class="form-item">
-            <label for="email">Your email:</label>
-            <input type="email" name="email" id="email" />
-          </div>
-          <div class="form-item">
-            <label for="phone">phone number:</label>
-            <input type="tel" name="phone" id="phone" />
-          </div>
-          <label for="Contact-method">Preferred contact method:</label>
-          <select name="reason" id="reason">
-            <option value="reason1">Email</option>
-            <option value="reason2">Phone</option>
-          </select>
-          <br /><br />
-          <label for="phone">Contact days:</label>
+            <input
+              placeholder="Enter your name"
+              id="name"
+              name="name"
+              type="text"
+              required
+            />
+            <div class="form-item">
+              <label for="email">Your E-mail:</label>
+              <input
+                placeholder="Enter your e-mail"
+                type="email"
+                name="email"
+                id="email"
+                required
+              />
+            </div>
+            <div class="form-item">
+              <label for="phone">Phone number:</label>
+              <input
+                placeholder="Enter your phone number"
+                type="tel"
+                name="phone"
+                id="phone"
+                required
+              />
+            </div>
+            <label for="Contact-method">Preferred contact method:</label>
+            <select name="reason" id="reason">
+              <option value="reason1">Email</option>
+              <option value="reason2">Phone</option>
+            </select>
+            <br /><br />
+            <label for="phone">Contact days:</label>
             <form>
-              
-          <div class="new">
-            <form>
-              <div class="form-group">
-                <input type="checkbox" id="day1">
-                <label for="day1">Monday</label>
+              <div class="new">
+                <form>
+                  <div class="form-group">
+                    <input type="checkbox" id="day1" />
+                    <label for="day1">Monday</label>
+                  </div>
+                  <div id="notify"></div>
+                  <div class="form-group">
+                    <input type="checkbox" id="day2" />
+                    <label for="day2">Tuesday</label>
+                  </div>
+                  <div class="form-group">
+                    <input type="checkbox" id="day3" />
+                    <label for="day3">Wednesday</label>
+                  </div>
+                  <div class="form-group">
+                    <input type="checkbox" id="day4" />
+                    <label for="day4">Thursday</label>
+                  </div>
+                  <div class="form-group">
+                    <input type="checkbox" id="day5" />
+                    <label for="day5">Friday</label>
+                  </div>
+                  <div class="form-group">
+                    <input type="checkbox" id="day6" />
+                    <label for="day6">Saturday</label>
+                  </div>
+                  <div class="form-group">
+                    <input type="checkbox" id="day7" />
+                    <label for="day7">Sunday</label>
+                  </div>
+                </form>
               </div>
-              <div class="form-group">
-                <input type="checkbox" id="day2">
-                <label for="day2">Tuesday</label>
+              <div class="form-item">
+                <label for="message">Your message:</label>
+                <textarea
+                  name="message"
+                  id="message"
+                  cols="30"
+                  rows="7"
+                ></textarea>
               </div>
-              <div class="form-group">
-                <input type="checkbox" id="day3">
-                <label for="day3">Wednesday</label>
-              </div>
-              <div class="form-group">
-                <input type="checkbox" id="day4">
-                <label for="day4">Thursday</label>
-              </div>
-              <div class="form-group">
-                <input type="checkbox" id="day5">
-                <label for="day5">Friday</label>
-              </div>
-              <div class="form-group">
-                <input type="checkbox" id="day6">
-                <label for="day6">Saturday</label>
-              </div>
-              <div class="form-group">
-                <input type="checkbox" id="day7">
-                <label for="day7">Sunday</label>
+              <div class="form-item"></div>
+              <div class="form-item">
+                <button class="button button1">clear</button>
+                <button
+                  type="submit"
+                  class="button button2"
+                  id="contactSubmitButton"
+                >
+                  send
+                </button>
               </div>
             </form>
-          </div>
-          <div class="form-item">
-            <label for="message">Your message:</label>
-            <textarea name="message" id="message" cols="30" rows="7"></textarea>
-          </div>
-          <div class="form-item">
-            
-          </div>
-          <div class="form-item">
-            <button class="button button1">clear</button>
-            <button class="button button2">send</button>
           </div>
         </form>
       </div>
@@ -158,17 +201,23 @@
             <h3>Application Information</h3>
             <a
               href="https://github.com/Web-programming-sem1-2021/group-26-HTML-CSS-assignment"
-              ><img class="footer-icon" src="../../icons/github-character.svg" />
+              ><img
+                class="footer-icon"
+                src="../../icons/github-character.svg"
+              />
               Source Code</a
             >
-            <a href="https://web-programming-sem1-2021.github.io/group-26-HTML-CSS-assignment/"
-              ><img class="footer-icon" src="../../icons/footerIcons/globe.svg" />
+            <a
+              href="https://web-programming-sem1-2021.github.io/group-26-HTML-CSS-assignment/"
+              ><img
+                class="footer-icon"
+                src="../../icons/footerIcons/globe.svg"
+              />
               Website</a
             >
           </div>
         </div>
       </div>
     </footer>
-
   </body>
 </html>

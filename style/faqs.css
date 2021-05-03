@@ -1,5 +1,5 @@
-:root{
-  --section-color:#7BB0B8;
+:root {
+  --section-color: #b4addd;
 }
 
 .hidden_box {
@@ -25,6 +25,19 @@
   .hidden_box label {
     line-height: 2;
     padding: 0.5em 3em 0.5em 4em;
+  }
+  .hidden_box{
+    margin: 10px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .hidden_box label {
+    line-height: 2;
+    padding: 0.5em 3em 0.5em 4em;
+  }
+  .hidden_box{
+    margin: 10px;
   }
 }
 
