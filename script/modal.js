@@ -40,6 +40,7 @@ const questions = [3];
 // }
 
 const modalOpenImages = document.querySelectorAll(".modal-open");
+console.log('modalOpenImages :>> ', modalOpenImages);
 const modalCloseButtons = document.querySelectorAll(".modal-close");
 
 modalOpenImages.forEach((image) => {

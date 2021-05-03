@@ -1,7 +1,6 @@
 :root {
   --theme-color: #807bb8;
 }
-
 section {
   padding: 5rem 10px;
   background-position: center center;
@@ -152,4 +151,24 @@ textarea {
   100% {
     transform: scale(0.98);
   }
+}
+
+.valid {
+  color: green;
+}
+
+.valid:before {
+  position: relative;
+  left: -35px;
+  content: "✔";
+}
+
+.invalid {
+  color: red;
+}
+
+.invalid:before {
+  position: relative;
+  left: -35px;
+  content: "✖";
 }
