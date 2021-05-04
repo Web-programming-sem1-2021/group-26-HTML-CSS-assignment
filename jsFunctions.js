@@ -82,10 +82,7 @@ function changeSlide() {
 }
 
 function resetTimer() {
-  // when click to indicator or controls button
-  // stop timer
   clearInterval(timer);
-  // then started again timer
   timer = setInterval(autoPlay, 4000);
 }
 
