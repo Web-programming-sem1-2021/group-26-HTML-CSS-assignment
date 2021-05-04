@@ -93,13 +93,13 @@ input.addEventListener("input", updateValue);
 function updateValue(e) {
   message.style.color = "red";
   let currentCharacters = e.target.value.length;
-  let wordLeft50 = 51 - currentCharacters;
-  let wordLeft500 = 500 - currentCharacters;
-  let wordOver = currentCharacters - 500;
+  let wordLeft50 = 50 - currentCharacters; //0 - 50
+  let wordLeft500 = 500 - currentCharacters; // 50 - 500
+  let wordOver = currentCharacters - 500; //500 -
   if (!currentCharacters == 0) {
     wordLeft50 <= 50 && wordLeft50 > 0
       ? (message.textContent = `${wordLeft50} is needed to reach the required character number!`)
-      : wordLeft500 >= 50 && wordLeft500 <= 500
+      : wordLeft500 <= 500 && wordLeft500 > 0
       ? (message.textContent = `You can text ${wordLeft500} more letters!`)
       : (message.textContent = `Deleting ${wordOver} letters is needed!`);
   }
