@@ -1,0 +1,233 @@
+@import url(“https://fonts.googlecpis.com/css2?family=Poppins:wght@300;400&display=swap”);
+/* @media url(“https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css”); */
+:root {
+  /* --background-color: #fff4f4; */
+  --store-slider-bg-color: white;
+  --nav-color: #ece9d0;
+  --nav-text-color: rgb(80, 78, 78);
+  --nav-hover-color: rgb(119, 119, 119);
+}
+
+* {
+  padding: 0;
+  margin-top: 0;
+  box-sizing: border-box;
+}
+
+body {
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+  font-family: “Poppins”, sans-serif;
+  background-color: var(--background-color);
+}
+header {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+h1 {
+  text-align: center;
+}
+a {
+  text-decoration: none;
+  color: blueviolet;
+}
+/* navigation bar */
+.nav {
+  overflow: hidden;
+  background-color: var(--nav-color);
+}
+.nav .nav-section {
+  display: inline-block;
+  width: 10%;
+  outline-offset: 0px;
+  text-shadow: none;
+  color: var(--nav-text-color);
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+  font-size: 20px;
+  transition: all 800ms cubic-bezier(0.18, 1, 0.23, 1);
+}
+.nav .homeIcon {
+  text-decoration: none !important;
+  display: inline-block;
+  color: var(--nav-text-color);
+  text-align: center;
+  padding: 16px 16px;
+  font-size: 20;
+  widows: 2px;
+  width: 20%;
+}
+
+.nav .icon {
+  display: none;
+  width: 13%;
+  outline-offset: 0px;
+  text-shadow: none;
+  color: var(--nav-text-color);
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+  font-size: 20px;
+  transition: all 800ms cubic-bezier(0.18, 1, 0.23, 1);
+}
+.nav .nav-section:hover,
+.nav .dropdown:hover,
+.nav .nav-section:active,
+.dropdown2:hover .dropbtn2 {
+  background-color: var(--nav-hover-color);
+  color: white;
+  letter-spacing: 5px;
+}
+.dropdown2 {
+  overflow: hidden;
+  display: inline;
+  background-color: var(--nav-color);
+}
+
+.dropdown2 .dropbtn2 {
+  display: inline-block;
+  width: 10%;
+  text-shadow: none;
+  background-color: var(--nav-color);
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+  font-size: 20px;
+  transition: all 800ms cubic-bezier(0.18, 1, 0.23, 1);
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.dropdown-content {
+  display: none;
+  position: relative;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
+.dropdown:hover .dropdown-content {
+  display: inline-table;
+}
+
+@media screen and (max-width: 600px) {
+  .nav a:not(:first-child),
+  .dropdown .dropbtn {
+    display: none;
+  }
+  .dropdown .dropbtn {
+    display: none;
+  }
+  .nav a.icon {
+    float: right;
+    display: block;
+    font-size: large;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .nav.responsive {
+    position: relative;
+  }
+  .nav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .nav.responsive .nav-section {
+    float: none;
+    display: grid;
+    text-align: center;
+    width: auto;
+  }
+  .nav.responsive .dropdown {
+    float: none;
+    display: block;
+    width: auto;
+  }
+  .nav.responsive .dropdown .dropdown-content {
+    position: relative;
+  }
+  .nav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+.footer {
+  width: 95%;
+  height: 300px;
+  position: relative;
+  justify-content: center;
+  background-color: #fff;
+  border-radius: 20px;
+  margin: 20px auto 10px auto;
+}
+.footer-content {
+  height: 300px;
+  display: flex;
+  padding: 40px 60px;
+  width: 100%;
+  margin-top: 200px;
+  border-top: 1px solid #84849d;
+  padding: 1rem;
+  height: 4rem;
+}
+.footer-section {
+  width: 20%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 1rem;
+}
+
+.footer-section li {
+  list-style: inherit;
+  padding-bottom: 7px;
+}
+.footer-section a {
+  display: inline;
+  text-align: left;
+  justify-content: space-between;
+  text-decoration: none;
+  color: #000948;
+  font-size: 24px;
+}
+.footer-section h3 {
+  color: #010837;
+}
+
+.footer-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.footer-section:hover a {
+  text-decoration: bold;
+  color: pink;
+}
+@media screen and (max-width: 600px) {
+  .footer {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+  }
+}

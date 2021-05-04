@@ -3,5 +3,6 @@ _site/
 .jekyll-cache/
 .jekyll-metadata
 bin/
-/.vs
+/.vscode
 
+.DS_Store

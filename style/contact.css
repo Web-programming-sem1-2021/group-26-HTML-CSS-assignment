@@ -93,7 +93,7 @@ textarea {
   height: initial;
   width: initial;
   margin-bottom: 0;
-  display: none;
+  display: block;
   cursor: pointer;
 }
 
@@ -102,7 +102,7 @@ textarea {
   cursor: pointer;
 }
 
-.form-group label:before {
+/* .form-group label:before {
   content: "";
   -webkit-appearance: none;
   background-color: transparent;
@@ -128,7 +128,7 @@ textarea {
   border: solid #0079bf;
   border-width: 0 2px 2px 0;
   transform: rotate(45deg);
-}
+} */
 #reason {
   font-size: 20px;
   border-radius: 10px;
@@ -151,24 +151,4 @@ textarea {
   100% {
     transform: scale(0.98);
   }
-}
-
-.valid {
-  color: green;
-}
-
-.valid:before {
-  position: relative;
-  left: -35px;
-  content: "✔";
-}
-
-.invalid {
-  color: red;
-}
-
-.invalid:before {
-  position: relative;
-  left: -35px;
-  content: "✖";
 }

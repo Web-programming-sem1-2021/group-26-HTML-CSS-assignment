@@ -422,7 +422,6 @@ body {
 .product,
 .product--col {
   box-shadow: 1px 5px 15px #ccc;
-
   height: auto;
   border-radius: 3px;
   padding: 2em;

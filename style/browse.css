@@ -1,0 +1,186 @@
+:root {
+  --theme-color: #cec8ef;
+}
+
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  justify-content: space-around;
+}
+
+/* general */
+aside section {
+  width: 6.5cm;
+  background-color: var(--theme-color);
+  margin-bottom: 24px;
+  margin-top: 30px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+/* small images are set to 200px in height */
+img.small1 {
+  float: left;
+  height: 200px;
+  margin-bottom: 24px;
+  margin-right: 24px;
+}
+/* medium images can be 50% of the container element�s width, up to 360px */
+img.medium {
+  max-width: 360px;
+  width: 50%;
+}
+/* large images are 100% of the container element�s width */
+img.large {
+  width: 100%;
+}
+/* add the same style of border to the elements which are to have borders */
+section,
+img,
+.checkmark {
+  border: 2px solid #b1b1b1;
+  border-radius: 16px;
+}
+/* the bits that are specific to a wide viewport (over 56em) */
+@media all and (min-width: 600px) {
+  aside {
+    float: left;
+    padding-left: 24px;
+    position: relative;
+  }
+  footer {
+    clear: both;
+  }
+}
+
+/* The container */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #2196f3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.row {
+  display: flex;
+  border: 0px solid #b1b1b1;
+  width: 2.5cm;
+  margin: 10px;
+  padding: 0;
+}
+
+.column {
+  margin: 0;
+  padding: 0;
+  width: 2.5cm;
+  flex: 50%;
+  border: 0px solid #b1b1b1;
+}
+
+/* store cards list layout */
+
+.store-cards {
+  max-width: 80%;
+  margin: 20px auto 20px auto;
+  position: relative;
+  display: grid;
+  justify-content: left;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  /* grid-template-rows: repeat(8, 1fr); */
+}
+
+.store-card {
+  background-color: var(--theme-color);
+  color: white;
+  margin: 20px;
+  padding: 1rem;
+  height: 20rem;
+  border: 2px solid #b1b1b1;
+  border-radius: 16px;
+}
+
+img.store-image {
+  flex: start;
+
+  max-width: 100%;
+
+  height: 10rem;
+}
+p.thumbnail-description {
+  margin: 10px;
+  justify-content: space-around;
+  font-size: 0.8rem;
+}
+
+.store-card a {
+  text-decoration: none;
+  color: rgb(231, 12, 132);
+}
+
+.store-card a:hover {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  cursor: pointer;
+}
