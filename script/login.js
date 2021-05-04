@@ -10,11 +10,6 @@ console.log(`loginSubmitButton`, loginSubmitButton);
 localStorage.setItem("userName", "");
 localStorage.setItem("password", "password");
 
-document.addEventListener("DOMContentLoaded", () => {
-  // Handler when the DOM is fully loaded
-  console.log(`object`, accountNavBarLink.slice(accountNavBarLink.length - 10));
-});
-
 console.log(
   `localStorage.getItem("password")`,
   localStorage.getItem("password")
