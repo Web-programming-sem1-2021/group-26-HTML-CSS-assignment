@@ -18,7 +18,8 @@
     <title>About Us</title>
     <script src="../script/modal.js" defer></script>
     <style></style>
-    <script src="../jsFunctions.js"></script>
+    <script src="../jsFunctions.js" defer></script>
+    <script src="../script/login.js" defer></script>
   </head>
 
   <body>
@@ -29,7 +30,9 @@
       /></a>
       <a class="nav-section" href="./about-us.html">About Us</a>
       <a class="nav-section" href="./fees.html">Fees</a>
-      <a class="nav-section" href="./myAccount/login.html">Account</a>
+      <a class="nav-section" href="./myAccount/login.html" id="nav-bar-acount"
+        >Account</a
+      >
 
       <details class="dropdown">
         <summary class="dropbtn">
@@ -57,21 +60,21 @@
     </div>
     <br />
     <div class="profile-card">
-        <div class="container">
-          <div class="content">
-            <a href="https://unsplash.com/photos/HkTMcmlMOUQ" target="_blank">
-              <div class="content-overlay"></div>
-              <img
-                class="content-image"
-                src="https://images.unsplash.com/photo-1433360405326-e50f909805b3?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=359e8e12304ffa04a38627a157fc3362"
-              />
-              <div class="content-details fadeIn-right">
-                <h3>This is a title</h3>
-                <p>This is a short description</p>
-              </div>
-            </a>
-          </div>
+      <div class="container">
+        <div class="content">
+          <a href="https://unsplash.com/photos/HkTMcmlMOUQ" target="_blank">
+            <div class="content-overlay"></div>
+            <img
+              class="content-image"
+              src="https://images.unsplash.com/photo-1433360405326-e50f909805b3?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=359e8e12304ffa04a38627a157fc3362"
+            />
+            <div class="content-details fadeIn-right">
+              <h3>This is a title</h3>
+              <p>This is a short description</p>
+            </div>
+          </a>
         </div>
+      </div>
     </div>
 
     <section class="profile-card">
@@ -187,395 +190,321 @@
       </div>
     </section>
 
-    <div class="shadowBox">
-      <section class="main">
-        <!-- leftSide -->
-        <div class="side_left">
-          <div class="profile">
-            <img
-              src="https://i.ibb.co/TMHYMD3/fb51dada-cf48-4c3c-8070-949acaf75f58.jpg"
-              class="img-fluid"
-              alt="Vishal Sondarva"
-            />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <div class="resume-wrapper">
+      <section class="profile section-padding">
+        <div class="container">
+          <div class="picture-resume-wrapper">
+            <div class="picture-resume">
+              <span
+                ><img
+                  src="https://gravatar.com/avatar/d9d6559748e67bdbe9f0f1c302f78e16?s=80&d=https://codepen.io/assets/avatars/user-avatar-80x80-fd2a2ade7f141e06f8fd94c000d6ac7a.png"
+                  alt=""
+              /></span>
+              <svg version="1.1" viewBox="0 0 350 350">
+                <defs>
+                  <filter id="goo">
+                    <feGaussianBlur
+                      in="SourceGraphic"
+                      stdDeviation="8"
+                      result="blur"
+                    />
+                    <feColorMatrix
+                      in="blur"
+                      mode="matrix"
+                      values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 21 -9"
+                      result="cm"
+                    />
+                  </filter>
+                </defs>
+
+                <g filter="url(#goo)">
+                  <circle
+                    id="main_circle"
+                    class="st0"
+                    cx="171.5"
+                    cy="175.6"
+                    r="130"
+                  />
+
+                  <circle
+                    id="circle"
+                    class="bubble0 st1"
+                    cx="171.5"
+                    cy="175.6"
+                    r="122.7"
+                  />
+                  <circle
+                    id="circle"
+                    class="bubble1 st1"
+                    cx="171.5"
+                    cy="175.6"
+                    r="122.7"
+                  />
+                  <circle
+                    id="circle"
+                    class="bubble2 st1"
+                    cx="171.5"
+                    cy="175.6"
+                    r="122.7"
+                  />
+                  <circle
+                    id="circle"
+                    class="bubble3 st1"
+                    cx="171.5"
+                    cy="175.6"
+                    r="122.7"
+                  />
+                  <circle
+                    id="circle"
+                    class="bubble4 st1"
+                    cx="171.5"
+                    cy="175.6"
+                    r="122.7"
+                  />
+                  <circle
+                    id="circle"
+                    class="bubble5 st1"
+                    cx="171.5"
+                    cy="175.6"
+                    r="122.7"
+                  />
+                  <circle
+                    id="circle"
+                    class="bubble6 st1"
+                    cx="171.5"
+                    cy="175.6"
+                    r="122.7"
+                  />
+                  <circle
+                    id="circle"
+                    class="bubble7 st1"
+                    cx="171.5"
+                    cy="175.6"
+                    r="122.7"
+                  />
+                  <circle
+                    id="circle"
+                    class="bubble8 st1"
+                    cx="171.5"
+                    cy="175.6"
+                    r="122.7"
+                  />
+                  <circle
+                    id="circle"
+                    class="bubble9 st1"
+                    cx="171.5"
+                    cy="175.6"
+                    r="122.7"
+                  />
+                  <circle
+                    id="circle"
+                    class="bubble10 st1"
+                    cx="171.5"
+                    cy="175.6"
+                    r="122.7"
+                  />
+                </g>
+              </svg>
+            </div>
+            <div class="clearfix"></div>
           </div>
-
-          <div class="profile_name">
-            <h1><strong>Vishal</strong> Sondarva</h1>
-            <h2>Web Designer</h2>
+          <div class="name-wrapper">
+            <h1>A.K. <br />Suryavanshi</h1>
+            <!-- YOUR NAME AND LAST NAME  -->
           </div>
-
-          <div class="boxArea about">
-            <div class="title">
-              <span>
-                <em>
-                  <?xml version="1.0" ?><svg
-                    height="32"
-                    id="svg8"
-                    version="1.1"
-                    viewBox="0 0 8.4666665 8.4666669"
-                    width="32"
-                    xmlns="http://www.w3.org/2000/svg"
-                    xmlns:cc="http://creativecommons.org/ns#"
-                    xmlns:dc="http://purl.org/dc/elements/1.1/"
-                    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-                    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-                    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-                    xmlns:svg="http://www.w3.org/2000/svg"
-                  >
-                    <defs id="defs2" />
-                    <g id="layer1" transform="translate(0,-288.53332)">
-                      <path
-                        d="M 10.462891 16.070312 C 4.9244824 18.277775 0.99608795 23.682844 0.99609375 30 A 1.0001 1.0001 0 0 0 2 31.003906 L 30 31.003906 A 1.0001 1.0001 0 0 0 30.996094 30 C 30.996099 23.68349 27.06876 18.278206 21.53125 16.070312 C 19.99994 17.27111 18.07881 17.996094 15.996094 17.996094 C 13.912967 17.996094 11.992832 17.271538 10.462891 16.070312 z "
-                        id="path935"
-                        style="
-                          color: #000000;
-                          font-style: normal;
-                          font-variant: normal;
-                          font-weight: normal;
-                          font-stretch: normal;
-                          font-size: medium;
-                          line-height: normal;
-                          font-family: sans-serif;
-                          font-variant-ligatures: normal;
-                          font-variant-position: normal;
-                          font-variant-caps: normal;
-                          font-variant-numeric: normal;
-                          font-variant-alternates: normal;
-                          font-feature-settings: normal;
-                          text-indent: 0;
-                          text-align: start;
-                          text-decoration: none;
-                          text-decoration-line: none;
-                          text-decoration-style: solid;
-                          text-decoration-color: #000000;
-                          letter-spacing: normal;
-                          word-spacing: normal;
-                          text-transform: none;
-                          writing-mode: lr-tb;
-                          direction: ltr;
-                          text-orientation: mixed;
-                          dominant-baseline: auto;
-                          baseline-shift: baseline;
-                          text-anchor: start;
-                          white-space: normal;
-                          shape-padding: 0;
-                          clip-rule: nonzero;
-                          display: inline;
-                          overflow: visible;
-                          visibility: visible;
-                          opacity: 1;
-                          isolation: auto;
-                          mix-blend-mode: normal;
-                          color-interpolation: sRGB;
-                          color-interpolation-filters: linearRGB;
-                          solid-color: #000000;
-                          solid-opacity: 1;
-                          vector-effect: none;
-                          fill: #fff;
-                          fill-opacity: 1;
-                          fill-rule: nonzero;
-                          stroke: none;
-                          stroke-width: 1.99999988;
-                          stroke-linecap: round;
-                          stroke-linejoin: round;
-                          stroke-miterlimit: 4;
-                          stroke-dasharray: none;
-                          stroke-dashoffset: 0;
-                          stroke-opacity: 1;
-                          paint-order: stroke fill markers;
-                          color-rendering: auto;
-                          image-rendering: auto;
-                          shape-rendering: auto;
-                          text-rendering: auto;
-                          enable-background: accumulate;
-                        "
-                        transform="matrix(0.26458333,0,0,0.26458333,0,288.53332)"
-                      />
-                      <path
-                        d="M 15.996094 1.0039062 C 11.589664 1.0039062 8.0019573 4.5916469 8.0019531 8.9980469 C 8.0019573 13.404485 11.589664 17 15.996094 17 C 20.402524 17 23.998043 13.404485 23.998047 8.9980469 C 23.998043 4.5916469 20.402524 1.0039062 15.996094 1.0039062 z "
-                        id="path940"
-                        style="
-                          color: #000000;
-                          font-style: normal;
-                          font-variant: normal;
-                          font-weight: normal;
-                          font-stretch: normal;
-                          font-size: medium;
-                          line-height: normal;
-                          font-family: sans-serif;
-                          font-variant-ligatures: normal;
-                          font-variant-position: normal;
-                          font-variant-caps: normal;
-                          font-variant-numeric: normal;
-                          font-variant-alternates: normal;
-                          font-feature-settings: normal;
-                          text-indent: 0;
-                          text-align: start;
-                          text-decoration: none;
-                          text-decoration-line: none;
-                          text-decoration-style: solid;
-                          text-decoration-color: #000000;
-                          letter-spacing: normal;
-                          word-spacing: normal;
-                          text-transform: none;
-                          writing-mode: lr-tb;
-                          direction: ltr;
-                          text-orientation: mixed;
-                          dominant-baseline: auto;
-                          baseline-shift: baseline;
-                          text-anchor: start;
-                          white-space: normal;
-                          shape-padding: 0;
-                          clip-rule: nonzero;
-                          display: inline;
-                          overflow: visible;
-                          visibility: visible;
-                          opacity: 1;
-                          isolation: auto;
-                          mix-blend-mode: normal;
-                          color-interpolation: sRGB;
-                          color-interpolation-filters: linearRGB;
-                          solid-color: #000000;
-                          solid-opacity: 1;
-                          vector-effect: none;
-                          fill: #fff;
-                          fill-opacity: 1;
-                          fill-rule: nonzero;
-                          stroke: none;
-                          stroke-width: 1.99999988;
-                          stroke-linecap: round;
-                          stroke-linejoin: round;
-                          stroke-miterlimit: 4;
-                          stroke-dasharray: none;
-                          stroke-dashoffset: 0;
-                          stroke-opacity: 1;
-                          paint-order: stroke fill markers;
-                          color-rendering: auto;
-                          image-rendering: auto;
-                          shape-rendering: auto;
-                          text-rendering: auto;
-                          enable-background: accumulate;
-                        "
-                        transform="matrix(0.26458333,0,0,0.26458333,0,288.53332)"
-                      />
-                    </g>
-                  </svg>
-                </em>
-              </span>
-              <h3>About Me</h3>
-            </div>
-            <div class="contentArea">
-              <p>
-                Always willing to learn, like to face challenges and have
-                ability to work. Always willing to learn, like to face
-                challenges and have ability to work.
-              </p>
-            </div>
+          <div class="clearfix"></div>
+          <div class="contact-info clearfix">
+            <ul class="list-titles">
+              <li>Call</li>
+              <li>Mail</li>
+              <li>Web</li>
+              <li>Home</li>
+            </ul>
+            <ul class="list-content">
+              <li>+91 893 006 8008</li>
+              <!-- YOUR PHONE NUMBER  -->
+              <li>thakurinfotech@gmail.com</li>
+              <!-- YOUR EMAIL -->
+              <li>
+                <a href="anilkumarsuryavanshi.wordpress.com"
+                  >anilkumarsuryavanshi.wordpress.com</a
+                >
+              </li>
+              <!-- YOUR WEBSITE  -->
+              <li>Faridabad HR, IN</li>
+              <!-- YOUR STATE AND COUNTRY  -->
+            </ul>
           </div>
-
-          <div class="boxArea contact">
-            <div class="title">
-              <span> </span>
-              <h3>Contact Me</h3>
-            </div>
-            <div class="contentArea">
-              <div class="contact-list">
-                <span>
-                  <em>
-                    <?xml version="1.0" ?><svg
-                      id="Layer_1"
-                      height="22"
-                      style="enable-background: new 0 0 512 512"
-                      version="1.1"
-                      viewBox="0 0 512 512"
-                      xml:space="preserve"
-                      xmlns="http://www.w3.org/2000/svg"
-                      xmlns:xlink="http://www.w3.org/1999/xlink"
-                    >
-                      <path
-                        d="M351.5,339.3c-18.8-4.1-41.3,3.1-49.4,20.6c-4.7,10.1-5.4,23.9-15.6,28.4c-7.3,3.3-15.7-0.4-22.7-4.3  c-34.4-19.2-103.4-156.4-98.2-195.5c1-7.9,3.2-16.9,10.1-20.8c9.7-5.5,21.2,2.2,32.1,4.4c18.9,4,38-9.8,46-27.3  c8-17.5,7.1-37.8,4.4-56.9c-3.2-22.3-9.2-45.2-24-62.1c-42.2-48-104.5,0.4-129.4,40.9C88.8,92.8,80,122.7,75.8,152.8  C66.7,217,182,446.4,239,477.5c26.7,14.6,55.9,25.3,86.2,28c47.4,4.2,123.4-16.9,110.1-79.4c-4.7-22-19.5-40.5-35.5-56.3  C386,356.2,370.3,343.4,351.5,339.3z"
-                        id="XMLID_1_"
-                      />
-                    </svg>
-                  </em>
-                </span>
-                <h3><a href="#">+91 9624805595</a></h3>
-              </div>
-              <div class="contact-list">
-                <span>
-                  <em>
-                    <?xml version="1.0" ?>
-                    <!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
-                    <svg
-                      height="28"
-                      id="Layer_1"
-                      style="enable-background: new 0 0 16 16"
-                      version="1.1"
-                      viewBox="0 0 16 16"
-                      width="16px"
-                      xml:space="preserve"
-                      xmlns="http://www.w3.org/2000/svg"
-                      xmlns:xlink="http://www.w3.org/1999/xlink"
-                    >
-                      <path
-                        d="M8,10c-0.266,0-0.5-0.094-1-0.336L0,6v7c0,0.55,0.45,1,1,1h14c0.55,0,1-0.45,1-1V6L9,9.664C8.5,9.906,8.266,10,8,10z M15,2  H1C0.45,2,0,2.45,0,3v0.758l8,4.205l8-4.205V3C16,2.45,15.55,2,15,2z"
-                      />
-                    </svg>
-                  </em>
-                </span>
-                <h3><a href="#">sondarvavishal@gmail.com</a></h3>
-              </div>
-              <div class="contact-list">
-                <span>
-                  <em>
-                    <?xml version="1.0" ?>
-                    <!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
-                    <svg
-                      height="28"
-                      id="Layer_1"
-                      style="enable-background: new 0 0 16 16"
-                      version="1.1"
-                      viewBox="0 0 16 16"
-                      width="16px"
-                      xml:space="preserve"
-                      xmlns="http://www.w3.org/2000/svg"
-                      xmlns:xlink="http://www.w3.org/1999/xlink"
-                    >
-                      <path
-                        d="M15.45,7L14,5.551V2c0-0.55-0.45-1-1-1h-1c-0.55,0-1,0.45-1,1v0.553L9,0.555C8.727,0.297,8.477,0,8,0S7.273,0.297,7,0.555  L0.55,7C0.238,7.325,0,7.562,0,8c0,0.563,0.432,1,1,1h1v6c0,0.55,0.45,1,1,1h3v-5c0-0.55,0.45-1,1-1h2c0.55,0,1,0.45,1,1v5h3  c0.55,0,1-0.45,1-1V9h1c0.568,0,1-0.437,1-1C16,7.562,15.762,7.325,15.45,7z"
-                      />
-                    </svg>
-                  </em>
-                </span>
-                <h3>Abc******, Zip-15**055</h3>
-              </div>
-            </div>
+          <div class="contact-presentation">
+            <!-- YOUR PRESENTATION RESUME  -->
+            <p>
+              I love devloping Web and Mobile apps and Organising Social
+              Activites for Nation
+            </p>
           </div>
-
-          <div class="boxArea education">
-            <div class="title">
-              <span>
-                <em>
-                  <?xml version="1.0" ?><svg
-                    fill="none"
-                    height="28"
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    viewBox="0 0 24 24"
-                    width="24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
-                    <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
-                  </svg>
-                </em>
-              </span>
-              <h3>Education</h3>
-            </div>
-            <div class="contentArea">
-              <div class="education_fild">
-                <p>2015 - 2018</p>
-                <strong>BCA in Computer Science</strong>
-                <p>**** University</p>
-              </div>
-
-              <div class="education_fild">
-                <p>2013 - 2015</p>
-                <strong>HSC in Commerce</strong>
-                <p>**** State Board</p>
-              </div>
-
-              <div class="education_fild">
-                <p>2012 - 2013</p>
-                <strong>SSC in design</strong>
-                <p>***** State Board</p>
-              </div>
-            </div>
+          <div class="contact-social clearfix">
+            <ul class="list-titles">
+              <li>Twitter</li>
+              <li>Dribbble</li>
+              <li>Codepen</li>
+            </ul>
+            <ul class="list-content">
+              <!-- REMEMBER TO PUT THE URL ON THE HREF TAG  -->
+              <li><a href="">@kanwar_ak</a></li>
+              <!-- YOUR TWITTER USER  -->
+              <li><a href="">KUNWARANILSURYAVANSHI</a></li>
+              <!-- YOUR DRIBBBLE USER  -->
+              <li><a href="">KUNWARANILSURYAVANSHI</a></li>
+              <!-- YOUR BEHANCE USER  -->
+            </ul>
           </div>
-        </div>
-
-        <!-- rightSide -->
-        <div class="side_Right">
-          <div class="profile_name">
-            <h1><strong>Vishal</strong> Sondarva</h1>
-            <h2>Web Designer</h2>
-          </div>
-
-          <div class="areaBox experience">
-            <h3>Experience</h3>
-
-            <div class="list">
-              <strong>Web Designer</strong>
-              <p>***abcd*** Pvt LTD - abc******, 123******</p>
-              <p>February 2019 - June 2020</p>
-            </div>
-
-            <div class="list">
-              <strong>Web Designer</strong>
-              <p>***abcdef*** Pvt LTD - abc******, 123******</p>
-              <p>September 2018 - February 2019</p>
-            </div>
-          </div>
-
-          <div class="areaBox skill">
-            <h3>Professional Skills</h3>
-
-            <div class="list p-80">
-              <strong>Photoshop</strong>
-              <span></span>
-            </div>
-
-            <div class="list p-90">
-              <strong>HTML5</strong>
-              <span></span>
-            </div>
-
-            <div class="list p-90">
-              <strong>CSS3</strong>
-              <span></span>
-            </div>
-
-            <div class="list p-80">
-              <strong>SCSS</strong>
-              <span></span>
-            </div>
-
-            <div class="list p-80">
-              <strong>JavaScript</strong>
-              <span></span>
-            </div>
-
-            <div class="list p-90">
-              <strong>Bootstrap</strong>
-              <span></span>
-            </div>
-
-            <div class="list p-50">
-              <strong>React Native</strong>
-              <span></span>
-            </div>
-          </div>
-
-          <div class="areaBox interests">
-            <h3>Interests</h3>
-
-            <div class="box">
-              <p>Coding</p>
-              <p>Typing</p>
-              <p>Gaming</p>
-              <p>Traveling</p>
-            </div>
-          </div>
-
-          <div class="areaBox portfolio">
-            <h3>Portfolio</h3>
-
-            <a href="http://vishal.ezyro.com/">www.vishal.ezyro.com/</a>
+          <br />
+          <div class="contact-social clearfix"><h2>Education</h2></div>
+          <div class="contact-social clearfix">
+            <ul class="list-titles">
+              <li>B.Tech</li>
+              <li>High School</li>
+            </ul>
+            <ul class="list-content">
+              <!-- REMEMBER TO PUT THE URL ON THE HREF TAG  -->
+              <li>
+                <a href=""
+                  >Compter Science and Engineering from MDU Rohtak HR, IN</a
+                >
+              </li>
+              <!-- YOUR TWITTER USER  -->
+              <li><a href="">D.A.V. Public School -CBSE</a></li>
+              <!-- YOUR DRIBBBLE USER  -->
+            </ul>
           </div>
         </div>
       </section>
+
+      <section class="experience section-padding">
+        <div class="container">
+          <h3 class="experience-title">Experience</h3>
+
+          <div class="experience-wrapper">
+            <div class="company-wrapper clearfix">
+              <div class="experience-title">Infosys Ltd</div>
+              <!-- NAME OF THE COMPANY YOUWORK WITH  -->
+              <div class="time">Sept 2016 - Present</div>
+              <!-- THE TIME YOU WORK WITH THE COMPANY  -->
+            </div>
+
+            <div class="job-wrapper clearfix">
+              <div class="experience-title">Front End Developer</div>
+              <!-- JOB TITLE  -->
+              <div class="company-description">
+                <p>
+                  Mangaing complete Front end development Majorly working with
+                  UI and Code review, Deployment.
+                </p>
+                <!-- JOB DESCRIPTION  -->
+              </div>
+            </div>
+
+            <div class="company-wrapper clearfix">
+              <div class="experience-title">Xchanging Technologies</div>
+              <!-- NAME OF THE COMPANY YOUWORK WITH  -->
+              <div class="time">Aug 2015 - Aug 2016</div>
+              <!-- THE TIME YOU WORK WITH THE COMPANY  -->
+            </div>
+
+            <div class="job-wrapper clearfix">
+              <div class="experience-title">Web Developer</div>
+              <!-- JOB TITLE  -->
+              <div class="company-description">
+                <p>
+                  Heading whole front end work. Managing team and Client with
+                  following Agile Development Methodology. Taking care of
+                  Complete Front End and Back end integration with REST
+                  services.
+                </p>
+                <!-- JOB DESCRIPTION  -->
+              </div>
+            </div>
+
+            <div class="company-wrapper clearfix">
+              <div class="experience-title">HCL SERVICES LTD</div>
+              <!-- NAME OF THE COMPANY YOUWORK WITH  -->
+              <div class="time">JAN 2014 - JUL 2015</div>
+              <!-- THE TIME YOU WORK WITH THE COMPANY  -->
+            </div>
+
+            <div class="job-wrapper clearfix">
+              <div class="experience-title">UI DEVELOPER/LAMP</div>
+              <!-- JOB TITLE  -->
+              <div class="company-description">
+                <p>
+                  Admininstration of Linux(Ubuntu, Rehdat) server and Desktop.
+                  Programming of PHP, MYSQL scripts and services and UI
+                  development.
+                </p>
+                <!-- JOB DESCRIPTION  -->
+              </div>
+            </div>
+
+            <div class="company-wrapper clearfix">
+              <div class="experience-title">Art tech Services</div>
+              <!-- NAME OF THE COMPANY YOUWORK WITH  -->
+              <div class="time">Sept 2012 - Jan 2014</div>
+              <!-- THE TIME YOU WORK WITH THE COMPANY  -->
+            </div>
+
+            <div class="job-wrapper clearfix">
+              <div class="experience-title">
+                Freelance, Web Designer / Web Developer, IT-admin
+              </div>
+              <!-- JOB TITLE  -->
+              <div class="company-description">
+                <p>
+                  Admininstration of Windows. Webmaster of Webhosting,
+                  Programming, UI development, Interview and Hiring. Marketing,
+                  Client Meeting
+                </p>
+                <!-- JOB DESCRIPTION  -->
+              </div>
+            </div>
+          </div>
+          <!--Skill experience-->
+
+          <div class="section-wrapper clearfix">
+            <h3 class="section-title">Skills</h3>
+            <!-- YOUR SET OF SKILLS  -->
+            <ul>
+              <li class="skill-percentage">HTML / HTML5</li>
+              <li class="skill-percentage">CSS / CSS3 / BOOTSTRAP</li>
+              <li class="skill-percentage">Javascript</li>
+              <li class="skill-percentage">Jquery</li>
+              <li class="skill-percentage">AngularJS</li>
+              <li class="skill-percentage">Photoshop</li>
+              <li class="skill-percentage">BASIC PHP</li>
+              <li class="skill-percentage">BASIC MYSQL</li>
+              <li class="skill-percentage">BASIC LINUX</li>
+              <li class="skill-percentage">GIT/SVN</li>
+              <li class="skill-percentage">GULP/GRUNT</li>
+            </ul>
+          </div>
+
+          <div class="section-wrapper clearfix">
+            <h3 class="section-title">Hobbies</h3>
+            <!-- DESCRIPTION OF YOUR HOBBIES -->
+            <p>
+              Organising Social activities, Health awareness, Free Yoga Sessions
+              and Camp.
+            </p>
+
+            <p>Free Motivational seminars and Coding for something new.</p>
+          </div>
+        </div>
+      </section>
+
+      <div class="clearfix"></div>
     </div>
 
     <div class="modal" id="modal-giang">

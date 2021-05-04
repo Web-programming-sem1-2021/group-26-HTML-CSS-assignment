@@ -1,9 +1,8 @@
-
-*{
+* {
   font-family: Arial, Helvetica, sans-serif;
 }
 a {
-color: black;
+  color: black;
 }
 
 @keyframes tonext {
@@ -51,7 +50,6 @@ color: black;
   }
 }
 
-
 * {
   box-sizing: border-box;
   scrollbar-color: transparent transparent; /* thumb and track color */
@@ -75,7 +73,8 @@ color: black;
   -ms-overflow-style: none;
 }
 
-ol, li {
+ol,
+li {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -112,15 +111,15 @@ ol, li {
 /* .carousel__slide:nth-child(even) {
   background-color: #99f;
 } */
-.carousel-pic1{
-    width: 100%;
-    height: 100%;
-    background-image: url(./images/Carousel/carousel1.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+.carousel-pic1 {
+  width: 100%;
+  height: 100%;
+  background-image: url(./images/Carousel/carousel1.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
-.carousel-pic2{
+.carousel-pic2 {
   width: 100%;
   height: 100%;
   background-image: url(./images/Carousel/carousel2.png);
@@ -128,7 +127,7 @@ ol, li {
   background-repeat: no-repeat;
   background-position: center;
 }
-.carousel-pic3{
+.carousel-pic3 {
   width: 100%;
   height: 100%;
   background-image: url(./images/Carousel/carousel3.png);
@@ -136,7 +135,7 @@ ol, li {
   background-repeat: no-repeat;
   background-position: center;
 }
-.carousel-pic4{
+.carousel-pic4 {
   width: 100%;
   height: 100%;
   background-image: url(./images/Carousel/carousel4.png);
@@ -149,7 +148,7 @@ ol, li {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate3d(-50%,-40%,70px);
+  transform: translate3d(-50%, -40%, 70px);
   color: #fff;
   font-size: 0em;
 }
@@ -239,7 +238,7 @@ ol, li {
 
 .carousel::before,
 .carousel::after {
-  content: '';
+  content: "";
   z-index: 1;
   background-color: rgb(165, 165, 165);
   background-size: 1.5rem 1.5rem;
@@ -260,7 +259,6 @@ ol, li {
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='100,50 20,100 20,0' fill='%23fff'/%3E%3C/svg%3E");
 }
 
-
 /*--------------- store sections carousels ---------------- */
 /* -------------------------------------------------------- */
 .carousel2 {
@@ -271,18 +269,25 @@ ol, li {
   margin: 0 auto 0 auto;
   width: 73vw;
   height: fit-content;
-  background: linear-gradient(90deg, rgb(255, 240, 241) 0%, rgb(210, 210, 255) 100%);
+  background: linear-gradient(
+    90deg,
+    rgb(255, 240, 241) 0%,
+    rgb(210, 210, 255) 100%
+  );
 
   background-color: #ffffff;
 }
 .carousel2::-webkit-scrollbar {
   display: none;
   -webkit-overflow-scrolling: auto;
-  
 }
-.featured{
+.featured {
   width: 100%;
-  background: linear-gradient(90deg, rgb(255, 240, 241) 0%, rgb(210, 210, 255) 100%);
+  background: linear-gradient(
+    90deg,
+    rgb(255, 240, 241) 0%,
+    rgb(210, 210, 255) 100%
+  );
 }
 .item2 {
   min-width: 300px;
