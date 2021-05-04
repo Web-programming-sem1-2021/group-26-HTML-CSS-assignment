@@ -7,11 +7,11 @@
     <link rel="stylesheet" href="../../style.css" />
     <link rel="stylesheet" href="../../style/login.css" />
     <script src="../../script/login.js" defer></script>
-    <script>
+    <!-- <script>
       function redirect() {
         location.replace("../myAccount/my-account.html");
       }
-    </script>
+    </script> -->
   </head>
   <body>
     <!-- referenced from : "https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp" -->
@@ -54,16 +54,11 @@
       <form class="login-form">
         <input type="text" placeholder="Enter Username" id="usrname" />
         <input type="password" placeholder="Enter Password" id="passcode" />
-        <button
-          class="login-button"
-          id="login-submit"
-          href="./my-account.html"
-          action="submit"
-        >
+        <button class="login-button" id="login-submit" action="submit">
           login
           <em style="color: navy">(Click here to see user's profile page)</em>
         </button>
-
+        <div></div>
         <p class="message">
           Not registered? <a href="../register.html">Create an account</a>
         </p>
