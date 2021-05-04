@@ -1,8 +1,9 @@
 const loginForm = document.getElementsByClassName("login-form");
 const loginSubmitButton = document.getElementById("login-submit");
+const userName = document.getElementById("usrname");
+const password = document.getElementById("passcode");
 console.log(`loginSubmitButton`, loginSubmitButton);
 
-localStorage.setItem("userName", "");
 localStorage.setItem("password", "password");
 
 console.log(
@@ -10,20 +11,30 @@ console.log(
   localStorage.getItem("password")
 );
 
+const handleWrongPassword = () => {
+  const wrongPasswordStyle = {
+    "animation-name": "shake, glow-red",
+    "animation-duration": "0.7s, 0.35s",
+    "animation-iteration-count": "1, 2",
+  };
+  const invalidPasswordMessage = "Your password is invalid!";
+  const invalidPasswordElement = document.getElementById(
+    "wrong-password-message"
+  );
+  // Object.assign(password.style, wrongPasswordStyle);
+  invalidPasswordElement.style.color = "red ";
+  invalidPasswordElement.innerHTML = invalidPasswordMessage;
+};
+
 const handleLogin = () => {
   if (loginForm != null) {
-    const userName = document.getElementById("usrname");
-    const password = document.getElementById("passcode");
-    
-
     loginSubmitButton.addEventListener("click", (e) => {
       e.preventDefault();
-      if (localStorage.getItem("password") === password.value) {
-        localStorage.setItem("passcode", password.value);
-        window.location = "../myAccount/my-account.html";
-      } else {
-        
-      }
+      localStorage.getItem("password") === password.value
+        ? (localStorage.setItem("email", userName.value),
+          localStorage.setItem("passcode", password.value),
+          (window.location = "../myAccount/my-account.html"))
+        : handleWrongPassword();
     });
   }
 };

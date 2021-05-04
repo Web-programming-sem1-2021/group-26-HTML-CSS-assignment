@@ -23,6 +23,20 @@
   box-sizing: border-box;
   font-size: 14px;
 }
+
+.form input[type="password"] {
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+  animation-name: shake, glow-red;
+  animation-duration: 0.7s, 0.35s;
+  animation-iteration-count: 1, 2;
+}
 .form .login-button {
   text-transform: uppercase;
   outline: 0;
@@ -94,5 +108,28 @@
 @media screen and (max-width: 1000px) {
   .form {
     max-width: 60%;
+  }
+}
+
+@keyframes shake {
+  0%,
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(8px);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-8px);
+  }
+}
+
+@keyframes glow-red {
+  50% {
+    border-color: indianred;
   }
 }
