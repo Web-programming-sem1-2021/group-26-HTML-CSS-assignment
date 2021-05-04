@@ -3,9 +3,7 @@
 const questions = [5];
 
 const loginForm = document.getElementsByClassName("login-form");
-let accountNavBarLink = document
-  .getElementById("nav-bar-acount")
-  .getAttribute("href");
+let accountNavBarLink = document.getElementById("nav-bar-acount");
 const loginSubmitButton = document.getElementById("login-submit");
 console.log(`loginSubmitButton`, loginSubmitButton);
 
@@ -23,7 +21,6 @@ console.log(
 );
 
 const handleLogin = () => {
-  accountNavBarLink = "";
   if (loginForm != null) {
     const userName = document.getElementById("usrname");
     const password = document.getElementById("passcode");
@@ -35,8 +32,10 @@ const handleLogin = () => {
           //     `object`,
           //     localStorage.getItem("password") === password.value
           //   ),
-          ((accountNavBarLink =
-            "https://web-programming-sem1-2021.github.io/group-26-HTML-CSS-assignment/homepage/myAccount/my-account.html"),
+          (accountNavBarLink.setAttribute(
+            "href",
+            "https://web-programming-sem1-2021.github.io/group-26-HTML-CSS-assignment/homepage/myAccount/my-account.html"
+          ),
           console.log(`object`, accountNavBarLink),
           (window.location =
             "https://web-programming-sem1-2021.github.io/group-26-HTML-CSS-assignment/homepage/myAccount/my-account.html"),
