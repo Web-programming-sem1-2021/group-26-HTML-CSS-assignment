@@ -33,7 +33,8 @@ const handleLogin = () => {
       localStorage.getItem("password") === password.value
         ? (localStorage.setItem("email", userName.value),
           localStorage.setItem("passcode", password.value),
-          (window.location = "../myAccount/my-account.html"))
+          (window.location =
+            "https://web-programming-sem1-2021.github.io/group-26-HTML-CSS-assignment/homepage/myAccount/my-account.html"))
         : handleWrongPassword();
     });
   }
