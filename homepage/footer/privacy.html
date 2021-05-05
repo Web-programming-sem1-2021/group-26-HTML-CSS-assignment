@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Copyright</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    />
+    <script src="../../jsFunctions.js" defer></script>
   </head>
   <body>
     <!DOCTYPE html>
@@ -51,12 +56,31 @@
       <body>
         <div class="nav" id="navbar">
           <a href="../../index.html" class="homeIcon">
-            <h1 style="font-size: 50px">ICONIC 🐈</h1></a
-          >
+            <img src="../../icons/ICONIC MALL.svg"
+          /></a>
           <a class="nav-section" href="../about-us.html">About Us</a>
           <a class="nav-section" href="../fees.html">Fees</a>
-          <a class="nav-section" href="../myAccount/my-account.html">Account</a>
-          <a class="nav-section" href="../browse.html">Browse</a>
+          <a
+            class="nav-section"
+            href="../myAccount/login.html"
+            id="nav-bar-acount"
+            >Account</a
+          >
+
+          <details class="dropdown">
+            <summary class="dropbtn">
+              Browse<i class="fa fa-caret-down"></i>
+            </summary>
+            <div onclick="" class="dropdown-content">
+              <a href="../browse/browse-stores-by-name.html"
+                >Browse Store <br />
+                by name</a
+              >
+              <a href="../browse/browse-stores-by-categories.html"
+                >Browse Store <br />by Categories</a
+              >
+            </div>
+          </details>
           <a class="nav-section" href="../faqs.html">FAQs</a>
           <a class="nav-section" href="../contact.html">Contact</a>
           <a
@@ -365,7 +389,6 @@
           </ul>
         </div>
         <footer>
-          <h1>FOOTER AREA</h1>
           <div class="footer">
             <div class="footer-content">
               <div class="footer-section">
@@ -394,20 +417,8 @@
                 <ul></ul>
               </div>
             </div>
-            <div class="footer-bottom">Privacy policy-Terms and conditions</div>
           </div>
         </footer>
-
-        <script>
-          function handleResponsiveNavBar() {
-            var x = document.getElementById("navbar");
-            if (x.className === "nav") {
-              x.className += " responsive";
-            } else {
-              x.className = "nav";
-            }
-          }
-        </script>
       </body>
     </html>
   </body>

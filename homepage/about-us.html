@@ -4,28 +4,51 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./../style.css" />
+    <link rel="stylesheet" href="../style/aboutUs/about-us.css" />
+    <link rel="stylesheet" href="../style/aboutUs/profileModal.css" />
+
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
-      href="../style/about-us.css
-  "
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     />
     <title>About Us</title>
+    <script src="../script/modal.js" defer></script>
+    <style></style>
+    <script src="../jsFunctions.js" defer></script>
   </head>
-  <div></div>
+
   <body>
+    <!-- referenced from : "https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp" -->
     <div class="nav" id="navbar">
-      <a href="../" class="homeIcon"> <h1>ICONIC</h1></a>
+      <a style="border: none" href="../index.html" class="homeIcon">
+        <img src="../icons/ICONIC MALL.svg"
+      /></a>
       <a class="nav-section" href="./about-us.html">About Us</a>
       <a class="nav-section" href="./fees.html">Fees</a>
-      <a class="nav-section" href="./myAccount/my-account.html">Account</a>
-      <a class="nav-section" href="./browse.html">Browse</a>
-      <a class="nav-section" href="./about-us.html">FAQs</a>
-      <a
-        class="nav-section"
-        href="./contact.html
-      "
-        >Contact</a
+      <a class="nav-section" href="./myAccount/login.html" id="nav-bar-acount"
+        >Account</a
       >
+
+      <details class="dropdown">
+        <summary class="dropbtn">
+          Browse<i class="fa fa-caret-down"></i>
+        </summary>
+        <div onclick="" class="dropdown-content">
+          <a href="./browse/browse-stores-by-name.html"
+            >Browse Store <br />
+            by name</a
+          >
+          <a href="./browse/browse-stores-by-categories.html"
+            >Browse Store <br />by Categories</a
+          >
+        </div>
+      </details>
+      <a class="nav-section" href="./faqs.html">FAQs</a>
+      <a class="nav-section" href="./contact.html">Contact</a>
       <a
         href="javascript:void(0);"
         style="font-size: 15px"
@@ -34,129 +57,579 @@
         >&#9776;</a
       >
     </div>
-    <section>
-      <h2 style="position: relative">Nguyen Thi Quynh Giang</h2>
-      <p>
+    <!-- <br />
+    <div class="profile-card">
+      <div class="container">
+        <div class="content">
+          <a href="https://unsplash.com/photos/HkTMcmlMOUQ" target="_blank">
+            <div class="content-overlay"></div>
+            <img
+              class="content-image"
+              src="https://images.unsplash.com/photo-1433360405326-e50f909805b3?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=359e8e12304ffa04a38627a157fc3362"
+            />
+            <div class="content-details fadeIn-right">
+              <h3>This is a title</h3>
+              <p>This is a short description</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div> -->
+
+    <section class="profile-card">
+      <h2 style="position: relative">Nguyễn Thị Quỳnh Giang</h2>
+      <p class="modal-open" data-modal="modal-giang">
         <img
           class="small1"
           src="../images/team/Giang.jpg"
           alt="Picture of Giang"
         />
       </p>
-      <p>
-       <h3>Major: Information Technology</h3>
-       <b>Date of birth:</b> May 18th, 2020 <br>
-       <b>Personality type:</b> INTP <br>
-       <b>Interests:</b>  <br>
-      </p>
+      <div>
+        <h3>Major: Information Technology</h3>
+        <b>Date of birth:</b> May 18th, 2020 <br />
+        <b>Personality type:</b> INTP <br />
+        <b>Hobbies:</b>Technology, cats and dogs petting, front-end coding<br />
+      </div>
+      <br />
+      <div class="social">
+        <div>
+          <a href="https://www.facebook.com/nguyenthi.quynhgiang.52"
+            ><li><i class="fab fa-facebook"></i></li
+          ></a>
+          <a
+            href="https://github.com/GiangNguyennhttps://github.com/GiangNguyenn"
+            ><li><i class="fab fa-github"></i></li
+          ></a>
+        </div>
+      </div>
     </section>
-    <section>
-      <h2 style="display: block; position: relative;">Joo Jeong-hyeon</h2>
-      <p>
+    <section class="profile-card">
+      <h2 style="display: block; position: relative">Joo Jeong-hyeon</h2>
+      <p class="modal-open" data-modal="modal-joo">
         <img
           class="small2"
           src="../images/team/Jeong-hyeon.png"
           alt="Picture of Jeong-hyeon"
         />
       </p>
-      <p>
-        Acoustic guitar? Electric lead guitar? Ukelele? Harp? Jean can play them
-        all. She started off by making homemade guitars from cardboard boxes and
-        elastic bands till her uncle took pity on her and bought her a Spanish
-        guitar for Christmas. After a few lessons at school she was flying!
-      </p>
+      <div>
+        <h3>Major: Information Technology</h3>
+        <b>Date of birth:</b> April 27th, 1999 <br />
+        <b>Nationality</b>: Korea<br />
+        <b>Personality type:</b> ISFP <br />
+        <b>Interests</b> : Playing the Ukulele and Piano. Mobile application
+        development as well. <br />
+      </div>
+      <br />
+      <div class="social">
+        <div>
+          <a href="https://www.facebook.com/profile.php?id=100024240333444"
+            ><li><i class="fab fa-facebook"></i></li
+          ></a>
+          <a href="https://github.com/JooJeonghyeon99"
+            ><li><i class="fab fa-github"></i></li
+          ></a>
+        </div>
+      </div>
     </section>
-    <section>
-      <h2>Ramcharan Ramacharan</h2>
-      <p>
+    <section class="profile-card">
+      <h2 style="display: block; position: relative">Ramcharan Ramacharan</h2>
+      <p class="modal-open" data-modal="modal-ramcharan">
         <img
           class="small1"
           src="../images/team/Ram.jpg"
           alt="Picture of Ramcharan"
         />
       </p>
-      <p>
-        Jonathan is the VampireTribe's singer. He likes to sing all the time -
-        not just when he's playing with the VampireTribe! His mom and dad say he
-        learened to sing before he learned to talk!
-      </p>
-      <p>Jonathan also plays clarinet and is learning the alto saxophone.</p>
+      <p>Major: Information Technology</p>
+      <p>Full Name: Ramanaharan Ramcharan</p>
+      <p>Nationality: Sri Lankan</p>
+      <p>Date of Birth: 1998/10/10</p>
+      <p>Hobbies: Video Games, Swimming</p>
+      <br />
+
+      <div class="social">
+        <a href="https://www.facebook.com/profile.php?id=100038263066152"
+          ><li><i class="fab fa-facebook"></i></li
+        ></a>
+        <a href="https://github.com/ramcharan10"
+          ><li><i class="fab fa-github"></i></li
+        ></a>
+      </div>
     </section>
-    <section>
-      <h2 style="padding-left: 88%; position: relative">
-        Vo Khai Minh
-      </h2>
-      <p>
+    <section class="profile-card">
+      <h2 style="display: block; position: relative">Võ Khải Minh</h2>
+      <p class="modal-open" data-modal="modal-minh">
         <img
           class="small2"
           src="../images/team/Minh.png"
-          alt="Picture of Jean"
+          alt="Picture of Minh"
         />
       </p>
 
+      <br />
+      <h3>Major: Information technology</h3>
+      <p><b>Hometown:</b> Quãng Ngãi City</p>
+      <p><b>Date of birth:</b> November 8th, 2002</p>
+      <p><b>Hobbies:</b>Reading books, reading wikipedia, listening to music</p>
       <p>
-        Acoustic guitar? Electric lead guitar? Ukelele? Harp? Jean can play them
-        all. She started off by making homemade guitars from cardboard boxes and
-        elastic bands till her uncle took pity on her and bought her a Spanish
-        guitar for Christmas. After a few lessons at school she was flying!
+        <b>Background:</b> Studied in Lê Khiết Specialized and gifted
+        highschool, curently studing in RMIT uni and major in Information
+        Technology.
       </p>
+
+      <div class="social">
+        <a href="https://www.facebook.com/vokhaiminhheo/"
+          ><li><i class="fab fa-facebook"></i></li
+        ></a>
+        <a href="https://github.com/Minh0811"
+          ><li><i class="fab fa-github"></i></li
+        ></a>
+      </div>
     </section>
-    <ul class="icon-effect icon-effect-1a">
-      <li>
-        <a href="#" class="icon"><i class="fa fa-facebook"></i></a>
-      </li>
-      <li>
-        <a href="#" class="icon"><i class="fa fa-twitter"></i></a>
-      </li>
-      <li>
-        <a href="#" class="icon"><i class="fa fa-github"></i></a>
-      </li>
-    </ul>
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <div class="resume-wrapper">
+      <section class="profile section-padding">
+        <div class="container">
+          <div class="picture-resume-wrapper">
+            <div class="picture-resume">
+              <span
+                ><img
+                  src="https://gravatar.com/avatar/d9d6559748e67bdbe9f0f1c302f78e16?s=80&d=https://codepen.io/assets/avatars/user-avatar-80x80-fd2a2ade7f141e06f8fd94c000d6ac7a.png"
+                  alt=""
+              /></span>
+              <svg version="1.1" viewBox="0 0 350 350">
+                <defs>
+                  <filter id="goo">
+                    <feGaussianBlur
+                      in="SourceGraphic"
+                      stdDeviation="8"
+                      result="blur"
+                    />
+                    <feColorMatrix
+                      in="blur"
+                      mode="matrix"
+                      values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 21 -9"
+                      result="cm"
+                    />
+                  </filter>
+                </defs>
+
+                <g filter="url(#goo)">
+                  <circle
+                    id="main_circle"
+                    class="st0"
+                    cx="171.5"
+                    cy="175.6"
+                    r="130"
+                  />
+
+                  <circle
+                    id="circle"
+                    class="bubble0 st1"
+                    cx="171.5"
+                    cy="175.6"
+                    r="122.7"
+                  />
+                  <circle
+                    id="circle"
+                    class="bubble1 st1"
+                    cx="171.5"
+                    cy="175.6"
+                    r="122.7"
+                  />
+                  <circle
+                    id="circle"
+                    class="bubble2 st1"
+                    cx="171.5"
+                    cy="175.6"
+                    r="122.7"
+                  />
+                  <circle
+                    id="circle"
+                    class="bubble3 st1"
+                    cx="171.5"
+                    cy="175.6"
+                    r="122.7"
+                  />
+                  <circle
+                    id="circle"
+                    class="bubble4 st1"
+                    cx="171.5"
+                    cy="175.6"
+                    r="122.7"
+                  />
+                  <circle
+                    id="circle"
+                    class="bubble5 st1"
+                    cx="171.5"
+                    cy="175.6"
+                    r="122.7"
+                  />
+                  <circle
+                    id="circle"
+                    class="bubble6 st1"
+                    cx="171.5"
+                    cy="175.6"
+                    r="122.7"
+                  />
+                  <circle
+                    id="circle"
+                    class="bubble7 st1"
+                    cx="171.5"
+                    cy="175.6"
+                    r="122.7"
+                  />
+                  <circle
+                    id="circle"
+                    class="bubble8 st1"
+                    cx="171.5"
+                    cy="175.6"
+                    r="122.7"
+                  />
+                  <circle
+                    id="circle"
+                    class="bubble9 st1"
+                    cx="171.5"
+                    cy="175.6"
+                    r="122.7"
+                  />
+                  <circle
+                    id="circle"
+                    class="bubble10 st1"
+                    cx="171.5"
+                    cy="175.6"
+                    r="122.7"
+                  />
+                </g>
+              </svg>
+            </div>
+            <div class="clearfix"></div>
+          </div>
+          <div class="name-wrapper">
+            <h1>A.K. <br />Suryavanshi</h1>
+            <!-- YOUR NAME AND LAST NAME  -->
+          </div>
+          <div class="clearfix"></div>
+          <div class="contact-info clearfix">
+            <ul class="list-titles">
+              <li>Call</li>
+              <li>Mail</li>
+              <li>Web</li>
+              <li>Home</li>
+            </ul>
+            <ul class="list-content">
+              <li>+91 893 006 8008</li>
+              <!-- YOUR PHONE NUMBER  -->
+              <li>thakurinfotech@gmail.com</li>
+              <!-- YOUR EMAIL -->
+              <li>
+                <a href="anilkumarsuryavanshi.wordpress.com"
+                  >anilkumarsuryavanshi.wordpress.com</a
+                >
+              </li>
+              <!-- YOUR WEBSITE  -->
+              <li>Faridabad HR, IN</li>
+              <!-- YOUR STATE AND COUNTRY  -->
+            </ul>
+          </div>
+          <div class="contact-presentation">
+            <!-- YOUR PRESENTATION RESUME  -->
+            <p>
+              I love devloping Web and Mobile apps and Organising Social
+              Activites for Nation
+            </p>
+          </div>
+          <div class="contact-social clearfix">
+            <ul class="list-titles">
+              <li>Twitter</li>
+              <li>Dribbble</li>
+              <li>Codepen</li>
+            </ul>
+            <ul class="list-content">
+              <!-- REMEMBER TO PUT THE URL ON THE HREF TAG  -->
+              <li><a href="">@kanwar_ak</a></li>
+              <!-- YOUR TWITTER USER  -->
+              <li><a href="">KUNWARANILSURYAVANSHI</a></li>
+              <!-- YOUR DRIBBBLE USER  -->
+              <li><a href="">KUNWARANILSURYAVANSHI</a></li>
+              <!-- YOUR BEHANCE USER  -->
+            </ul>
+          </div>
+          <br />
+          <div class="contact-social clearfix"><h2>Education</h2></div>
+          <div class="contact-social clearfix">
+            <ul class="list-titles">
+              <li>B.Tech</li>
+              <li>High School</li>
+            </ul>
+            <ul class="list-content">
+              <!-- REMEMBER TO PUT THE URL ON THE HREF TAG  -->
+              <li>
+                <a href=""
+                  >Compter Science and Engineering from MDU Rohtak HR, IN</a
+                >
+              </li>
+              <!-- YOUR TWITTER USER  -->
+              <li><a href="">D.A.V. Public School -CBSE</a></li>
+              <!-- YOUR DRIBBBLE USER  -->
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="experience section-padding">
+        <div class="container">
+          <h3 class="experience-title">Experience</h3>
+
+          <div class="experience-wrapper">
+            <div class="company-wrapper clearfix">
+              <div class="experience-title">Infosys Ltd</div>
+              <!-- NAME OF THE COMPANY YOUWORK WITH  -->
+              <div class="time">Sept 2016 - Present</div>
+              <!-- THE TIME YOU WORK WITH THE COMPANY  -->
+            </div>
+
+            <div class="job-wrapper clearfix">
+              <div class="experience-title">Front End Developer</div>
+              <!-- JOB TITLE  -->
+              <div class="company-description">
+                <p>
+                  Mangaing complete Front end development Majorly working with
+                  UI and Code review, Deployment.
+                </p>
+                <!-- JOB DESCRIPTION  -->
+              </div>
+            </div>
+
+            <div class="company-wrapper clearfix">
+              <div class="experience-title">Xchanging Technologies</div>
+              <!-- NAME OF THE COMPANY YOUWORK WITH  -->
+              <div class="time">Aug 2015 - Aug 2016</div>
+              <!-- THE TIME YOU WORK WITH THE COMPANY  -->
+            </div>
+
+            <div class="job-wrapper clearfix">
+              <div class="experience-title">Web Developer</div>
+              <!-- JOB TITLE  -->
+              <div class="company-description">
+                <p>
+                  Heading whole front end work. Managing team and Client with
+                  following Agile Development Methodology. Taking care of
+                  Complete Front End and Back end integration with REST
+                  services.
+                </p>
+                <!-- JOB DESCRIPTION  -->
+              </div>
+            </div>
+
+            <div class="company-wrapper clearfix">
+              <div class="experience-title">HCL SERVICES LTD</div>
+              <!-- NAME OF THE COMPANY YOUWORK WITH  -->
+              <div class="time">JAN 2014 - JUL 2015</div>
+              <!-- THE TIME YOU WORK WITH THE COMPANY  -->
+            </div>
+
+            <div class="job-wrapper clearfix">
+              <div class="experience-title">UI DEVELOPER/LAMP</div>
+              <!-- JOB TITLE  -->
+              <div class="company-description">
+                <p>
+                  Admininstration of Linux(Ubuntu, Rehdat) server and Desktop.
+                  Programming of PHP, MYSQL scripts and services and UI
+                  development.
+                </p>
+                <!-- JOB DESCRIPTION  -->
+              </div>
+            </div>
+
+            <div class="company-wrapper clearfix">
+              <div class="experience-title">Art tech Services</div>
+              <!-- NAME OF THE COMPANY YOUWORK WITH  -->
+              <div class="time">Sept 2012 - Jan 2014</div>
+              <!-- THE TIME YOU WORK WITH THE COMPANY  -->
+            </div>
+
+            <div class="job-wrapper clearfix">
+              <div class="experience-title">
+                Freelance, Web Designer / Web Developer, IT-admin
+              </div>
+              <!-- JOB TITLE  -->
+              <div class="company-description">
+                <p>
+                  Admininstration of Windows. Webmaster of Webhosting,
+                  Programming, UI development, Interview and Hiring. Marketing,
+                  Client Meeting
+                </p>
+                <!-- JOB DESCRIPTION  -->
+              </div>
+            </div>
+          </div>
+          <!--Skill experience-->
+
+          <div class="section-wrapper clearfix">
+            <h3 class="section-title">Skills</h3>
+            <!-- YOUR SET OF SKILLS  -->
+            <ul>
+              <li class="skill-percentage">HTML / HTML5</li>
+              <li class="skill-percentage">CSS / CSS3 / BOOTSTRAP</li>
+              <li class="skill-percentage">Javascript</li>
+              <li class="skill-percentage">Jquery</li>
+              <li class="skill-percentage">AngularJS</li>
+              <li class="skill-percentage">Photoshop</li>
+              <li class="skill-percentage">BASIC PHP</li>
+              <li class="skill-percentage">BASIC MYSQL</li>
+              <li class="skill-percentage">BASIC LINUX</li>
+              <li class="skill-percentage">GIT/SVN</li>
+              <li class="skill-percentage">GULP/GRUNT</li>
+            </ul>
+          </div>
+
+          <div class="section-wrapper clearfix">
+            <h3 class="section-title">Hobbies</h3>
+            <!-- DESCRIPTION OF YOUR HOBBIES -->
+            <p>
+              Organising Social activities, Health awareness, Free Yoga Sessions
+              and Camp.
+            </p>
+
+            <p>Free Motivational seminars and Coding for something new.</p>
+          </div>
+        </div>
+      </section>
+
+      <div class="clearfix"></div>
+    </div>
+
+    <div class="modal" id="modal-giang">
+      <div class="modal-content">
+        <div class="modal-header">
+          Giang
+          <button class="icon modal-close">
+            <i class="material-icons">close</i>
+          </button>
+        </div>
+        <span
+          style="
+            display: block;
+            border: 1px solid rgb(0, 107, 139);
+            margin: auto 5px auto 5px;
+          "
+        >
+        </span>
+        <div class="modal-body">Giang</div>
+        <div class="modal-footer">Giang</div>
+      </div>
+    </div>
+    <div class="modal" id="modal-joo">
+      <div class="modal-content">
+        <div class="modal-header">
+          Joo
+          <button class="icon modal-close">
+            <i class="material-icons">close</i>
+          </button>
+        </div>
+        <span
+          style="
+            display: block;
+            border: 1px solid rgb(0, 107, 139);
+            margin: auto 5px auto 5px;
+          "
+        >
+        </span>
+        <div class="modal-body">Joo</div>
+        <div class="modal-footer">Joo</div>
+      </div>
+    </div>
+    <div class="modal" id="modal-ramcharan">
+      <div class="modal-content">
+        <div class="modal-header">
+          ramcharan
+          <button class="icon modal-close">
+            <i class="material-icons">close</i>
+          </button>
+        </div>
+        <span
+          style="
+            display: block;
+            border: 1px solid rgb(0, 107, 139);
+            margin: auto 5px auto 5px;
+          "
+        >
+        </span>
+        <div class="modal-body">ramcharan</div>
+        <div class="modal-footer">ramcharan</div>
+      </div>
+    </div>
+    <div class="modal" id="modal-minh">
+      <div class="modal-content">
+        <div class="modal-header">
+          minh
+          <button class="icon modal-close">
+            <i class="material-icons">close</i>
+          </button>
+        </div>
+        <span
+          style="
+            display: block;
+            border: 1px solid rgb(0, 107, 139);
+            margin: auto 5px auto 5px;
+          "
+        >
+        </span>
+        <div class="modal-body">minh</div>
+        <div class="modal-footer">minhy</div>
+      </div>
+    </div>
+    <div id="overlay"></div>
 
     <footer>
-      <h1>FOOTER AREA</h1>
       <div class="footer">
         <div class="footer-content">
           <div class="footer-section">
-            <h3>Copyright</h3>
-            <ul></ul>
-          </div>
-          <div class="footer-section">
-            <h3>Term of Service</h3>
-            <ul></ul>
-          </div>
-          <div class="footer-section">
-            <h3>Privacy Policy</h3>
-            <ul></ul>
+            <h3>Other Authorities</h3>
+            <h3>
+              <a href="../homepage/footer/copyright.html"> Copyright</a>
+            </h3>
+            <h3>
+              <a href="../homepage/footer/privacy.html">Privacy Policy</a>
+            </h3>
+            <h3>
+              <a href="../homepage/footer/terms.html">Terms of Service</a>
+            </h3>
           </div>
           <div class="footer-section">
             <h3>Student contributors</h3>
             <ol>
               <li>Nguyen Thi Quynh Giang <b>[s3866617]</b></li>
               <br />
-              <li>Joo Jeong-hyeon<b>[sid]</b></li>
+              <li>Joo Jeong-hyeon<b>[s3865746]</b></li>
               <br />
-              <li>Vo Khai Minh<b>[s3866617]</b></li>
+              <li>Vo Khai Minh<b>[s3879953]</b></li>
+              <br />
+              <li>Ramanaharan Ramcharan<b>[s3775271]</b></li>
             </ol>
           </div>
           <div class="footer-section">
-            <h3>Source Code</h3>
-            <ul></ul>
+            <h3>Application Information</h3>
+            <a
+              href="https://github.com/Web-programming-sem1-2021/group-26-HTML-CSS-assignment"
+              ><img class="footer-icon" src="../icons/github-character.svg" />
+              Source Code</a
+            >
+            <a
+              href="https://web-programming-sem1-2021.github.io/group-26-HTML-CSS-assignment/"
+              ><img class="footer-icon" src="../icons/footerIcons/globe.svg" />
+              Website</a
+            >
           </div>
         </div>
-        <div class="footer-bottom">Privacy policy-Terms and conditions</div>
       </div>
     </footer>
-
-    <script>
-      function handleResponsiveNavBar() {
-        var x = document.getElementById("navbar");
-        if (x.className === "nav") {
-          x.className += " responsive";
-        } else {
-          x.className = "nav";
-        }
-      }
-    </script>
   </body>
 </html>
