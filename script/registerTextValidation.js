@@ -10,6 +10,7 @@ const city = document.getElementById("city");
 const zipCode = document.getElementById("zip");
 
 registerSubmitButton.addEventListener("click", (e) => {
+  debugger;
   const emailPattern = /^([a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-])+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
   const phoneNumberPattern = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{3,6}$/im;
   const passwordPattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,20}$/;
@@ -18,6 +19,10 @@ registerSubmitButton.addEventListener("click", (e) => {
   const cityPattern = /[A-Za-z]{3,}/;
   const zipCodePattern = /[0-9]{4,6}/;
   //email
+  console.log(
+    "emailPattern.test(email.value) :>> ",
+    emailPattern.test(email.value)
+  );
   emailPattern.test(email.value)
     ? (email.setCustomValidity("Right"),
       email.reportValidity(),
@@ -25,7 +30,7 @@ registerSubmitButton.addEventListener("click", (e) => {
     : (email.setCustomValidity(
         "Your email must be in a correct form (abc#def@mail.com)"
       ),
-      (city.style.boxShadow = "0 0 10px red"),
+      (email.style.boxShadow = "0 0 10px red"),
       email.reportValidity(),
       e.preventDefault());
 
@@ -49,11 +54,15 @@ registerSubmitButton.addEventListener("click", (e) => {
       retypePassword.reportValidity(),
       e.preventDefault())
     : (retypePassword.setCustomValidity("Wrong!"),
-      (city.style.boxShadow = "0 0 10px red"),
+      (retypePassword.style.boxShadow = "0 0 10px red"),
       retypePassword.reportValidity(),
       e.preventDefault());
 
   //first-name
+  console.log(
+    "  namePattern.test(firstName.value):>> ",
+    namePattern.test(firstName.value)
+  );
   namePattern.test(firstName.value)
     ? (firstName.setCustomValidity("Right"), e.preventDefault())
     : (firstName.setCustomValidity(
@@ -99,7 +108,7 @@ registerSubmitButton.addEventListener("click", (e) => {
       zipCode.reportValidity(),
       e.preventDefault())
     : (zipCode.setCustomValidity("Wrong!"),
-      (city.style.boxShadow = "0 0 10px red"),
+      (zipCode.style.boxShadow = "0 0 10px red"),
       zipCode.reportValidity(),
       e.preventDefault());
 });
