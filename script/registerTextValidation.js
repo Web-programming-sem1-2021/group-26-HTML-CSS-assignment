@@ -44,9 +44,10 @@ registerSubmitButton.addEventListener("click", (e) => {
 
   //password
   passwordPattern.test(password.value)
-    ? password.setCustomValidity("Right!")
+    ? (password.setCustomValidity("Right!"), e.preventDefault())
     : (password.setCustomValidity("Wrong!"),
-      (password.style.boxShadow = "0 0 10px red"));
+      (password.style.boxShadow = "0 0 10px red"),
+      e.preventDefault());
 
   //retype-password
   password.value === retypePassword.value
