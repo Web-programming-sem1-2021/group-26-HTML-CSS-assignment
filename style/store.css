@@ -4,10 +4,10 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 @import url(https://fonts.googleapis.com/css?family=Bree+Serif);
 
-*{
+* {
   font-family: Poppins, sans-serif;
 }
-a{
+a {
   text-decoration: none;
 }
 .toggle,
@@ -19,7 +19,7 @@ a{
 nav {
   margin: 0;
   padding: 0;
-  background-color: #ffffff;  
+  background-color: #ffffff;
 }
 
 .logo-img {
@@ -422,7 +422,6 @@ body {
 .product,
 .product--col {
   box-shadow: 1px 5px 15px #ccc;
-  
   height: auto;
   border-radius: 3px;
   padding: 2em;
@@ -464,7 +463,7 @@ body {
   color: rgba(0, 0, 0, 0.9);
 }
 
-.product_inner:hover p{
+.product_inner:hover p {
   color: #2196f3;
 }
 .product_inner button {
@@ -520,7 +519,7 @@ body {
 /*Browse products by categories*/
 
 .category-section section {
-  border-radius:  20px;
+  border-radius: 20px;
   width: 100%;
   display: inline-flex;
   justify-content: space-around;
@@ -619,15 +618,6 @@ body {
   border: 0px solid #b1b1b1;
 }
 
-
-
-
-
-
-
-
-
-
 .carousel {
   display: flex;
   overflow-x: auto;
@@ -678,40 +668,6 @@ body {
   width: 120px;
   height: 200px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* FOOTER */
 .footer {

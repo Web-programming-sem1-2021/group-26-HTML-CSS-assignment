@@ -6,6 +6,7 @@
     <title>My Account</title>
     <link rel="stylesheet" href="../../style.css" />
     <link rel="stylesheet" href="../../style/account.css" />
+    <script src="../../script/myAccount.js" defer></script>
   </head>
   <body>
     <!-- referenced from : "https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp" -->
@@ -15,7 +16,9 @@
       /></a>
       <a class="nav-section" href="../about-us.html">About Us</a>
       <a class="nav-section" href="../fees.html">Fees</a>
-      <a class="nav-section" href="../myAccount/login.html">Account</a>
+      <a class="nav-section" href="../myAccount/login.html" id="nav-bar-acount"
+        >Account</a
+      >
 
       <details class="dropdown">
         <summary class="dropbtn">
@@ -49,8 +52,14 @@
         <h2>Helen Mccory</h2>
       </div>
       <div class="description">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi
-        repellendus laudantium asperiores!
+        <em><b>Username:&nbsp;&nbsp;</b></em>
+        my-user-name
+      </div>
+      <div class="description" id="email">
+        <em><b>Email: &nbsp;&nbsp; </b></em>
+      </div>
+      <div class="description">
+        <em><b>Date of Birth:&nbsp;&nbsp; </b> </em> 18/05/2000
       </div>
       <div class="social">
         <ul>
